@@ -1,15 +1,14 @@
 export const navItems = [
-  { name: "Home", link: "#", route: "/" },
-  { name: "About", link: "#about", route: "/about" },
-  { name: "Projects", link: "#projects", route: "/portfolio" },
-  // { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact", route: "/contact" },
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Portfolio", link: "/portfolio" },
+  { name: "Contact", link: "/contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "We prioritize client collaboration, fostering open communication ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -19,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "We are very flexible with time zone communications",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -29,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Developing",
+    description: "We constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -39,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "InfineTeck delivers tailored software solutions.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -73,66 +72,68 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    title: "Spotic Coin Blockchain website",
+    des: "Discover the future of digital currency with Spotic Coin – a blockchain-powered platform revolutionizing the way we transact.",
+    img: "/SpoticCoin-01 – 1.png",
+    iconLists: ["/eth.png", "/soli.png", "/tuf.png", "/next.svg", "/myt.png"],
     link: "/ui.earth.com",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    title: "Candy Mall Mania - Roblox Game",
+    des: "Step into the sweet adventure of Candy Mall Mania – a delightful Roblox game filled with fun, challenges, and sugary surprises!",
+    img: "/candy.jpg",
+    iconLists: ["/rbs.png", "/bln.png", "/lua.png", "/maya.png", "/max.png"],
     link: "/ui.yoom.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    title: "Hide N Snipe - Roblox Game",
+    des: "Hide N Snipe – Dive into an immersive Roblox gaming experience blending strategy, stealth, and excitement like never before!",
+    img: "/hidnsnip.jpg",
+    iconLists: ["/rbs.png", "/bln.png", "/lua.png", "/maya.png", "/max.png"],
     link: "/ui.aiimg.com",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "InnoVest - Investment Website 0.3",
+    des: "Experience the future of finance with InnoVest – an innovative investment platform powered by cutting-edge technology and seamless design.",
+    img: "/Web 1920 – 2.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
   },
 ];
 
+
+
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
@@ -174,31 +175,59 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "BlockChain Development",
+    desc: "Blockchain development builds trustless systems,transforming industries efficiency.",
     className: "md:col-span-2",
     thumbnail: "/exp1.png",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.png",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Mobile App & Website Development",
+    desc: "Mobile app and website development deliver seamless digital solutions that enhance user experience & drive business growth.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.png",
   },
   {
+    id: 3,
+    title: "Metaverse Virtual Tours",
+    desc: "We offer immersive, interactive experiences that transform how users explore and engage with digital environments.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.png",
+  },
+  {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Game Development",
+    desc: "As a software development company, we use Unity and Roblox to create immersive, interactive game worlds that captivate players and bring ideas to life.",
     className: "md:col-span-2",
     thumbnail: "/exp4.png",
+  },
+  {
+    id: 5,
+    title: "Digital Marketing & Branding",
+    desc: "Digital marketing and branding services help businesses establish a strong online presence.",
+    className: "md:col-span-2",
+    thumbnail: "/exp5.png",
+  },
+  {
+    id: 6,
+    title: "2D & 3D Animation - Video Editing",
+    desc: "2D and 3D animation and video editing services help you bring your vision to life.",
+    className: "md:col-span-2",
+    thumbnail: "/exp6.png",
+  },
+  {
+    id: 7,
+    title: "E-commerce Consultancy",
+    desc: "2D and 3D animation and video editing services help you bring your vision to life.",
+    className: "md:col-span-2",
+    thumbnail: "/exp7.png",
+  },
+  {
+    id: 8,
+    title: "Artificial Intelligence Development",
+    desc: "We develop AI for chatbots, LLM models, predictive analytics, automation, and personalized solutions that transform businesses.",
+    className: "md:col-span-2",
+    thumbnail: "/exp8.png",
   },
 ];
 
