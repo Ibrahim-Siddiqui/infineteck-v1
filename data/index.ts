@@ -1,8 +1,9 @@
 export const navItems = [
-  { name: "Home", link: "/" },
-  { name: "About", link: "/about" },
-  { name: "Portfolio", link: "/portfolio" },
-  { name: "Contact", link: "/contact" },
+  { name: "Home", link: "#", route: "/" },
+  { name: "About", link: "#about", route: "/about" },
+  { name: "Portfolio", link: "#Portfolio", route: "/portfolio" },
+  // { name: "Testimonials", link: "#testimonials" },
+  { name: "Contact", link: "#contact", route: "/contact" },
 ];
 
 export const gridItems = [
@@ -73,15 +74,15 @@ export const projects = [
   {
     id: 1,
     title: "Spotic Coin Blockchain website",
-    des: "Discover the future of digital currency with Spotic Coin – a blockchain-powered platform revolutionizing the way we transact.",
-    img: "/SpoticCoin-01 – 1.png",
+    des: "Discover the future of digital currency with Spotic Coin | a blockchain-powered platform revolutionizing the way we transact.",
+    img: "/SpoticCoin.png",
     iconLists: ["/eth.png", "/soli.png", "/tuf.png", "/next.svg", "/myt.png"],
     link: "/ui.earth.com",
   },
   {
     id: 2,
     title: "Candy Mall Mania - Roblox Game",
-    des: "Step into the sweet adventure of Candy Mall Mania – a delightful Roblox game filled with fun, challenges, and sugary surprises!",
+    des: "Step into the sweet adventure of Candy Mall Mania  a delightful Roblox game filled with fun, challenges, and sugary surprises!",
     img: "/candy.jpg",
     iconLists: ["/rbs.png", "/bln.png", "/lua.png", "/maya.png", "/max.png"],
     link: "/ui.yoom.com",
@@ -89,7 +90,7 @@ export const projects = [
   {
     id: 3,
     title: "Hide N Snipe - Roblox Game",
-    des: "Hide N Snipe – Dive into an immersive Roblox gaming experience blending strategy, stealth, and excitement like never before!",
+    des: "Hide N Snipe | Dive into an immersive Roblox gaming experience blending strategy, stealth, and excitement like never before!",
     img: "/hidnsnip.jpg",
     iconLists: ["/rbs.png", "/bln.png", "/lua.png", "/maya.png", "/max.png"],
     link: "/ui.aiimg.com",
@@ -97,8 +98,8 @@ export const projects = [
   {
     id: 4,
     title: "InnoVest - Investment Website 0.3",
-    des: "Experience the future of finance with InnoVest – an innovative investment platform powered by cutting-edge technology and seamless design.",
-    img: "/Web 1920 – 2.png",
+    des: "Experience the future of finance with InnoVest | an innovative investment platform powered by cutting-edge technology and seamless design.",
+    img: "/Web 1920.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
   },
