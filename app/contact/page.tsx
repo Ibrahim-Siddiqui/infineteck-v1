@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
                 <div className="information">
                   <img src="/telephone.png" className="icon" alt="" />
-                  <p>123-456-789</p>
+                  <p>+4474638365597</p>
                 </div>
               </div>
 
@@ -46,13 +46,13 @@ const Home = () => {
                   <a href="#">
                     <img src="/twitter.png" className="icon" alt="" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/infineteck/">
                     <img src="/linkedin.png" className="icon" alt="" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL">
                     <img src="/facebook.png" className="icon" alt="" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/infineteck/profilecard/?igsh=dnR6c2FjNjJjcWE2">
                     <img src="/instagram.png" className="icon" alt="" />
                   </a>
                 </div>
