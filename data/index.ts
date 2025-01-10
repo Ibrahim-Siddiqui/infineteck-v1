@@ -246,3 +246,294 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+
+export const textLogoPortfolioData = [
+  {
+    id: 1,
+    title: "Text Logo",
+    src: "/branding7.jpg",
+  },
+  {
+    id: 2,
+    title: "Text Logo",
+    src: "/branding8.jpg",
+  },
+  {
+    id: 3,
+    title: "Text Logo",
+    src: "/branding9.jpg",
+  },
+  {
+    id: 4,
+    title: "Text Logo",
+    src: "/branding10.jpg",
+  },
+  {
+    id: 5,
+    title: "Text Logo",
+    src: "/branding11.jpg",
+  },
+  {
+    id: 6,
+    title: "Text Logo",
+    src: "/branding12.jpg",
+  },
+  {
+    id: 7,
+    title: "Business Card",
+    src: "/branding1.jpg",
+  },
+  {
+    id: 8,
+    title: "Business Card",
+    src: "/branding2.jpg",
+  },
+  {
+    id: 9,
+    title: "Business Card",
+    src: "/branding3.jpg",
+  },
+  {
+    id: 10,
+    title: "Business Stationery",
+    src: "/branding4.jpg",
+  },
+  {
+    id: 11,
+    title: "Business Stationery",
+    src: "/branding5.jpg",
+  },
+  {
+    id: 12  ,
+    title: "Business Stationery",
+    src: "/branding6.jpg",
+  },
+]
+
+export const UIUXPortfolioData = [
+  {
+    id: 1,
+    title: "Business Stationery",
+    src: "/ui-ux-1.jpg",
+  },
+  {
+    id: 2,
+    title: "Business Stationery",
+    src: "/ui-ux-2.jpg",
+  },
+  {
+    id: 3,
+    title: "Business Stationery",
+    src: "/ui-ux-3.jpg",
+  },
+  {
+    id: 4,
+    title: "Business Stationery",
+    src: "/ui-ux-4.jpg",
+  },
+  {
+    id: 5,
+    title: "Business Stationery",
+    src: "/ui-ux-5.jpg",
+  },
+  {
+    id: 6,
+    title: "Business Stationery",
+    src: "/ui-ux-6.jpg",
+  },
+  {
+    id: 7,
+    title: "Business Stationery",
+    src: "/ui-ux-7.jpg",
+  },
+  {
+    id: 8,
+    title: "Business Stationery",
+    src: "/ui-ux-8.jpg",
+  },
+  {
+    id: 9,
+    title: "Business Stationery",
+    src: "/ui-ux-9.jpg",
+  },
+
+]
+
+export const gameDevPortfolioData = [
+  {
+    id: 1,
+    title: "Hinde N Snipe",
+    src: "/game-dev-1.jpg",
+  },
+  {
+    id: 2,
+    title: "Candy Mall Mania",
+    src: "/game-dev-2.jpg",
+  },
+  {
+    id: 3,
+    title: "Theme Park Tycoon",
+    src: "/game-dev-3.jpg",
+  },
+]
+
+export const shopifyPortfolioData = [
+  {
+    id: 1,
+    title: "Jaamz Beauty",
+    src: "/shopify-1.jpg",
+  },
+  {
+    id: 2,
+    title: "Vixens Beauty",
+    src: "/shopify-2.jpg",
+  },
+]
+
+export const mascotPortfolioData = [
+  {
+    id: 1,
+    title: "Text Logo",
+    src: "/mascot-7.jpg",
+  },
+  {
+    id: 2,
+    title: "Text Logo",
+    src: "/mascot-8.jpg",
+  },
+  {
+    id: 3,
+    title: "Text Logo",
+    src: "/mascot-9.jpg",
+  },
+  {
+    id: 4,
+    title: "Text Logo",
+    src: "/mascot-10.jpg",
+  },
+  {
+    id: 5,
+    title: "Text Logo",
+    src: "/mascot-11.jpg",
+  },
+  {
+    id: 6,
+    title: "Text Logo",
+    src: "/mascot-12.jpg",
+  },
+  {
+    id: 7,
+    title: "Business Card",
+    src: "/mascot-1.jpg",
+  },
+  {
+    id: 8,
+    title: "Business Card",
+    src: "/mascot-2.jpg",
+  },
+  {
+    id: 9,
+    title: "Business Card",
+    src: "/mascot-3.jpg",
+  },
+  {
+    id: 10,
+    title: "Business Stationery",
+    src: "/mascot-4.jpg",
+  },
+  {
+    id: 11,
+    title: "Business Stationery",
+    src: "/mascot-5.jpg",
+  },
+  {
+    id: 12  ,
+    title: "Business Stationery",
+    src: "/mascot-6.jpg",
+  },
+  {
+    id: 13  ,
+    title: "Business Stationery",
+    src: "/mascot-13.jpg",
+  },
+  {
+    id: 14  ,
+    title: "Business Stationery",
+    src: "/mascot-14.jpg",
+  },
+  {
+    id: 15  ,
+    title: "Business Stationery",
+    src: "/mascot-15.jpg",
+  },
+]
+
+
+export const socialMediaPortfolioData = [
+  {
+    id: 1,
+    title: "Text Logo",
+    src: "/social-media-7.png",
+  },
+  {
+    id: 2,
+    title: "Text Logo",
+    src: "/social-media-8.png",
+  },
+  {
+    id: 3,
+    title: "Text Logo",
+    src: "/social-media-9.png",
+  },
+  {
+    id: 4,
+    title: "Text Logo",
+    src: "/social-media-10.png",
+  },
+  {
+    id: 5,
+    title: "Text Logo",
+    src: "/social-media-11.png",
+  },
+  {
+    id: 6,
+    title: "Text Logo",
+    src: "/social-media-12.png",
+  },
+  {
+    id: 7,
+    title: "Business Card",
+    src: "/social-media-1.png",
+  },
+  {
+    id: 8,
+    title: "Business Card",
+    src: "/social-media-2.png",
+  },
+  {
+    id: 9,
+    title: "Business Card",
+    src: "/social-media-3.png",
+  },
+  {
+    id: 10,
+    title: "Business Stationery",
+    src: "/social-media-4.png",
+  },
+  {
+    id: 11,
+    title: "Business Stationery",
+    src: "/social-media-5.png",
+  },
+  {
+    id: 12  ,
+    title: "Business Stationery",
+    src: "/social-media-6.png",
+  },
+  {
+    id: 13  ,
+    title: "Business Stationery",
+    src: "/social-media-13.png",
+  },
+]
