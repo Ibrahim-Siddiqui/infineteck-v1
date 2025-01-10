@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 export const Card = React.memo(
   ({
@@ -10,7 +11,7 @@ export const Card = React.memo(
     hovered,
     setHovered,
   }: {
-    card: any;
+    card: Card;
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -23,22 +24,24 @@ export const Card = React.memo(
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
     >
-      <Image
-        src={card.src}
-        alt={card.title}
-        fill
-        className="object-cover absolute inset-0"
-      />
-      <div
-        className={cn(
+      <PhotoView key={card.id} src={card.src}>
+        <Image
+          src={card.src}
+          alt={card.title}
+          fill
+          className="object-cover absolute inset-0 cursor-pointer"
+        />
+      </PhotoView>
+      {/* <div
+       className={cn(
           "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
           hovered === index ? "opacity-100" : "opacity-0"
         )}
-      >
-        <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
-          {card.title}
-        </div>
+      > */}
+      <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+        {card.title}
       </div>
+      {/* </div> */}
     </div>
   )
 );
@@ -46,24 +49,40 @@ export const Card = React.memo(
 Card.displayName = "Card";
 
 type Card = {
+  id: number;
   title: string;
   src: string;
 };
 
-export function FocusCards({ cards }: { cards: Card[] }) {
+export function FocusCards({
+  cards,
+  loadMore,
+}: {
+  cards: Card[];
+  loadMore: boolean;
+}) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto md:px-8 w-full">
-      {cards.map((card, index) => (
-        <Card
-          key={card.title}
-          card={card}
-          index={index}
-          hovered={hovered}
-          setHovered={setHovered}
-        />
-      ))}
+      <PhotoProvider>
+        {cards.map(
+          (card) => (
+            !loadMore && card.id > 3 ? (
+              <React.Fragment key={card.id}></React.Fragment>
+            ) : (
+            <React.Fragment key={card.id}>
+              <Card
+                card={card}
+                index={card.id}
+                hovered={hovered}
+                setHovered={setHovered}
+              />
+            </React.Fragment>
+          )
+          )
+        )}
+      </PhotoProvider>
     </div>
   );
 }
