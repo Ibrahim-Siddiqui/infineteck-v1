@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+
 import Hero4 from "@/components/Hero4";
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { FocusCards } from "@/components/ui/FocusCards";
+import { VideoCards } from "@/components/ui/VideoCards";
 
 import { navItems } from "@/data";
 import { UIUXPortfolioData } from "@/data";
@@ -13,15 +15,16 @@ import { gameDevPortfolioData } from "@/data";
 import { shopifyPortfolioData } from "@/data";
 import { mascotPortfolioData } from "@/data";
 import { socialMediaPortfolioData } from "@/data";
+import { videoPortfolioData } from "@/data";
 
 const Home = () => {
-
   const [isTextLogo, setIsTextLogo] = useState(false);
   const [isUIUX, setIsUIUX] = useState(false);
   const [isGameDev, setIsGameDev] = useState(false);
   const [isShopify, setIsShopify] = useState(false);
   const [isMascot, setIsMascot] = useState(false);
   const [isSocialMedia, setIsSocialMedia] = useState(false);
+  const [isVideoEditing, setIsVideoEditing] = useState(false);
 
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
@@ -126,6 +129,26 @@ const Home = () => {
         ) : (
           <div className=""></div>
         )}
+
+        <div className="relative my-[5rem]">
+          <h1 className="text-white text-4xl md:text-5xl text-center font-bold">
+            Video Editing Portfolio
+          </h1>
+        </div>
+        <VideoCards cards={videoPortfolioData} loadMore={isVideoEditing} />
+        {videoPortfolioData.length > 4 ? (
+          <div className="flex justify-center my-5">
+            <button
+              className="bg-blue-900 p-4 rounded-lg text-white text-xl hover:scale-105 transition-all ease-in-out"
+              onClick={(e) => setIsVideoEditing(!isVideoEditing)}
+            >
+              {!isVideoEditing ? <>Show More</> : <>Show Less</>}
+            </button>
+          </div>
+        ) : (
+          <div className=""></div>
+        )}
+
 
         <div className="relative my-[5rem]">
           <h1 className="text-white text-4xl md:text-5xl text-center font-bold">
