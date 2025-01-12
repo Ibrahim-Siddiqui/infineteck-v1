@@ -537,3 +537,41 @@ export const socialMediaPortfolioData = [
     src: "/social-media-13.png",
   },
 ]
+
+export const videoPortfolioData = [
+  {
+    id: 1,
+    title: "Bringing Ideas to Life",
+    src: "vQlw8Z-UtW8",
+  }, 
+  {
+    id: 2,
+    title: "",
+    src: "DDDbypFTOYA",
+  },
+  {
+    id: 3,
+    title: "",
+    src: "tE72XzVy5Wo",
+  },
+  {
+    id: 4,
+    title: "",
+    src: "2S0spoNby_g",
+  },
+  {
+    id: 5,
+    title: "",
+    src: "OCzYZV8rGtM",
+  },
+  {
+    id: 6,
+    title: "",
+    src: "jYbbWyzlc5M",
+  },
+  {
+    id: 7,
+    title: "",
+    src: "nT6_MWbRi-E",
+  },
+]
