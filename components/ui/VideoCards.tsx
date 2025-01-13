@@ -9,24 +9,21 @@ import {
   plyrLayoutIcons,
 } from "@vidstack/react/player/layouts/plyr";
 
-export const Card = React.memo(
-  ({
-    card,
-  }: {
-    card: Card;
-    index: number;
-  }) => (
-    <div className="relative overflow-hidden pb-[56.25%] h-0">
-      <MediaPlayer title={card.title} src={`youtube/${card.src}`}>
-        <MediaProvider />
-        <PlyrLayout
-          // thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"
-          icons={plyrLayoutIcons}
-        />
-      </MediaPlayer>
-    </div>
-  )
-);
+export const Card = React.memo(({ card }: { card: Card; index: number }) => (
+  <div className="relative overflow-hidden pb-[56.25%] h-0">
+    <MediaPlayer
+      title={card.title}
+      src={`youtube/${card.src}`}
+      playsInline
+    >
+      <MediaProvider />
+      <PlyrLayout
+        // thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"
+        icons={plyrLayoutIcons}
+      />
+    </MediaPlayer>
+  </div>
+));
 
 Card.displayName = "Card";
 
@@ -43,18 +40,13 @@ export function VideoCards({
   cards: Card[];
   loadMore: boolean;
 }) {
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto md:px-8 w-full">
       {cards.map((card) =>
         !loadMore && card.id > 4 ? (
           <React.Fragment key={card.id}></React.Fragment>
         ) : (
-          <Card
-            key={card.id}
-            card={card}
-            index={card.id}
-          />
+          <Card key={card.id} card={card} index={card.id} />
         )
       )}
     </div>
