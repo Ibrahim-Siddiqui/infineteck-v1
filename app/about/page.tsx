@@ -12,7 +12,7 @@ const Home = () => {
     {
       title: "Who We Are?",
       content: (
-        <p>
+        <p className="lg:text-lg">
           At Infineteck, we transform bold ideas into innovative digital
           realities. With a focus on solving complex business challenges, we
           deliver bespoke, high-quality solutions designed to empower growth and
@@ -26,7 +26,7 @@ const Home = () => {
     {
       title: "Why Partner with Us?",
       content: (
-        <p>
+        <p className="lg:text-lg">
           With years of proven expertise, we specialize in delivering impactful
           solutions that combine precision, excellence, and unmatched quality in
           every project. Our commitment to providing premium outcomes at
@@ -40,7 +40,7 @@ const Home = () => {
     {
       title: "What We Excel At?",
       content: (
-        <p>
+        <p className="lg:text-lg">
           At Infineteck, we offer cutting-edge services to elevate your
           business. Our expertise includes web and app development for seamless
           user experiences, game development for immersive content, and AI and
@@ -55,7 +55,7 @@ const Home = () => {
     {
       title: "Your Trusted Partner in Digital Success",
       content: (
-        <p>
+        <p className="lg:text-lg">
           At Infineteck, we are driven by our unwavering commitment to
           delivering exceptional results that save you time and money while
           adding real value to your business. Our team of experts, specialized

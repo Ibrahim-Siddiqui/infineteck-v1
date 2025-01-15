@@ -251,32 +251,32 @@ export const socialMedia = [
 export const textLogoPortfolioData = [
   {
     id: 1,
-    title: "Text Logo",
+    title: "Demand Hospitality",
     src: "/branding7.jpg",
   },
   {
     id: 2,
-    title: "Text Logo",
+    title: "Mobility Machines",
     src: "/branding8.jpg",
   },
   {
     id: 3,
-    title: "Text Logo",
+    title: "Ragnarok Energy",
     src: "/branding9.jpg",
   },
   {
     id: 4,
-    title: "Text Logo",
+    title: "Laird Construction Inc.",
     src: "/branding10.jpg",
   },
   {
     id: 5,
-    title: "Text Logo",
+    title: "TVT Logistics Inc.",
     src: "/branding11.jpg",
   },
   {
     id: 6,
-    title: "Text Logo",
+    title: "The Culinary Venture",
     src: "/branding12.jpg",
   },
   {
@@ -314,47 +314,47 @@ export const textLogoPortfolioData = [
 export const UIUXPortfolioData = [
   {
     id: 1,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-1.jpg",
   },
   {
     id: 2,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-2.jpg",
   },
   {
     id: 3,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-3.jpg",
   },
   {
     id: 4,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-4.jpg",
   },
   {
     id: 5,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-5.jpg",
   },
   {
     id: 6,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-6.jpg",
   },
   {
     id: 7,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-7.jpg",
   },
   {
     id: 8,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-8.jpg",
   },
   {
     id: 9,
-    title: "Business Stationery",
+    title: "",
     src: "/ui-ux-9.jpg",
   },
 
@@ -394,77 +394,77 @@ export const shopifyPortfolioData = [
 export const mascotPortfolioData = [
   {
     id: 1,
-    title: "Text Logo",
+    title: "",
     src: "/mascot-7.jpg",
   },
   {
     id: 2,
-    title: "Text Logo",
+    title: "",
     src: "/mascot-8.jpg",
   },
   {
     id: 3,
-    title: "Text Logo",
+    title: "",
     src: "/mascot-9.jpg",
   },
   {
     id: 4,
-    title: "Text Logo",
+    title: "",
     src: "/mascot-10.jpg",
   },
   {
     id: 5,
-    title: "Text Logo",
+    title: "",
     src: "/mascot-11.jpg",
   },
   {
     id: 6,
-    title: "Text Logo",
+    title: "",
     src: "/mascot-12.jpg",
   },
   {
     id: 7,
-    title: "Business Card",
+    title: "",
     src: "/mascot-1.jpg",
   },
   {
     id: 8,
-    title: "Business Card",
+    title: "",
     src: "/mascot-2.jpg",
   },
   {
     id: 9,
-    title: "Business Card",
+    title: "",
     src: "/mascot-3.jpg",
   },
   {
     id: 10,
-    title: "Business Stationery",
+    title: "",
     src: "/mascot-4.jpg",
   },
   {
     id: 11,
-    title: "Business Stationery",
+    title: "",
     src: "/mascot-5.jpg",
   },
   {
     id: 12  ,
-    title: "Business Stationery",
+    title: "",
     src: "/mascot-6.jpg",
   },
   {
     id: 13  ,
-    title: "Business Stationery",
+    title: "",
     src: "/mascot-13.jpg",
   },
   {
     id: 14  ,
-    title: "Business Stationery",
+    title: "",
     src: "/mascot-14.jpg",
   },
   {
     id: 15  ,
-    title: "Business Stationery",
+    title: "",
     src: "/mascot-15.jpg",
   },
 ]
@@ -473,67 +473,67 @@ export const mascotPortfolioData = [
 export const socialMediaPortfolioData = [
   {
     id: 1,
-    title: "Text Logo",
+    title: "",
     src: "/social-media-7.png",
   },
   {
     id: 2,
-    title: "Text Logo",
+    title: "",
     src: "/social-media-8.png",
   },
   {
     id: 3,
-    title: "Text Logo",
+    title: "",
     src: "/social-media-9.png",
   },
   {
     id: 4,
-    title: "Text Logo",
+    title: "",
     src: "/social-media-10.png",
   },
   {
     id: 5,
-    title: "Text Logo",
+    title: "",
     src: "/social-media-11.png",
   },
   {
     id: 6,
-    title: "Text Logo",
+    title: "",
     src: "/social-media-12.png",
   },
   {
     id: 7,
-    title: "Business Card",
+    title: "",
     src: "/social-media-1.png",
   },
   {
     id: 8,
-    title: "Business Card",
+    title: "",
     src: "/social-media-2.png",
   },
   {
     id: 9,
-    title: "Business Card",
+    title: "",
     src: "/social-media-3.png",
   },
   {
     id: 10,
-    title: "Business Stationery",
+    title: "",
     src: "/social-media-4.png",
   },
   {
     id: 11,
-    title: "Business Stationery",
+    title: "",
     src: "/social-media-5.png",
   },
   {
     id: 12  ,
-    title: "Business Stationery",
+    title: "",
     src: "/social-media-6.png",
   },
   {
     id: 13  ,
-    title: "Business Stationery",
+    title: "",
     src: "/social-media-13.png",
   },
 ]
@@ -541,7 +541,7 @@ export const socialMediaPortfolioData = [
 export const videoPortfolioData = [
   {
     id: 1,
-    title: "Bringing Ideas to Life",
+    title: "",
     src: "vQlw8Z-UtW8",
   }, 
   {
@@ -557,7 +557,7 @@ export const videoPortfolioData = [
   {
     id: 4,
     title: "",
-    src: "2S0spoNby_g",
+    src: "jYbbWyzlc5M",
   },
   {
     id: 5,
@@ -567,8 +567,9 @@ export const videoPortfolioData = [
   {
     id: 6,
     title: "",
-    src: "jYbbWyzlc5M",
+    src: "2S0spoNby_g",
   },
+  
   {
     id: 7,
     title: "",
