@@ -41,7 +41,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
         <h1 className="heading">
-          Welcome to <span className="text-purple"> Infineteck </span>
+          Welcome to <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color"> Infineteck </span>
           {/* Innovating Beyond Limits */}
         </h1>
       </div>

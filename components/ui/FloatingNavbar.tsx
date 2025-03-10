@@ -1,13 +1,8 @@
 // "use client";
 import React, { useState } from "react";
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion";
+import { useRouter } from "next/router";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+
 import Image from "next/image";
 
 export const FloatingNav = ({
@@ -22,86 +17,196 @@ export const FloatingNav = ({
   }[];
   className?: string;
 }) => {
-  const { scrollYProgress } = useScroll();
+  // const { scrollYProgress } = useScroll();
 
   // set true for the initial state so that nav bar is visible in the hero section
-  const [visible, setVisible] = useState(true);
+  // const [visible, setVisible] = useState(true);
 
-  useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
-    if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+  // useMotionValueEvent(scrollYProgress, "change", (current) => {
+  //   // Check if current is not undefined and is a number
+  //   if (typeof current === "number") {
+  //     let direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.05) {
-        // also set true for the initial state
-        setVisible(true);
-      } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
-      }
-    }
-  });
+  //     if (scrollYProgress.get() < 0.05) {
+  //       // also set true for the initial state
+  //       setVisible(true);
+  //     } else {
+  //       if (direction < 0) {
+  //         setVisible(true);
+  //       } else {
+  //         setVisible(false);
+  //       }
+  //     }
+  //   }
+  // });
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
+  // const router = useRouter();
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        initial={{
-          opacity: 1,
-          y: -100,
-        }}
-        animate={{
-          y: visible ? 0 : -100,
-          opacity: visible ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.2,
-        }}
-        className={cn(
-          "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-4",
-          className
-        )}
-        style={{
-          backdropFilter: "blur(16px) saturate(180%)",
-          backgroundColor: "rgba(17, 25, 40, 0.75)",
-          borderRadius: "12px",
-          border: "1px solid rgba(255, 255, 255, 0.125)",
-        }}
-      >
-        {/* <div className="bg-white rounded-lg"> */}
+    <nav className="sticky top-0 bg-white shadow-md flex lg:flex lg:justify-between z-[1]">
+      <div className={`container py-2 lg:flex justify-between`}>
+        <Link href="/" className="text-xl font-light capitalcase flex items-center">
+          <Image src="/logo.png" width={50} height={50} alt="cosmic jewels logo"/>
+          {/* Cosmic Jewels */}
+        </Link>
+        
+        <button
+          className="lg:hidden inline-flex float-right border h-15 w-15 outline-none focus:outline-none border-none"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <Image src="/logo.png" height={50} alt="menu icon" width={40} />
+        </button>
 
-        {navItems.map((navItem: any, idx: number) => (
-          
-            <Link
-              key={navItem.name}
-              href={navItem.route}
-              className={cn(
-                "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-              )}
+        <div
+          className={`lg:flex lg:w-auto mt-4 lg:mt-0 lg:items-end ${
+            isMobileMenuOpen
+              ? "transition-all transform duration-500 focus:ease-in-out flex"
+              : "hidden"
+          }`}
+        >
+          <ul className="flex flex-col lg:flex-row lg:w-auto space-y-2 lg:space-y-0 lg:space-x-2">
+            <li className="">
+              <Link
+                href="/"
+                className="flex px-4 py-2 font-medium hover:text-gray-600"
               >
-              {/* <span className="block sm:hidden">{navItem.icon}</span> */}
-              <span className="text-sm !cursor-pointer">{navItem.name}</span>
-              {navItem.name === "About" && (
-              <div className="h-10">
-                <Image
-                  key={idx}
-                  src="/logo.png"
-                  alt="Logo"
-                  width={500}
-                  height={500}
-                  className="h-full w-auto object-contain mx-2"
-                />
+                Home
+              </Link>
+            </li>
+            {/* <li>
+              <Link
+                href="/about"
+                className="flex px-4 py-2 font-medium hover:text-gray-600"
+              >
+                About Us
+              </Link>
+            </li> */}
+            <li className="relative">
+              {isMobileMenuOpen ? (
+                // <Link
+                //   href="/services"
+                //   className="flex px-4 py-2 font-medium hover:text-gray-600"
+                //   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                // >
+                <button
+                  className=" flex px-4 py-2 font-medium hover:text-gray-600"
+                  onClick={() => {setIsDropdownOpen(!isDropdownOpen); }}
+                > 
+                  Services
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="size-6 pt-1 ml-1 inline-block group-open::rotate-180"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+              ) : (
+                // </Link>
+
+                <Link
+                  href="/services"
+                  className="flex px-4 py-2 font-medium hover:text-gray-600"
+                  //   onMouseLeave={() => setIsDropdownOpen(!isDropdownOpen)}
+                  onMouseOver={() => setIsDropdownOpen(!isDropdownOpen)}
+                >
+                  Services
+                  <button className="inline-flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-6 pt-1 ml-1 inline-block"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </Link>
+              )}
+
+              <div
+              // bg-[#dbd9d9]
+                className={`lg:absolute bg-white lg:border lg:border-gray-300 top-12 ml-4 w-96 lg:w-64 ${
+                  !isDropdownOpen ? "hidden" : ""
+                }`}
+                onMouseLeave={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
+                <ul className="space-y-2 p-2">
+                  <li className="border-solid border-1 p-2 hover:text-gray-600">
+                    <Link href="/services/modeling" className="hover:text-gray-600">Modeling</Link>
+                  </li>
+                  <Link href="/services/sketching">
+                    <li className="border-solid border-1 p-2 hover:text-gray-600">
+                      Sketching
+                    </li>
+                  </Link>
+
+                  <Link href="/services/rendering">
+                    <li className="border-solid border-1 p-2 hover:text-gray-600">
+                      Rendering
+                    </li>
+                  </Link>
+                  <Link href="/services/animation">
+                    <li className="border-solid border-1 p-2 hover:text-gray-600">
+                      Animation
+                    </li>
+                  </Link>
+                  <Link href="/services/3d-design">
+                    <li className="border-solid border-1 p-2 hover:text-gray-600">
+                      3D Jewellery Design
+                    </li>
+                  </Link>
+                  <Link href="/services/card-design">
+                    <li className="border-solid border-1 p-2 hover:text-gray-600">
+                      Jewllery Card Design
+                    </li>
+                  </Link>
+                </ul>
               </div>
-          )}
-            </Link>
-           
-          
-        ))}
-      </motion.div> 
-    </AnimatePresence>
-    );
-  };
-  
-  {/* </div> */}
+            </li>
+            <li>
+              <Link
+                href="/portfolio"
+                className="flex px-4 py-2 font-medium hover:text-gray-600"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blog"
+                className="flex px-4 py-2 font-medium hover:text-gray-600"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="flex px-4 py-2 font-medium hover:text-gray-600"
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  );
+};
+
+{
+  /* </div> */
+}
