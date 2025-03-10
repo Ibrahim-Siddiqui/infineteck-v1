@@ -2,23 +2,90 @@
 import { navItems } from "@/data";
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import Hero3 from "@/components/Hero3";
+import Select from "react-select";
+import Navbar from "@/components/ui/Navbar";
+import { useState } from "react";
+import { color } from "framer-motion";
 
 const Home = () => {
+  type OptionType = {
+    value: string;
+    label: string;
+  };
+
+  const options: OptionType[] = [
+    {
+      value: "digital marketing & branding",
+      label: "Digital Marketing & Branding",
+    },
+    { 
+      label: "Game Development",
+      value: "game development"
+    },
+    { label: "Website & App Development",
+      value: "website & app development" 
+    },
+    {
+      value: "2d & 3d animation - video editing",
+      label: "2D & 3D Animation - Video Editing",
+    },
+    {
+      value: "e-commerce solutions",
+      label: "Ecommerce Solutions",
+    },
+    {
+      value: "artificial intelligence automation",
+      label: "Artificial Intelligence Automation",
+    },
+  ];
+
+  const [selectedOptions, setSelectedOptions] = useState<OptionType>();
+
+  const handleChange = (option: OptionType) => {
+    setSelectedOptions(option);
+    console.log(selectedOptions)
+  };
+
+
+  const colourStyles = {
+    control: styles => ({ ...styles, backgroundColor: '#fff', color:"#1c3be9"}),
+    option: (styles, { isDisabled,}) => {
+      // const color = chrome(data.color);
+      return {
+        ...styles,
+        backgroundColor: isDisabled ? 'red' : '#fff',
+        color: '#1c3be9',
+        cursor: isDisabled ? 'not-allowed' : 'default',
+        
+      };
+    },
+    
+  };
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
-        <Hero3 />
+    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className="">
+        <Navbar />
+        {/* <FloatingNav navItems={navItems} /> */}
+        {/* <Hero3 /> */}
+        <div className="mt-[5%]">
+          <h1 className="text-5xl text-center font-bold ">
+            {" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
+              {" "}
+              Get in Touch{" "}
+            </span>{" "}
+            with Us Today
+          </h1>
+        </div>
         <div className="container">
           <span className="big-circle"></span>
           <img src="/shape.png" className="square" alt="" />
           <div className="form">
             <div className="contact-info">
               <h3 className="title">Get in touch</h3>
-              <p className="text">
-                Have questions or need assistance? Reach out to us and we&apos;re
-                here to help!
+              <p className="">
+                Have questions or need assistance? Reach out to us and
+                we&apos;re here to help!
               </p>
 
               <div className="info">
@@ -78,6 +145,18 @@ const Home = () => {
                   <input type="tel" name="phone" className="input" />
                   <label htmlFor="">Phone</label>
                   <span>Phone</span>
+                </div>
+                <div className="input-container ">
+                  <Select
+                    isMulti
+                    options={options}
+                    name="services"
+                    value={selectedOptions}
+                    onChange={(option) => handleChange(option)}
+                    className="bg-primary-color"
+                    placeholder="Select Service Type"
+                    styles={colourStyles}
+                  />
                 </div>
                 <div className="input-container textarea">
                   <textarea name="message" className="input"></textarea>
