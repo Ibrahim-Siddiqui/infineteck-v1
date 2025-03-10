@@ -1,3 +1,155 @@
+import { Bolt } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
+import { BellDot } from "lucide-react";
+import { BookOpenText } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
+import { CircleHelp } from "lucide-react";
+import { TriangleAlert } from "lucide-react";
+import { Users } from "lucide-react";
+import { Lock } from "lucide-react";
+import { Dessert } from "lucide-react";
+import { ShieldPlus } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { Images } from "lucide-react";
+import { Figma } from "lucide-react";
+import { Play } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { Database } from "lucide-react";
+import { PanelsTopLeft } from "lucide-react";
+import { PanelTop } from "lucide-react";
+
+export const Menus = [
+  {
+    name: "Features",
+    subMenuHeading: ["Design", "Scale"],
+    subMenu: [
+      {
+        name: "Design",
+        desc: "Responsive design",
+        icon: PanelsTopLeft,
+      },
+      {
+        name: "Management",
+        desc: "Site control",
+        icon: Bolt,
+      },
+      {
+        name: "Navigation",
+        desc: "Link pages",
+        icon: PanelTop,
+      },
+      {
+        name: "CMS",
+        desc: "Management content",
+        icon: Database,
+      },
+    ],
+    gridCols: 2,
+  },
+  {
+    name: "Resources",
+    subMenuHeading: ["Get started", "Programs", "Recent"],
+    subMenu: [
+      {
+        name: "Markplace",
+        desc: "Browse templates",
+        icon: ShoppingBag,
+      },
+      {
+        name: "Meetups",
+        desc: "Upcoming events",
+        icon: MapPin,
+      },
+      {
+        name: "Updates",
+        desc: "Changelog",
+        icon: BellDot,
+      },
+      {
+        name: "Academy",
+        desc: "Watch lessions",
+        icon: Play,
+      },
+      {
+        name: "Blog",
+        desc: "Posts",
+        icon: BookOpenText,
+      },
+      {
+        name: "Figma",
+        desc: "Plugin",
+        icon: Figma,
+      },
+      {
+        name: "Experts",
+        desc: "Jobs",
+        icon: BriefcaseBusiness,
+      },
+      {
+        name: "Gallery",
+        desc: "Images",
+        icon: Images,
+      },
+    ],
+    gridCols: 3,
+  },
+  {
+    name: "Support",
+    subMenu: [
+      {
+        name: "Help",
+        desc: "Center",
+        icon: CircleHelp,
+      },
+      {
+        name: "Community",
+        desc: "Project help",
+        icon: MessageCircle,
+      },
+      {
+        name: "Emergency",
+        desc: "Urgent issues",
+        icon: TriangleAlert,
+      },
+    ],
+    gridCols: 1,
+  },
+  {
+    name: "Enterprise",
+    subMenuHeading: ["Overview", "Features"],
+    subMenu: [
+      {
+        name: "Enterprise",
+        desc: "Overview",
+        icon: ShieldPlus,
+      },
+      {
+        name: "Collaboration",
+        desc: "Design together",
+        icon: Users,
+      },
+      {
+        name: "Customers",
+        desc: "Stories",
+        icon: Dessert,
+      },
+      {
+        name: "Security",
+        desc: "Your site secured",
+        icon: Lock,
+      },
+    ],
+    gridCols: 2,
+  },
+  {
+    name: "Pricing",
+  },
+  {
+    name: "Contact",
+  },
+];
+
+
 export const navItems = [
   { name: "Home", link: "#", route: "/" },
   { name: "About", link: "#about", route: "/about" },
@@ -110,65 +262,71 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "I hired InfineTeck to develop a custom website for my small business, and I couldn’t be happier with the results! From the very first meeting, their team was professional, attentive, and genuinely interested in understanding my vision. They walked me through every step of the process, from planning to design and development. The website they delivered is not only visually stunning but also incredibly user-friendly. It’s helped us attract more customers and grow our online presence. What I appreciated most was their flexibility—they were always available to answer my questions and make adjustments as needed. If you’re looking for a reliable and talented team, InfineTeck is the way to go!",
+    name: "Sarah T.",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "InfineTeck developed a mobile app for my startup, and it’s been a game-changer for our business. The app is sleek, intuitive, and packed with features that our users love. What impressed me most was their ability to take my rough ideas and turn them into a polished, functional product. They kept me updated throughout the entire process and were always open to feedback. The app has significantly improved our customer engagement, and we’ve received so many positive reviews. InfineTeck’s team is not only skilled but also a pleasure to work with. I highly recommend them to anyone looking for top-notch app development services!",
+    name: "James L.",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "I worked with InfineTeck on a game development project, and I’m thrilled with the outcome! They created a Roblox game for my kids’ brand, and it’s been a huge hit. The game is fun, engaging, and perfectly captures the essence of our brand. The team was incredibly creative and patient, taking the time to understand our vision and bring it to life. They also provided excellent support after the launch, helping us troubleshoot and make improvements. InfineTeck’s professionalism and expertise made the entire process smooth and enjoyable. If you’re looking for a team that delivers high-quality results, look no further than InfineTeck!",
+    name: "Emily R.",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "InfineTeck’s branding services helped us establish a strong online presence, and I couldn’t be happier with the results. Their team created a modern, eye-catching design that perfectly represents our brand. They were professional, responsive, and always willing to go the extra mile to ensure we were satisfied. The new branding has helped us attract more customers and grow our business. If you’re looking for a talented and reliable branding team, I highly recommend InfineTeck!",
+    name: "Ethan S.",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian&apos;s enthusiasm for every facet of development truly stands out. If you&apos;re seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "Before partnering with Infineteck, my Shopify store was just good—but they turned it into something extraordinary. Not only does it look stunning and work perfectly, but their team completely revamped my social media strategy. They crafted viral product reels, optimized my ad targeting, and even rebuilt my brand’s visual identity. And the results? My engagement tripled, website traffic doubled, and sales skyrocketed by 40% in just 3 months! Infineteck didn’t just design a website—they engineered a profit machine.",
+    name: "Olivia G.",
     title: "Director of AlphaStream Technologies",
   },
 ];
 
-export const companies = [
+export const partners = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
+    name: "",
+    img: "/testimonial-01.png",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
     name: "appwrite",
-    img: "/app.svg",
+    img: "/testimonial-02.png",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
     name: "HOSTINGER",
-    img: "/host.svg",
+    img: "/testimonial-03.png",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
     name: "stream",
-    img: "/s.svg",
+    img: "/testimonial-04.png",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
     name: "docker.",
-    img: "/dock.svg",
+    img: "/testimonial-05.png",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 6,
+    name: "docker.",
+    img: "/testimonial-06.png",
     nameImg: "/dockerName.svg",
   },
 ];
