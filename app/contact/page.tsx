@@ -1,11 +1,9 @@
 "use client";
-import { navItems } from "@/data";
 import Footer from "@/components/Footer";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Select from "react-select";
 import Navbar from "@/components/ui/Navbar";
 import { useState } from "react";
-import { color } from "framer-motion";
+import { MultiValue } from "react-select";
 
 const Home = () => {
   type OptionType = {
@@ -13,7 +11,7 @@ const Home = () => {
     label: string;
   };
 
-  const options: OptionType[] = [
+  const options = [
     {
       value: "digital marketing & branding",
       label: "Digital Marketing & Branding",
@@ -39,17 +37,17 @@ const Home = () => {
     },
   ];
 
-  const [selectedOptions, setSelectedOptions] = useState<OptionType>();
+  const [selectedOptions, setSelectedOptions] = useState<MultiValue<OptionType>>();
 
-  const handleChange = (option: OptionType) => {
+  const handleChange = (option: MultiValue<OptionType>) => {
     setSelectedOptions(option);
     console.log(selectedOptions)
   };
 
 
   const colourStyles = {
-    control: styles => ({ ...styles, backgroundColor: '#fff', color:"#1c3be9"}),
-    option: (styles, { isDisabled,}) => {
+    control: (styles:any) => ({ ...styles, backgroundColor: '#fff', color:"#1c3be9"}),
+    option: (styles: any, { isDisabled,}: any) => {
       // const color = chrome(data.color);
       return {
         ...styles,
@@ -152,7 +150,7 @@ const Home = () => {
                     options={options}
                     name="services"
                     value={selectedOptions}
-                    onChange={(option) => handleChange(option)}
+                    onChange={(option: MultiValue<OptionType>) => handleChange(option)}
                     className="bg-primary-color"
                     placeholder="Select Service Type"
                     styles={colourStyles}
