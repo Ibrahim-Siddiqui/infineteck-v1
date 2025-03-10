@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { Timeline } from "@/components/ui/timeline";
+import Navbar from "@/components/ui/Navbar";
 
 const Home = () => {
   const timelineData = [
@@ -72,10 +73,11 @@ const Home = () => {
     },
   ];
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
-        <Hero2 />
+    <main className="relative overflow-hidden ">
+      <div className="">
+        <Navbar />
+        {/* <FloatingNav navItems={navItems} /> */}
+        {/* <Hero2 /> */}
         <Timeline data={timelineData} />
         <RecentProjects />
         <Footer />
