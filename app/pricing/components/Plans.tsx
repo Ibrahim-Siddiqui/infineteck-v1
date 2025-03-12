@@ -47,7 +47,7 @@ const Plans = ({plans}: any) => {
 
               <ul className="mt-2 space-y-2 sm:mt-4 max-h-[50vh] overflow-y-scroll">
                 {plan.features.map((feature:any) => (
-                  <li className="flex items-center gap-1">
+                  <li key={feature} className="flex items-center gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"

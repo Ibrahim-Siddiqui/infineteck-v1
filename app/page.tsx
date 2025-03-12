@@ -23,14 +23,16 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import FAQ from "@/components/FAQ";
 import Testimonial from "@/components/Testimonial";
 import OurPartners from "@/components/OurPartners";
+import NewNavbar from "@/components/NewNavbar";
 
 const Home = () => {
   return (
-    <main className="w-full">
+    <main className="">
       {/* <div className="max-w-7xl w-full"> */}
 
       {/* <FloatingNav navItems={navItems} /> */}
-      <Navbar />
+      {/* <Navbar /> */}
+      <NewNavbar />
       <HomeHero />
       <USP />
       <HomeOffer />

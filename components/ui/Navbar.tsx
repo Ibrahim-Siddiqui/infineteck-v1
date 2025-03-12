@@ -80,6 +80,10 @@ const navItems: NavItem[] = [
     label: "Portfolio",
     link: "/portfolio",
   },
+  {
+    label: "Pricing",
+    link: "/pricing",
+  },
 
   {
     label: "About",
@@ -178,15 +182,15 @@ export default function Navbar() {
 
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
-    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-even bg-black/60 lg:hidden">
-      <div className=" h-full w-[65%] bg-white px-4 py-4">
+    <div className="absolute left-0 top-0 flex h-full min-h-screen w-full justify-even bg-black/60 lg:hidden z-[99]">
+      <div className=" h-full w-[95%] bg-white px-4 py-4">
         <div className="flex justify-end">
           <AiOutlineClose
             onClick={closeSideMenu}
             className="cursor-pointer text-4xl "
           />
         </div>
-        <div className=" flex flex-col text-base gap-2 transition-all">
+        <div className=" flex flex-col text-xl gap-2 transition-all px-[5%]">
           {navItems.map((d, i) => (
             <SingleNavItem
               key={i}
@@ -199,12 +203,12 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           ))}
         </div>
 
-        <div className="  flex  flex-col   gap-8  mt-4 items-center">
-          <Link href="/blog" className="h-fit text-accent-color transition-all hover:text-primary-color">
+        <div className="flex flex-col gap-5 mt-4 items-center">
+          <Link href="/blog" className="h-fit w-full max-w-[200px] px-4 py-2 rounded-lg text-center  text-accent-color transition-all hover:text-primary-color border-2 border-primary-color">
             Blog
           </Link>
 
-          <Link href="/contact" className="w-full  max-w-[200px]  rounded-lg border-2 border-primary-color px-4 py-2 text-primary-color transition-all hover:text-white hover:bg-primary-color">
+          <Link href="/contact" className="w-full max-w-[200px] rounded-lg border-2 border-primary-color px-4 py-2 text-white text-center text-primary-color transition-all focus:scale-105 bg-primary-color">
             Contact
           </Link>
         </div>

@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Raleway, Roboto, Poppins, Montserrat, Lato, Open_Sans, Hedvig_Letters_Sans } from "next/font/google";
 
 import "./globals.css";
 import "react-photo-view/dist/react-photo-view.css";
 import { ThemeProvider } from "./provider";
+import NewNavbar from "@/components/NewNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
+const mont = Montserrat({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
+const lato = Lato({ subsets: ["latin"], weight: ["100", "300", "400", "700", "900"] });
+const open_sans = Open_Sans({ subsets: ["latin"], weight: ["300", "400", "700", "800"] });
+// const hevdig = Hedvig_Letters_Sans({ subsets: ["latin"], weight: ["400"] });
+
 
 export const metadata: Metadata = {
   title: "Infineteck",
@@ -22,7 +31,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={poppins.className}>
+        {/* <NewNavbar /> */}
         {/* <ThemeProvider
           attribute="class"
           defaultTheme="dark"

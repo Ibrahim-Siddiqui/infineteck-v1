@@ -8,7 +8,7 @@ const HeroCounter = () => {
           
           <div className="w-full md:w-1/2 lg:w-1/4 py-8">
             <div className="">
-              <CountUp end={10} duration={2} className='text-4xl md:text-5xl  font-semibold text-center'/>
+              <CountUp end={100} duration={2} className='text-4xl md:text-5xl  font-semibold text-center'/>
               <h2 className="inline text-4xl md:text-5xl  font-semibold text-center">
                 +
               </h2>
@@ -17,7 +17,7 @@ const HeroCounter = () => {
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 py-8">
             <div className="">
-                <CountUp end={20} duration={2} className='text-4xl md:text-5xl  font-semibold text-center'/>
+                <CountUp end={100} duration={2} className='text-4xl md:text-5xl  font-semibold text-center'/>
               <h2 className="inline text-4xl md:text-5xl  font-semibold text-left">
                 +
               </h2>

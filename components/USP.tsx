@@ -7,8 +7,6 @@ import {
   PlyrLayout,
   plyrLayoutIcons,
 } from "@vidstack/react/player/layouts/plyr";
-
-import ideaIcon from "@/public/idea.svg";
 const USPData = [
   {
     id: 1,
@@ -33,8 +31,8 @@ const USPData = [
 const USP = () => {
   return (
     // bg-gradient-to-tr from-blue-50 via-blue-100 to-blue-200
-    <section className="backdrop-blur-3xl backdrop-filter ">
-      <div className="pt-[10%] px-[5%]">
+    <section className="">
+      <div className="px-[5%]">
         <div className="grid grid-cols-1 md:grid-cols-3 space-y-[10%] md:gap-[2%] md:space-y-0">
           {USPData.map((usp) => (
             <div
@@ -67,16 +65,17 @@ const USP = () => {
             </span>
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row gap-[5%]">
+        <div className="flex flex-col lg:flex-row gap-[5%] ">
           <div className="lg:w-[50%]">
             <MediaPlayer
-              title="Bradning 101"
-              src={`youtube/PkHbP3hX7XA`}
+              title="Infineteck Introduction"
+              src={`youtube/qCCl_2fGKYY`}
               playsInline
+              className="z-[-99]"
             >
               <MediaProvider />
               <PlyrLayout
-                // thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"
+                
                 icons={plyrLayoutIcons}
               />
             </MediaPlayer>

@@ -17,136 +17,153 @@ import { MapPin } from "lucide-react";
 import { Database } from "lucide-react";
 import { PanelsTopLeft } from "lucide-react";
 import { PanelTop } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
+import { MonitorSmartphone } from "lucide-react";
+// import { ChartNoAxesCombined } from "lucide-react";
+import { Gamepad2 } from "lucide-react";
+import { BrainCircuit } from "lucide-react";
+import { LucideBarChart } from "lucide-react";
+
+
+
 
 export const Menus = [
   {
-    name: "Features",
-    subMenuHeading: ["Design", "Scale"],
-    subMenu: [
-      {
-        name: "Design",
-        desc: "Responsive design",
-        icon: PanelsTopLeft,
-      },
-      {
-        name: "Management",
-        desc: "Site control",
-        icon: Bolt,
-      },
-      {
-        name: "Navigation",
-        desc: "Link pages",
-        icon: PanelTop,
-      },
-      {
-        name: "CMS",
-        desc: "Management content",
-        icon: Database,
-      },
-    ],
-    gridCols: 2,
+    name: "Home",
+    link: "/",
+    // subMenuHeading: ["Design", "Scale"],
+    // subMenu: [
+    //   {
+    //     name: "Design",
+    //     desc: "Responsive design",
+    //     icon: PanelsTopLeft,
+    //   },
+    //   {
+    //     name: "Management",
+    //     desc: "Site control",
+    //     icon: Bolt,
+    //   },
+    //   {
+    //     name: "Navigation",
+    //     desc: "Link pages",
+    //     icon: PanelTop,
+    //   },
+    //   {
+    //     name: "CMS",
+    //     desc: "Management content",
+    //     icon: Database,
+    //   },
+    // ],
+    // gridCols: 2,
   },
   {
-    name: "Resources",
-    subMenuHeading: ["Get started", "Programs", "Recent"],
+    name: "Services",
+    link: "#",
+    // subMenuHeading: ["Development", "Marketing", "Creative"],
     subMenu: [
       {
-        name: "Markplace",
+        name: "Web & App Development",
         desc: "Browse templates",
-        icon: ShoppingBag,
+        icon: MonitorSmartphone,
       },
       {
-        name: "Meetups",
+        name: "Digital Marketing & Branding",
         desc: "Upcoming events",
-        icon: MapPin,
+        icon: LucideBarChart,
       },
       {
-        name: "Updates",
+        name: "Game Development",
         desc: "Changelog",
-        icon: BellDot,
+        icon: Gamepad2,
       },
       {
-        name: "Academy",
+        name: "Animation - Video Editing",
         desc: "Watch lessions",
         icon: Play,
       },
       {
-        name: "Blog",
+        name: "Ecommerce Solutions",
         desc: "Posts",
-        icon: BookOpenText,
+        icon: ShoppingCart,
       },
       {
-        name: "Figma",
+        name: "AI Automation",
         desc: "Plugin",
-        icon: Figma,
+        icon: BrainCircuit,
       },
-      {
-        name: "Experts",
-        desc: "Jobs",
-        icon: BriefcaseBusiness,
-      },
-      {
-        name: "Gallery",
-        desc: "Images",
-        icon: Images,
-      },
-    ],
-    gridCols: 3,
-  },
-  {
-    name: "Support",
-    subMenu: [
-      {
-        name: "Help",
-        desc: "Center",
-        icon: CircleHelp,
-      },
-      {
-        name: "Community",
-        desc: "Project help",
-        icon: MessageCircle,
-      },
-      {
-        name: "Emergency",
-        desc: "Urgent issues",
-        icon: TriangleAlert,
-      },
-    ],
-    gridCols: 1,
-  },
-  {
-    name: "Enterprise",
-    subMenuHeading: ["Overview", "Features"],
-    subMenu: [
-      {
-        name: "Enterprise",
-        desc: "Overview",
-        icon: ShieldPlus,
-      },
-      {
-        name: "Collaboration",
-        desc: "Design together",
-        icon: Users,
-      },
-      {
-        name: "Customers",
-        desc: "Stories",
-        icon: Dessert,
-      },
-      {
-        name: "Security",
-        desc: "Your site secured",
-        icon: Lock,
-      },
+      // {
+      //   name: "Experts",
+      //   desc: "Jobs",
+      //   icon: BriefcaseBusiness,
+      // },
+      // {
+      //   name: "Gallery",
+      //   desc: "Images",
+      //   icon: Images,
+      // },
     ],
     gridCols: 2,
   },
+  // {
+  //   name: "Support",
+  //   subMenu: [
+  //     {
+  //       name: "Help",
+  //       desc: "Center",
+  //       icon: CircleHelp,
+  //     },
+  //     {
+  //       name: "Community",
+  //       desc: "Project help",
+  //       icon: MessageCircle,
+  //     },
+  //     {
+  //       name: "Emergency",
+  //       desc: "Urgent issues",
+  //       icon: TriangleAlert,
+  //     },
+  //   ],
+  //   gridCols: 1,
+  // },
+  // {
+  //   name: "Enterprise",
+  //   subMenuHeading: ["Overview", "Features"],
+  //   subMenu: [
+  //     {
+  //       name: "Enterprise",
+  //       desc: "Overview",
+  //       icon: ShieldPlus,
+  //     },
+  //     {
+  //       name: "Collaboration",
+  //       desc: "Design together",
+  //       icon: Users,
+  //     },
+  //     {
+  //       name: "Customers",
+  //       desc: "Stories",
+  //       icon: Dessert,
+  //     },
+  //     {
+  //       name: "Security",
+  //       desc: "Your site secured",
+  //       icon: Lock,
+  //     },
+  //   ],
+  //   gridCols: 2,
+  // },
+  {
+    name: "Portfolio",
+    link: "/portfolio",
+  },
   {
     name: "Pricing",
+    link: "pricing",
   },
-  {
-    name: "Contact",
-  },
+  // {
+  //   name: "Contact",
+  // },
+
 ];
 
 

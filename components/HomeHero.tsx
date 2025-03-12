@@ -6,7 +6,7 @@ const HomeHero = () => {
   return (
     // bg-gradient-to-tr from-blue-50 via-blue-100 to-blue-200
     // bg-blue-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-25
-    <section className="pb-[5%]">
+    <section className="pb-[5%] pt-[15%] md:pt-[5%]">
       <div className="hidden xl:block absolute top-0 -z-10 h-full w-full bg-white">
         <div className="absolute bottom-auto left-auto right-0 top-0 h-[50%] lg:h-[60%] w-[20%] lg:w-[30%] -translate-x-[10%] lg:-translate-x-[30%] translate-y-[180%] lg:translate-y-[30%] rounded-full bg-secondary-color opacity-70 blur-[80px]"></div>
       </div>
