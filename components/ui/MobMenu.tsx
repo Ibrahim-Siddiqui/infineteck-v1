@@ -4,9 +4,9 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Menus } from "@/data/utils";
 import Link from "next/link";
 
-export default function MobMenu({ Menus }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [clicked, setClicked] = useState(null);
+export default function MobMenu({ Menus }: any) {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [clicked, setClicked] = useState<any>(null);
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setClicked(null);
@@ -35,7 +35,7 @@ export default function MobMenu({ Menus }) {
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
         <ul>
-          {Menus.map(({ name, link, subMenu }, i) => {
+          {Menus.map(({ name, link, subMenu }:any, i:number) => {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;
             return (
@@ -59,7 +59,7 @@ export default function MobMenu({ Menus }) {
                       variants={subMenuDrawer}
                       className="ml-5"
                     >
-                      {subMenu.map(({ name, icon: Icon }) => (
+                      {subMenu.map(({ name, icon: Icon }: any) => (
                         <li
                           key={name}
                           className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
