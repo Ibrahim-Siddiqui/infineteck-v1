@@ -41,7 +41,7 @@ const Home = () => {
     stateSetter(true);
   };
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 280);
   }, [
     isTextLogo,
     isGameDev,
@@ -53,18 +53,17 @@ const Home = () => {
   ]);
   return (
     <>
-      <main className="flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <NewNavbar />
-        {/* <div className=""> */}
-        {/* <Navbar /> */}
+      <main className="">
+        <NewNavbar />
 
-        <div className="mt-[20%] md:mt-[10%] mb-10">
-          <h1 className="text-5xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
-            Our Portfolio
+        <div className="pt-[20%] md:pt-[8%] pb-[5%] md:pb-[5%] bg-gradient-to-r from-blue-300 via-accent-color to-primary-color text-white">
+          <h1 className="text-4xl md:text-5xl text-center font-bold ">
+            {" "}
+            <span className=""> Our Portfolio</span>{" "}
           </h1>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap gap-5 justify-center text-sm lg:text-lg">
+        <div className="my-5 mx-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap gap-5 justify-center text-sm lg:text-lg">
           <button
             className="rounded-lg px-4 py-2 text-primary-color transition-all border-2 border-primary-color hover:bg-primary-color hover:scale-105 hover:text-white"
             onClick={() => handleButtonClick(setIsVideoEditing)}
