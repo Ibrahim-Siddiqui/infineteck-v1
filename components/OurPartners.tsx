@@ -13,7 +13,7 @@ import { partners } from "@/data";
 
 const OurPartners = () => {
   return (
-    <div className="mt-[5%]">
+    <div className="mt-[5%] z-[-99]">
       <h1
         className="text-4xl lg:text-6xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color
       to-primary-color"
@@ -31,6 +31,8 @@ const OurPartners = () => {
       <Carousel
         opts={{
           //   align: "",
+          
+          direction: 'ltr',
           loop: true,
         }}
         plugins={[
@@ -38,7 +40,7 @@ const OurPartners = () => {
             delay: 2000,
           }),
         ]}
-        className="z-[-99] p-5 bg-blue-100"
+        className=" p-5 bg-blue-100"
       >
         <CarouselContent className="">
           {partners.map((partner) => (
@@ -53,6 +55,8 @@ const OurPartners = () => {
       <Carousel
         opts={{
           //   align: "",
+          
+          direction: 'rtl',
           loop: true,
         }}
         plugins={[
@@ -60,9 +64,9 @@ const OurPartners = () => {
             delay: 2000,
           }),
         ]}
-        className="mb-[5%] p-5 z-[-99] bg-blue-100"
+        className="mb-[5%] p-5 bg-blue-100 direction-reverse carousel-direction"
       >
-        <CarouselContent className="ml-5">
+        <CarouselContent className="">
           {partners.map((partner) => (
             <CarouselItem key={partner.id} className="basis-1/3 md:basis-1/4 ">
               <div className="flex justify-center items-start rounded-lg ">
