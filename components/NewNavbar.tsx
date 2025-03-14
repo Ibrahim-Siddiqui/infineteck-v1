@@ -7,9 +7,9 @@ import Link from 'next/link'
 
 const NewNavbar = () => {
   return (
-    <div className='z-[99]'>
-      <header className="h-16 text-[15px] fixed inset-0 flex-center shadow-lg bg-white">
-        <nav className=" px-3.5 flex-center-between w-full max-w-7xl mx-auto">
+    <div className='z-[999]'>
+      <header className="h-16 text-[15px] fixed inset-0 flex-center shadow-lg bg-white z-[99]">
+        <nav className=" px-3.5 flex-center-between w-full max-w-7xl mx-auto z-[99]">
           <div className="flex-center gap-x-3 z-[999] relative">
             <img src="/logo.png" width={150} height={100} alt="" className="w-[150px] md:w-[200px]" />
           </div>
@@ -23,7 +23,7 @@ const NewNavbar = () => {
             <Link
             href="/blog"
               aria-label="sign-in"
-              className="z-[999] relative text-primary-color text-md px-4 py-2 shadow rounded-lg border-2 border-primary-color hover:bg-primary-color hover:text-white hover:scale-105 transition-all duration-300 flex-center"
+              className="relative text-primary-color text-md px-4 py-2 shadow rounded-lg border-2 border-primary-color hover:bg-primary-color hover:text-white hover:scale-105 transition-all duration-300 flex-center"
             >
               Blog
             </Link>

@@ -33,7 +33,7 @@ export default function DesktopMenu({ menu }: any) {
   const hasSubMenu = menu?.subMenu?.length;
 
   return (
-    <Link href={menu.link}>
+    <Link href={menu.link} className="z-[999]">
       <motion.li
         className="group/link "
         onHoverStart={() => {

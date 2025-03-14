@@ -34,8 +34,8 @@ export default function MobMenu({ Menus }: any) {
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
-        <ul>
-          {Menus.map(({ name, link, subMenu }:any, i:number) => {
+        <ul className="text-lg md:text-xl">
+          {Menus.map(({ name, link, subMenu }: any, i: number) => {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;
             return (
@@ -74,6 +74,22 @@ export default function MobMenu({ Menus }: any) {
               </Link>
             );
           })}
+          <div className="lg:hidden">
+          <Link
+            href="/blog"
+            aria-label="sign-in"
+            className="text-primary-color text-md text-center px-4 py-2 my-5 shadow rounded-lg border-2 border-primary-color hover:bg-primary-color hover:text-white hover:scale-105 transition-all duration-300 flex justify-center"
+          >
+            Blog
+          </Link>
+          <Link
+            href="/contact"
+            aria-label="sign-in"
+            className="bg-primary-color text-white text-md text-center px-4 py-2 my-5 shadow rounded-lg border-2 border-primary-color hover:scale-105 transition-all duration-300 flex justify-center"
+          >
+            Contact
+          </Link>
+        </div>
         </ul>
       </motion.div>
     </div>
