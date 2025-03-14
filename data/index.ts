@@ -1,32 +1,9 @@
-import { Bolt } from "lucide-react";
-import { ShoppingBag } from "lucide-react";
-import { BellDot } from "lucide-react";
-import { BookOpenText } from "lucide-react";
-import { BriefcaseBusiness } from "lucide-react";
-import { CircleHelp } from "lucide-react";
-import { TriangleAlert } from "lucide-react";
-import { Users } from "lucide-react";
-import { Lock } from "lucide-react";
-import { Dessert } from "lucide-react";
-import { ShieldPlus } from "lucide-react";
-import { MessageCircle } from "lucide-react";
-import { Images } from "lucide-react";
-import { Figma } from "lucide-react";
 import { Play } from "lucide-react";
-import { MapPin } from "lucide-react";
-import { Database } from "lucide-react";
-import { PanelsTopLeft } from "lucide-react";
-import { PanelTop } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
 import { MonitorSmartphone } from "lucide-react";
-// import { ChartNoAxesCombined } from "lucide-react";
 import { Gamepad2 } from "lucide-react";
 import { BrainCircuit } from "lucide-react";
 import { LucideBarChart } from "lucide-react";
-
-
-
-
 export const Menus = [
   {
     name: "Home",
@@ -97,12 +74,16 @@ export const Menus = [
       //   icon: BriefcaseBusiness,
       // },
       // {
-      //   name: "Gallery",
+        //   name: "Gallery",
       //   desc: "Images",
       //   icon: Images,
       // },
     ],
     gridCols: 2,
+  },
+  {
+    name: "About",
+    link: "/about",
   },
   // {
   //   name: "Support",
