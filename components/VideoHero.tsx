@@ -5,8 +5,8 @@ import React from "react";
 
 const VideoHero = () => {
   return (
-    <div className="main h-[30vh] sm:h-[60vh] md:h-[70vh] lg:h-[90vh] xl:h-[110vh] 2xl:h-[125vh]">
-      <div className="overlay h-[28%] sm:h-[60%] md:h-[65%] lg:h-[85%] xl:h-[95%] 2xl:h-[115%]"></div>
+    <div className="main h-[30vh] sm:h-[50vh] md:h-[65vh] lg:h-[85vh] xl:h-[110vh] 2xl:h-[125vh]">
+      <div className="overlay top-0 left-0 h-[60vw] xs:h-[60vw] sm:h-[60vw] md:h-[60vw] lg:h-[60vw] xl:h-[60vw] 2xl:h-[60vw]"></div>
       {/* <video src="/public/Infineteck-Intro.mp4" autoPlay loop muted /> */}
       <MediaPlayer
         src={`youtube/qCCl_2fGKYY`}
@@ -22,8 +22,9 @@ const VideoHero = () => {
           icons={plyrLayoutIcons}
           /> */}
       </MediaPlayer>
-      <div className="content h-[35%] sm:h-[60%] md:h-[70%] lg:h-[80%] xl:h-[90%] 2xl:h-[100%] flex flex-col justify-center items-center">
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white ">
+      {/* h-[40%] sm:h-[60%] md:h-[70%] lg:h-[80%] xl:h-[90%] 2xl:h-[100%] */}
+      <div className="content pt-[10vh] sm:pt-[20vh] md:[25vh] lg:pt-[20vh] xl:pt-[35vh] flex flex-col justify-center items-center">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-center text-white ">
           <span className="block xl:inline">
             <span className="mb-1 block text-center">Transforming Concepts</span>
             <span className="lg:pl-3 bg-gradient-to-l from-secondary-color to-primary-color bg-clip-text text-transparent">
@@ -37,7 +38,7 @@ const VideoHero = () => {
             </span>
           </div>
         </h1>
-        <p className="max-w-xl md:max-w-2xl lg:max-w-4xl text-[10px] sm:text-lg lg:text-2xl text-center text-white">
+        <p className="max-w-xl hidden md:block md:max-w-2xl lg:max-w-4xl text-[10px] sm:text-lg lg:text-2xl text-center text-white">
           At Infineteck, we empower small, medium, and large businesses to
           dominate their industries with cutting-edge digital solutions. From
           crafting unforgettable brands to scaling revenue with AI-driven

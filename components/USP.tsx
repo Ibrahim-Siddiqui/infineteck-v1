@@ -32,7 +32,7 @@ const USPData = [
 const USP = () => {
   return (
     // bg-gradient-to-tr from-blue-50 via-blue-100 to-blue-200
-    <section className="">
+    <section className="mt-[10%] md:[5%]">
       <div className="px-[5%]">
         <div className="z-[-99] grid grid-cols-1 md:grid-cols-3 space-y-[10%] md:gap-[2%] md:space-y-0">
           {USPData.map((usp) => (
