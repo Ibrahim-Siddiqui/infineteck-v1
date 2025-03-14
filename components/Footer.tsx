@@ -16,23 +16,31 @@ const Footer = () => {
               Driving Online Sucess
             </h2>
           </div>
-          <Image src="/trust-pilot.png" width={200} height={200} alt="logo" />
+          <a
+            href="https://www.trustpilot.com/review/infineteck.com"
+            target="_blank"
+          >
+            <Image src="/trust-pilot.png" width={200} height={200} alt="logo" />
+          </a>
         </div>
         <div className="p-5 col-span-1">
           <div className="text-md uppercase text-primary-color font-bold">
             Quick Links
           </div>
-          <a className="my-3 block" href="/#">
+          <a className="my-3 block" href="/">
             Home <span className="text-teal-600 text-xs p-1"></span>
           </a>
-          <a className="my-3 block" href="/#">
+          <a className="my-3 block" href="/about">
             About Us <span className="text-teal-600 text-xs p-1"></span>
           </a>
-          <a className="my-3 block" href="/#">
+          <a className="my-3 block" href="/blog">
             Blog <span className="text-teal-600 text-xs p-1"></span>
           </a>
-          <a className="my-3 block" href="/#">
+          <a className="my-3 block" href="/contact">
             Contact <span className="text-teal-600 text-xs p-1"></span>
+          </a>
+          <a className="my-3 block" href="/pricing">
+            Pricing <span className="text-teal-600 text-xs p-1"></span>
           </a>
         </div>
         <div className="p-5 col-span-1 md:col-span-1">
@@ -109,7 +117,7 @@ const Footer = () => {
         >
           <div className="flex gap-4 mt-2 flex-row">
             <a
-              href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL "
+              href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL"
               className="w-8"
               target="_blank"
             >
