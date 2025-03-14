@@ -71,7 +71,7 @@ const Plans = ({plans}: any) => {
             
             <a
               className="my-4 mx-5 block rounded-sm border bg-primary-color px-12 py-3 text-center text-lg font-medium text-white transition-all duration-300 hover:scale-105 focus:ring-3 focus:outline-hidden sm:mt-6"
-              href="#"
+              href="/contact"
               >
               ORDER NOW
             </a>

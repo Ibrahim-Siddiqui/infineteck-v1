@@ -13,6 +13,7 @@ import {
 } from "./data";
 import Plans from "./components/Plans";
 import NewNavbar from "@/components/NewNavbar";
+import Footer from "@/components/Footer";
 
 const PricingPage = () => {
   const [webDev, setWebDev] = useState(true);
@@ -40,12 +41,15 @@ const PricingPage = () => {
   return (
     <>
       <NewNavbar />
-      <div className="mt-[20%] md:mt-[10%] mb-10">
-        <h1 className="text-5xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color hover:bg-primary-color">
-          Our Packages
+
+      <div className="pt-[20%] md:pt-[8%] pb-[5%] md:pb-[5%] bg-gradient-to-r from-blue-300 via-accent-color to-primary-color text-white">
+        <h1 className="text-4xl md:text-5xl text-center font-bold ">
+          {" "}
+          <span className=""> Our Packages </span>{" "}
         </h1>
       </div>
-      <div className="grid grid-cols-2 gap-2 lg:gap-4 mx-2 lg:mx-1 lg:flex lg:justify-center lg:flex-wrap text-md lg:text-lg">
+
+      <div className="my-5 mx-5 grid grid-cols-2 gap-2 lg:gap-4 lg:mx-1 lg:flex lg:justify-center lg:flex-wrap text-md lg:text-lg">
         <button
           className="rounded-lg px-4 py-4 text-primary-color transition-all bg-white hover:scale-105  border-2 border-primary-color  hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setWebDev)}
@@ -104,6 +108,8 @@ const PricingPage = () => {
       {seo ? <Plans plans={seoPlans} /> : <></>}
       {logo ? <Plans plans={logoPlans} /> : <></>}
       {socialMedia ? <Plans plans={socialPlans} /> : <></>}
+
+      <Footer />
     </>
   );
 };
