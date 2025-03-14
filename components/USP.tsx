@@ -7,6 +7,7 @@ import {
   PlyrLayout,
   plyrLayoutIcons,
 } from "@vidstack/react/player/layouts/plyr";
+import Link from "next/link";
 const USPData = [
   {
     id: 1,
@@ -33,7 +34,7 @@ const USP = () => {
     // bg-gradient-to-tr from-blue-50 via-blue-100 to-blue-200
     <section className="">
       <div className="px-[5%]">
-        <div className="grid grid-cols-1 md:grid-cols-3 space-y-[10%] md:gap-[2%] md:space-y-0">
+        <div className="z-[-99] grid grid-cols-1 md:grid-cols-3 space-y-[10%] md:gap-[2%] md:space-y-0">
           {USPData.map((usp) => (
             <div
               key={usp.title}
@@ -57,7 +58,7 @@ const USP = () => {
             </div>
           ))}
         </div>
-        <div className="mt-[10%] mb-[5%] text-center text-3xl lg:text-5xl font font-extrabold lg:px-[15%]">
+        <div className=" mt-[10%] mb-[5%] text-center text-3xl lg:text-5xl font font-extrabold lg:px-[15%]">
           <h1 className="leading-[3rem]">
             Watch How We Drive{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
@@ -71,7 +72,7 @@ const USP = () => {
               title="Infineteck Introduction"
               src={`youtube/qCCl_2fGKYY`}
               playsInline
-              className="z-[-99]"
+              className=""
             >
               <MediaProvider />
               <PlyrLayout
@@ -97,9 +98,9 @@ const USP = () => {
               delivering results that matter.
             </h1>
             <div className="my-[5%]">
-              <button className=" text-xl rounded-lg border-2 border-accent-color px-4 py-2 text-white transition-all duration-300 bg-primary-color hover:scale-105">
+              <Link href="/contact" className=" text-xl rounded-lg border-2 border-accent-color px-4 py-2 text-white transition-all duration-300 bg-primary-color hover:scale-105">
                 Let&apos;s Elevate Your Business
-              </button>
+              </Link>
             </div>
           </div>
         </div>
