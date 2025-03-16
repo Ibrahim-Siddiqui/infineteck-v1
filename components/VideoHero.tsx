@@ -26,11 +26,12 @@ const VideoHero = () => {
       <section className="relative h-screen sm:h-[70vh] xl:h-[80vh] flex flex-col items-center justify-center text-center text-white ">
         <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
           <video
-            controls={false}
+            // controls={false}
             className="min-w-full min-h-full absolute object-cover"
             autoPlay
             muted
             loop
+            playsInline
           >
             <source src="/hero-video.mp4" type="video/mp4" />
           </video>
