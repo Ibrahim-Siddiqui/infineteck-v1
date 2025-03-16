@@ -5,6 +5,8 @@ import Navbar from "@/components/ui/Navbar";
 import { useState } from "react";
 import { MultiValue } from "react-select";
 import NewNavbar from "@/components/NewNavbar";
+import PageBanner from "@/components/PageBanner";
+import bannerImg from "@/public/contact-banner.jpg";
 
 const Home = () => {
   type OptionType = {
@@ -64,13 +66,12 @@ const Home = () => {
     <>
       <NewNavbar />
 
+      <PageBanner
+        imgSrc={bannerImg}
+        heading="Contact Us"
+        text="Your Next Project Starts Here"
+      />
       <section className="">
-        <div className="pt-[20%] md:pt-[8%] pb-[5%] md:pb-[5%] bg-gradient-to-r from-blue-300 via-accent-color to-primary-color text-white">
-          <h1 className="text-4xl md:text-5xl text-center font-bold ">
-            {" "}
-            <span className=""> Get in Touch with Us Today</span>{" "}
-          </h1>
-        </div>
         <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 flex flex-col px-5">

@@ -57,7 +57,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-[5%] md:py-0">
+    <section id="contact" className="py-[5%] md:py-0">
       <div className="py-[10%] md:py-[5%]">
         <h1 className="text-4xl md:text-5xl text-center font-bold ">
           {" "}

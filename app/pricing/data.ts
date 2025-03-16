@@ -226,7 +226,6 @@ export const videoPlans = [
       "30sec Duration",
       "Script Writing",
       "Custom Artwork",
-      "Background Music",
       "HD Format Video",
       "Dedicated Support",
       "100% Ownership Rights",

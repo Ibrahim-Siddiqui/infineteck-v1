@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "@/components/ui/Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   webDevPlans,
   brandingPlans,
@@ -14,6 +14,8 @@ import {
 import Plans from "./components/Plans";
 import NewNavbar from "@/components/NewNavbar";
 import Footer from "@/components/Footer";
+import PageBanner from "@/components/PageBanner";
+import bannerImg from "@/public/pricing-banner.jpg";
 
 const PricingPage = () => {
   const [webDev, setWebDev] = useState(true);
@@ -37,45 +39,55 @@ const PricingPage = () => {
 
     stateSetter(true);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 600);
+  }, [
+    webDev,
+    branding,
+    ecommerce,
+    video,
+    seo,
+    logo,
+    shopify,
+    socialMedia,
+  ]);
   return (
     <>
       <NewNavbar />
 
-      <div className="pt-[20%] md:pt-[8%] pb-[5%] md:pb-[5%] bg-gradient-to-r from-blue-300 via-accent-color to-primary-color text-white">
-        <h1 className="text-4xl md:text-5xl text-center font-bold ">
-          {" "}
-          <span className=""> Our Packages </span>{" "}
-        </h1>
-      </div>
+      <PageBanner
+        imgSrc={bannerImg}
+        heading="Our Packages"
+        text="Tailored Plans, Transparent Costs"
+      />
 
-      <div className="my-5 mx-5 grid grid-cols-2 gap-2 lg:gap-4 lg:mx-1 lg:flex lg:justify-center lg:flex-wrap text-md lg:text-lg">
+      <div className="my-5 mx-2 grid grid-cols-2 gap-2 lg:gap-4 lg:mx-1 lg:flex lg:justify-center lg:flex-wrap text-md lg:text-lg">
         <button
-          className="rounded-lg px-4 py-4 text-primary-color transition-all bg-white hover:scale-105  border-2 border-primary-color  hover:bg-primary-color hover:text-white"
+          className="rounded-lg px-2 py-4 text-primary-color transition-all bg-white hover:scale-105  border-2 border-primary-color  hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setWebDev)}
         >
           Web Development
         </button>
         <button
-          className="rounded-lg px-4 py-2 text-primary-color transition-all bg-white hover:scale-105  border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105  border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setLogo)}
         >
           Logo Design
         </button>
         <button
-          className="rounded-lg px-4 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setEcommerce)}
         >
           E-Commerce
         </button>
         <button
-          className="rounded-lg px-4 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setVideo)}
         >
           Video & Animation
         </button>
         <button
-          className="rounded-lg px-4 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setShopify)}
         >
           Shopify Store
@@ -87,13 +99,13 @@ const PricingPage = () => {
           SEO
         </button>
         <button
-          className="rounded-lg px-4 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setBranding)}
         >
           Marketing & Branding
         </button>
         <button
-          className="rounded-lg px-4 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setSocialMedia)}
         >
           Social Media Management

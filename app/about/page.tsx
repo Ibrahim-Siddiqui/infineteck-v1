@@ -9,6 +9,7 @@ import { Handshake, TrendingUp } from "lucide-react";
 import ValueCard from "./components/ValueCard";
 import ContactForm from "./components/ContactForm";
 import HeroCounter from "@/components/ui/HeroCounter";
+import VideoIntro from "./components/VideoIntro";
 
 const Home = () => {
   const values = [
@@ -93,11 +94,13 @@ const Home = () => {
     "To become the global catalyst for digital excellence, where every business—regardless of size—can harness technology to dominate their industry, inspire loyalty, and shape the future.";
 
   return (
-    <main className="relative overflow-hidden ">
+    <main className="relative overflow-hidden scroll-smooth duration-2000">
       <div className="">
         <NewNavbar />
+
         <Hero />
-        <div className="px-[5%] pt-[15%] sm:pt-[5%] flex flex-col lg:flex-row justify-center gap-[5%]">
+        <VideoIntro />
+        <div className="px-[5%] py-[15%] sm:py-[5%] flex flex-col lg:flex-row justify-center gap-[5%] rounded-lg shadow-md shadow-accent-color border border-accent-color mx-5">
           <div className="">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
               Infineteck's Achievements
@@ -111,6 +114,7 @@ const Home = () => {
               a global presence.
             </p>
           </div>
+
           <HeroCounter />
         </div>
         <div className="">

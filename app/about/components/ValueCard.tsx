@@ -4,7 +4,7 @@ const ValueCard = ({ item }: any) => {
       <div
         key={item.id}
         // border-2 border-primary-color rounded-lg
-        className="h-[90%] flex flex-col justify-center group border border-primary-color rounded-lg p-[5%] my-[5%] mx-[2%] hover:bg-accent-color hover:text-white hover:transition-all duration-1000 ease-in-out"
+        className="h-[90%] flex flex-col justify-center group border border-primary-color rounded-lg shadow-md shadow-accent-color p-[5%] my-[5%] mx-[2%] hover:bg-accent-color hover:text-white hover:transition-all duration-1000 ease-in-out"
       >
         <div className="flex flex-col gap-5 justify-between items-start">
           {/* <Image src={item.icon} width={100} height={100} alt="icon" /> */}

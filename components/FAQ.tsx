@@ -37,7 +37,11 @@ const FAQ = () => {
         "We track real metrics: traffic growth, conversion rates, ROI, and social engagement. Monthly reports and strategy tweaks ensure your campaigns stay ahead of competitors.",
     },
   ];
-
+  const variants = {
+    enter: { scale: 1.03, transition: { duration: 0.5 } },
+    // You can do whatever you want here, if you just want it to stop completely use `rotate: 0`
+    stop: { y: [0, -10, 0], transition: { repeat: Infinity, repeatDelay: 3 } }
+  };  
   const backgroundStyle = `.bg-color{
   background
   }`;
@@ -68,7 +72,12 @@ const FAQ = () => {
                   backgroundColor: "var(--primary-color)",
                   color: "#fff",
                 }}
-                transition={{ scale: { type: "spring", stiffness: 100, duration: 0.3 } }}
+                whileTap={{
+                  scale: 1.03,
+                  backgroundColor: "var(--primary-color)",
+                  color: "#fff",
+                }}
+                transition={{ scale: { type: "spring", stiffness: 100, duration: 2 } }}
               >
                 {faq.question}
                 {activeQuestion === faq.id ? (

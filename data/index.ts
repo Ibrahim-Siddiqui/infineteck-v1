@@ -42,7 +42,7 @@ export const Menus = [
         name: "Web & App Development",
         desc: "Browse templates",
         icon: MonitorSmartphone,
-        link: "/services/web-development"
+        link: "/services/web-development",
       },
       {
         name: "Digital Marketing & Branding",
@@ -75,7 +75,7 @@ export const Menus = [
       //   icon: BriefcaseBusiness,
       // },
       // {
-        //   name: "Gallery",
+      //   name: "Gallery",
       //   desc: "Images",
       //   icon: Images,
       // },
@@ -145,9 +145,7 @@ export const Menus = [
   // {
   //   name: "Contact",
   // },
-
 ];
-
 
 export const navItems = [
   { name: "Home", link: "#", route: "/" },
@@ -230,14 +228,14 @@ export const projects = [
     iconLists: ["/eth.png", "/soli.png", "/tuf.png", "/next.svg", "/myt.png"],
     link: "/ui.earth.com",
   },
-  {
-    id: 2,
-    title: "Candy Mall Mania - Roblox Game",
-    des: "Step into the sweet adventure of Candy Mall Mania  a delightful Roblox game filled with fun, challenges, and sugary surprises!",
-    img: "/candy.jpg",
-    iconLists: ["/rbs.png", "/bln.png", "/lua.png", "/maya.png", "/max.png"],
-    link: "/ui.yoom.com",
-  },
+  // {
+  //   id: 2,
+  //   title: "Candy Mall Mania - Roblox Game",
+  //   des: "Step into the sweet adventure of Candy Mall Mania  a delightful Roblox game filled with fun, challenges, and sugary surprises!",
+  //   img: "/candy.jpg",
+  //   iconLists: ["/rbs.png", "/bln.png", "/lua.png", "/maya.png", "/max.png"],
+  //   link: "/ui.yoom.com",
+  // },
   {
     id: 3,
     title: "Hide N Snipe - Roblox Game",
@@ -255,8 +253,6 @@ export const projects = [
     link: "/ui.apple.com",
   },
 ];
-
-
 
 export const testimonials = [
   {
@@ -404,7 +400,6 @@ export const socialMedia = [
   },
 ];
 
-
 export const textLogoPortfolioData = [
   {
     id: 1,
@@ -462,11 +457,11 @@ export const textLogoPortfolioData = [
     src: "/branding5.jpg",
   },
   {
-    id: 12  ,
+    id: 12,
     title: "Business Stationery",
     src: "/branding6.jpg",
   },
-]
+];
 
 export const UIUXPortfolioData = [
   {
@@ -514,8 +509,7 @@ export const UIUXPortfolioData = [
     title: "",
     src: "/ui-ux-9.jpg",
   },
-
-]
+];
 
 export const gameDevPortfolioData = [
   {
@@ -533,7 +527,7 @@ export const gameDevPortfolioData = [
     title: "Theme Park Tycoon",
     src: "/game-dev-3.jpg",
   },
-]
+];
 
 export const shopifyPortfolioData = [
   {
@@ -546,7 +540,7 @@ export const shopifyPortfolioData = [
     title: "Vixens Beauty",
     src: "/shopify-2.jpg",
   },
-]
+];
 
 export const mascotPortfolioData = [
   {
@@ -605,27 +599,26 @@ export const mascotPortfolioData = [
     src: "/mascot-5.jpg",
   },
   {
-    id: 12  ,
+    id: 12,
     title: "",
     src: "/mascot-6.jpg",
   },
   {
-    id: 13  ,
+    id: 13,
     title: "",
     src: "/mascot-13.jpg",
   },
   {
-    id: 14  ,
+    id: 14,
     title: "",
     src: "/mascot-14.jpg",
   },
   {
-    id: 15  ,
+    id: 15,
     title: "",
     src: "/mascot-15.jpg",
   },
-]
-
+];
 
 export const socialMediaPortfolioData = [
   {
@@ -684,23 +677,23 @@ export const socialMediaPortfolioData = [
     src: "/social-media-5.png",
   },
   {
-    id: 12  ,
+    id: 12,
     title: "",
     src: "/social-media-6.png",
   },
   {
-    id: 13  ,
+    id: 13,
     title: "",
     src: "/social-media-13.png",
   },
-]
+];
 
 export const videoPortfolioData = [
   {
     id: 1,
     title: "",
     src: "vQlw8Z-UtW8",
-  }, 
+  },
   {
     id: 2,
     title: "",
@@ -726,10 +719,10 @@ export const videoPortfolioData = [
     title: "",
     src: "2S0spoNby_g",
   },
-  
+
   {
     id: 7,
     title: "",
     src: "nT6_MWbRi-E",
   },
-]
+];

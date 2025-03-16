@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Footer from "@/components/Footer";
-
+import bannerImg from "@/public/portfolio-banner.jpg";
 import { FocusCards } from "@/components/ui/FocusCards";
 import { VideoCards } from "@/components/ui/VideoCards";
 import {
@@ -16,6 +16,7 @@ import {
 } from "@/data";
 import Navbar from "@/components/ui/Navbar";
 import NewNavbar from "@/components/NewNavbar";
+import PageBanner from "@/components/PageBanner";
 
 const Home = () => {
   const [isTextLogo, setIsTextLogo] = useState(true);
@@ -38,30 +39,21 @@ const Home = () => {
     setIsSocialMedia(false);
     setShowMore(false);
 
-    stateSetter(true);
+    stateSetter(true);  
   };
   useEffect(() => {
-    window.scrollTo(0, 280);
-  }, [
-    isTextLogo,
-    isGameDev,
-    isMascot,
-    isShopify,
-    isSocialMedia,
-    isVideoEditing,
-    isUIUX,
-  ]);
+    window.scrollTo(0, 600);
+  }, [isTextLogo, isGameDev, isMascot, isShopify, isSocialMedia, isVideoEditing, isUIUX]);
   return (
     <>
       <main className="">
         <NewNavbar />
 
-        <div className="pt-[20%] md:pt-[8%] pb-[5%] md:pb-[5%] bg-gradient-to-r from-blue-300 via-accent-color to-primary-color text-white">
-          <h1 className="text-4xl md:text-5xl text-center font-bold ">
-            {" "}
-            <span className=""> Our Portfolio</span>{" "}
-          </h1>
-        </div>
+        <PageBanner
+          imgSrc={bannerImg}
+          heading="Our Portfolio"
+          text="Discover the Projects That Drive Our Success"
+        />
 
         <div className="my-5 mx-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap gap-5 justify-center text-sm lg:text-lg">
           <button
@@ -106,12 +98,6 @@ const Home = () => {
           >
             UI / UX
           </button>
-          {/*  <button
-            className="rounded-lg px-4 py-2 text-white transition-all bg-primary-color hover:scale-105"
-            onClick={() => handleButtonClick(setSocialMedia)}
-            >
-            Social Media Management
-          </button> */}
         </div>
         {isTextLogo && (
           <>

@@ -25,15 +25,15 @@ const Hero = () => {
             Innovation
           </span>
         </h1>
-        <p className="text-md md:text-xl max-w-3xl min-w-sm text-gray-300 mb-8">
+        {/* <p className="text-md md:text-xl max-w-3xl min-w-sm text-gray-300 mb-8">
           At Infineteck, we’re more than a software company—we’re your partners
           in digital transformation. Founded with a passion for innovation, we
           empower businesses to thrive in a fast-paced digital world by merging
           creativity, technology, and strategy.
-        </p>
+        </p> */}
         <a
           href="/contact"
-          className="bg-primary-color text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          className="bg-primary-color text-white py-2 px-6 rounded-full text-md sm:text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
           Get in Touch
         </a>
