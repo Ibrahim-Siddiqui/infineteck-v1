@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence, animate } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence, animate, color } from "framer-motion";
 import { PlusCircle, MinusCircle } from "lucide-react";
 
 const FAQ = () => {
@@ -38,6 +38,10 @@ const FAQ = () => {
     },
   ];
 
+  const backgroundStyle = `.bg-color{
+  background
+  }`;
+
   return (
     <>
       <div className="">
@@ -52,19 +56,29 @@ const FAQ = () => {
       <div className="max-w-4xl mx-auto">
         {faqs.map((faq) => (
           <div key={faq.id} className="mb-4 last:mb-0">
-            <button
-              className="w-full text-left text-md md:text-xl focus:outline-none p-4 bg-white rounded-lg shadow-sm shadow-primary-color flex justify-between items-center"
-              onClick={() =>
-                setActiveQuestion(activeQuestion === faq.id ? null : faq.id)
-              }
-            >
-              {faq.question}
-              {activeQuestion === faq.id ? (
-                <MinusCircle className="text-primary-color" />
-              ) : (
-                <PlusCircle className="text-primary-color" />
-              )}
-            </button>
+            <AnimatePresence>
+              <motion.button
+                className="w-full text-left text-md md:text-xl focus:outline-none p-4 bg-white rounded-lg shadow-sm shadow-primary-color flex justify-between items-center group"
+                onClick={() =>
+                  setActiveQuestion(activeQuestion === faq.id ? null : faq.id)
+                }
+                initial={{ scale: 1, backgroundColor: "#fff" }}
+                whileHover={{
+                  scale: 1.03,
+                  backgroundColor: "var(--primary-color)",
+                  color: "#fff",
+                }}
+                transition={{ scale: { type: "spring", stiffness: 100, duration: 0.3 } }}
+              >
+                {faq.question}
+                {activeQuestion === faq.id ? (
+                  <MinusCircle className="text-primary-color group-hover:text-inherit" />
+                ) : (
+                  // <style>{backgroundStyle}</style>
+                  <PlusCircle className="text-primary-color group-hover:text-inherit" />
+                )}
+              </motion.button>
+            </AnimatePresence>
             <AnimatePresence>
               {activeQuestion === faq.id && (
                 <motion.div

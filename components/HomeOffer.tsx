@@ -37,7 +37,7 @@ const offers = [
     id: 4,
     name: "2D & 3D Animation - Video Editing",
     title: "Animation & Video That Wows",
-    desc: "Bring ideas to life with stunning animations and polished video edits that tell the story of your brand.",
+    desc: "Bring ideas to life with stunning animations and polished video edits.",
     icon: <Play size={48} />,
   },
   {
@@ -49,7 +49,7 @@ const offers = [
   },
   {
     id: 6,
-    name: "Artificial Intelligence Automation",
+    name: "AI Automation",
     title: "AI-Driven Business Growth",
     desc: "Automate workflows, predict trends, and unlock efficiency with tailor-made AI solutions.",
     icon: <BrainCircuit size={48} />,
@@ -92,7 +92,7 @@ const OfferItem = ({ item }: any) => {
     <div
       key={item.id}
       // border-2 border-primary-color rounded-lg
-      className="flex flex-col justify-center group border border-primary-color rounded-lg p-[5%] my-[5%] mx-[2%] hover:bg-accent-color hover:text-white hover:transition-all duration-1000 ease-in-out"
+      className="h-[90%] flex flex-col justify-center group border border-primary-color rounded-lg p-[5%] my-[5%] mx-[2%] hover:bg-accent-color hover:text-white hover:transition-all duration-1000 ease-in-out"
     >
       <div className="flex flex-col gap-5 justify-between items-start">
         {/* <Image src={item.icon} width={100} height={100} alt="icon" /> */}
@@ -101,17 +101,17 @@ const OfferItem = ({ item }: any) => {
         </div>
         <h3 className="text-2xl font-bold tracking-tighter">{item.name}</h3>
       </div>
-      <hr className="border-1 border-primary-color" />
+      <hr className="border-1 border-primary-color group-hover:border-white" />
 
       {/* <h3 className="mt-[5%] mb-[2%] text-2xl font-semibold">
         {item.title}
       </h3> */}
-      <p className="my-[5%] text-md lg:text-lg tracking-tight">{item.desc}</p>
+      <p className="row-span-3 my-[5%] text-md lg:text-lg tracking-tight">{item.desc}</p>
 
-      <a className="flex gap-2 my-[2%] text-primary-color group-hover:text-inherit font-semibold">
+      {/* <a className="flex gap-2 my-[2%] text-primary-color group-hover:text-inherit font-semibold">
         Read More
         <ChevronRight />
-      </a>
+      </a> */}
     </div>
   );
 };
