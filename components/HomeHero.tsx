@@ -35,24 +35,25 @@ const HomeHero = () => {
               </div>
             </h1>
             <p className="lg:pl-3 mt-3 max-w-xl text-lg text-gray-500 dark:text-slate-400 sm:mt-5 md:mt-5">
-            At Infineteck, we empower small, medium, and large businesses to dominate their industries with cutting-edge digital solutions. From crafting unforgettable brands to scaling revenue with AI-driven strategies, we;&apos;re your one-stop partner for growth that lasts.
+              At Infineteck, we empower small, medium, and large businesses to
+              dominate their industries with cutting-edge digital solutions.
+              From crafting unforgettable brands to scaling revenue with
+              AI-driven strategies, we;&apos;re your one-stop partner for growth
+              that lasts.
             </p>
             <HeroCounter />
-            
-              <button className="flex lg:ml-[5%] mt-[5%] lg:mt-[5%] px-8 py-3 md:py-4 md:px-10 text-sm md:text-lg rounded-md border border-transparent shadow bg-primary-color hover:scale-105 transition-all duration-200 font-medium text-white ">
-              
-                  Download Our Company Profile
 
-              </button>
+            <a
+              href="/CC Profile-2024.pdf"
+              className="lg:ml-[5%] mt-[5%] lg:mt-[5%] px-8 py-3 md:py-4 md:px-10 text-sm md:text-lg rounded-md border border-transparent shadow bg-primary-color hover:scale-105 transition-all duration-200 font-medium text-white "
+              download
+            >
+              Download Our Company Profile
+            </a>
           </div>
         </div>
         <div className="hidden lg:w-[120%] xl:w-[110%] 2xl:w-[100%] pr-[5%] xl:flex justify-center">
-          <Image
-            src="/C.png"
-            width={1000}
-            height={100}
-            alt="person image"
-          />
+          <Image src="/C.png" width={1000} height={100} alt="person image" />
         </div>
       </div>
     </section>
