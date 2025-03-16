@@ -35,13 +35,14 @@ export const Menus = [
   },
   {
     name: "Services",
-    link: "#",
+    link: "/services",
     // subMenuHeading: ["Development", "Marketing", "Creative"],
     subMenu: [
       {
         name: "Web & App Development",
         desc: "Browse templates",
         icon: MonitorSmartphone,
+        link: "/services/web-development"
       },
       {
         name: "Digital Marketing & Branding",
