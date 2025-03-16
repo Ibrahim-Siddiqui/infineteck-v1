@@ -68,10 +68,7 @@ const Home = () => {
         <div className="pt-[20%] md:pt-[8%] pb-[5%] md:pb-[5%] bg-gradient-to-r from-blue-300 via-accent-color to-primary-color text-white">
           <h1 className="text-4xl md:text-5xl text-center font-bold ">
             {" "}
-            <span className="">
-              {" "}
-              Get in Touch with Us Today
-            </span>{" "}
+            <span className=""> Get in Touch with Us Today</span>{" "}
           </h1>
         </div>
         <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-12">
@@ -82,20 +79,20 @@ const Home = () => {
                 Have questions or need assistance? Reach out to us and
                 we&apos;re here to help!
               </p>
-
-              <div className="">
-                <div className="flex gap-5 h-6 my-4">
+              {/* grid grid-rows-4 row-auto space-y-5 */}
+              <div className="grid grid-rows-4 row-auto space-y-5 my-5">
+                <div className="flex gap-5 h-6 row-span-2 sm:row-span-1">
                   <img src="/map.png" className="icon" alt="" />
                   <p>
                     60 James Carter Road, Mildenhall, Bury St. Edmunds, England,
                     IP28 7DE
                   </p>
                 </div>
-                <div className="flex gap-5 w-8 my-8">
+                <div className="flex gap-5 w-8 ">
                   <img src="/gmail.png" className="icon" alt="" />
                   <p>info@infineteck.com</p>
                 </div>
-                <div className="flex gap-5 w-8 my-4">
+                <div className="flex gap-5 w-8 ">
                   <img src="/telephone.png" className="icon" alt="" />
                   <p>+4474638365597</p>
                 </div>
