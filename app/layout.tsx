@@ -13,7 +13,7 @@ import {
 import "./globals.css";
 import "react-photo-view/dist/react-photo-view.css";
 import { ThemeProvider } from "./provider";
-import NewNavbar from "@/components/NewNavbar";
+import { Toaster } from "@/components/ui/sonner"
 
 const inter = Inter({ subsets: ["latin"] });
 const raleway = Raleway({ subsets: ["latin"] });
@@ -63,6 +63,7 @@ export default function RootLayout({
           disableTransitionOnChange
         > */}
         {children}
+        <Toaster />
         {/* </ThemeProvider> */}
       </body>
     </html>
