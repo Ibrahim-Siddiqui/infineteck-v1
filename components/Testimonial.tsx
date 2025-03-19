@@ -8,10 +8,28 @@ import {
 } from "@/components/ui/carousel";
 import { testimonials } from "@/data";
 import Autoplay from "embla-carousel-autoplay";
+import { motion } from "framer-motion";
 
 const Testimonial = () => {
   return (
-    <div className="max-w-screen">
+    <motion.div
+      className="max-w-screen"
+      initial={{
+        opacity: 0,
+        translateY: 100,
+      }}
+      whileInView={{
+        translateY: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.7,
+      }}
+      viewport={{
+        once: true,
+        margin: "-250px",
+      }}
+    >
       <div className="flex flex-col items-center">
         <h2 className="text-3xl font-semibold">Client Feedback</h2>
         <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
@@ -59,7 +77,7 @@ const Testimonial = () => {
           {/* <CarouselNext className="mx-15" /> */}
         </Carousel>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

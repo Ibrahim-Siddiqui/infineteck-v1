@@ -10,10 +10,28 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { partners } from "@/data";
+import { motion } from "framer-motion";
 
 const OurPartners = () => {
   return (
-    <div className="mt-[5%] z-[-99]">
+    <motion.div
+      className="mt-[5%] z-[-99]"
+      initial={{
+        opacity: 0,
+        translateY: 100,
+      }}
+      whileInView={{
+        translateY: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.7,
+      }}
+      viewport={{
+        once: true,
+        margin: "-250px",
+      }}
+    >
       <h1
         className="text-4xl lg:text-6xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color
       to-primary-color"
@@ -31,8 +49,8 @@ const OurPartners = () => {
       <Carousel
         opts={{
           //   align: "",
-          
-          direction: 'ltr',
+
+          direction: "ltr",
           loop: true,
         }}
         plugins={[
@@ -55,8 +73,8 @@ const OurPartners = () => {
       <Carousel
         opts={{
           //   align: "",
-          
-          direction: 'rtl',
+
+          direction: "rtl",
           loop: true,
         }}
         plugins={[
@@ -76,7 +94,7 @@ const OurPartners = () => {
           ))}
         </CarouselContent>
       </Carousel>
-    </div>
+    </motion.div>
   );
 };
 
