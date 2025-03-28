@@ -1,12 +1,22 @@
 "use client";
 import Footer from "@/components/Footer";
 import Select from "react-select";
-import Navbar from "@/components/ui/Navbar";
 import { useState } from "react";
 import { MultiValue } from "react-select";
 import NewNavbar from "@/components/NewNavbar";
 import PageBanner from "@/components/PageBanner";
 import bannerImg from "@/public/contact-banner.jpg";
+import { formRequest } from "./components/FormRequest";
+
+// export interface formDataType
+// {
+//   name: string;
+//   company: string;
+//   email: string;
+//   phone: string;
+//   message: string;
+//   services: MultiValue<OptionType>;
+// };
 
 const Home = () => {
   type OptionType = {
@@ -16,30 +26,27 @@ const Home = () => {
 
   const options = [
     {
-      value: "digital marketing & branding",
+      value: "Digital Marketing & Branding",
       label: "Digital Marketing & Branding",
     },
     {
       label: "Game Development",
-      value: "game development",
+      value: "Game Development",
     },
-    { label: "Website & App Development", value: "website & app development" },
+    { label: "Website & App Development", value: "Website & App Development" },
     {
-      value: "2d & 3d animation - video editing",
+      value: "2D & 3D Animation - Video Editing",
       label: "2D & 3D Animation - Video Editing",
     },
     {
-      value: "e-commerce solutions",
+      value: "Ecommerce Solutions",
       label: "Ecommerce Solutions",
     },
     {
-      value: "artificial intelligence automation",
-      label: "Artificial Intelligence Automation",
+      value: "AI Automation",
+      label: "AI Automation",
     },
   ];
-
-  const [selectedOptions, setSelectedOptions] =
-    useState<MultiValue<OptionType>>();
 
   const handleChange = (option: MultiValue<OptionType>) => {
     setSelectedOptions(option);
@@ -62,6 +69,37 @@ const Home = () => {
       };
     },
   };
+
+  const [name, setName] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [selectedOptions, setSelectedOptions] = useState<
+    MultiValue<OptionType>
+  >([]);
+  let optionArray: any = [];
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    Object.values(selectedOptions).map((option) =>
+      optionArray.push(option.value)
+    );
+    const formData = {
+      name: name,
+      company: companyName,
+      email: email,
+      phone: phone,
+      message: message,
+      services: optionArray.join(", "),
+    };
+    console.log(formData);
+    formRequest(formData).then(() =>
+      console.log("form submitted successfully")
+    );
+    
+  };
+
   return (
     <>
       <NewNavbar />
@@ -119,43 +157,68 @@ const Home = () => {
             </div>
 
             <div className="border rounded-lg bg-white p-2 shadow-lg shadow-accent-color lg:col-span-3 lg:px-12">
-              <form action="#" className="space-y-4">
-                <div>
-                  <label className="sr-only" htmlFor="name">
-                    Name
+              <form
+                // action="https://formbold.com/s/oJldZ"
+                onSubmit={handleSubmit}
+                // method="POST"
+                // encType="multipart/form-data"
+                className="space-y-4"
+              >
+                {/* <div> */}
+                <label className="sr-only" htmlFor="name">
+                  Name
+                </label>
+                <input
+                  className="w-full rounded-lg border border-gray-200 shadow-md shadow-secondary-color p-3 text-sm"
+                  placeholder="Name"
+                  type="text"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+                {/* </div> */}
+                {/* <div> */}
+                <label className="sr-only" htmlFor="name">
+                  Company Name
+                </label>
+                <input
+                  className="w-full rounded-lg border border-gray-200 shadow-md shadow-secondary-color p-3 text-sm"
+                  placeholder="Company Name"
+                  type="text"
+                  id="name"
+                  value={companyName}
+                  onChange={(e) => setCompanyName(e.target.value)}
+                />
+                {/* </div> */}
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {/* <div> */}
+                  <label className="sr-only" htmlFor="email">
+                    Email
                   </label>
                   <input
                     className="w-full rounded-lg border border-gray-200 shadow-md shadow-secondary-color p-3 text-sm"
-                    placeholder="Name"
-                    type="text"
-                    id="name"
+                    placeholder="Email address"
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
-                </div>
+                  {/* </div> */}
 
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div>
-                    <label className="sr-only" htmlFor="email">
-                      Email
-                    </label>
-                    <input
-                      className="w-full rounded-lg border border-gray-200 shadow-md shadow-secondary-color p-3 text-sm"
-                      placeholder="Email address"
-                      type="email"
-                      id="email"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="sr-only" htmlFor="phone">
-                      Phone
-                    </label>
-                    <input
-                      className="w-full rounded-lg border border-gray-200 shadow-md shadow-secondary-color p-3 text-sm"
-                      placeholder="Phone Number"
-                      type="tel"
-                      id="phone"
-                    />
-                  </div>
+                  {/* <div> */}
+                  <label className="sr-only" htmlFor="phone">
+                    Phone
+                  </label>
+                  <input
+                    className="w-full rounded-lg border border-gray-200 shadow-md shadow-secondary-color p-3 text-sm"
+                    placeholder="Phone Number"
+                    type="tel"
+                    id="phone"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
+                  {/* </div> */}
                 </div>
 
                 {/* <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
@@ -214,38 +277,42 @@ const Home = () => {
                   </div>
                 </div> */}
 
-                <div className="input-container">
-                  <Select
-                    isMulti
-                    options={options}
-                    name="services"
-                    value={selectedOptions}
-                    onChange={(option: MultiValue<OptionType>) =>
-                      handleChange(option)
-                    }
-                    className="shadow-md shadow-secondary-color"
-                    placeholder="Select Service Type"
-                    styles={colourStyles}
-                  />
-                </div>
+                {/* <div className="input-container"> */}
+                <Select
+                  isMulti
+                  options={options}
+                  name="services"
+                  value={selectedOptions}
+                  onChange={(option: MultiValue<OptionType>) =>
+                    handleChange(option)
+                  }
+                  className="shadow-md shadow-secondary-color"
+                  placeholder="Select Service Type"
+                  styles={colourStyles}
+                  inputValue=""
+                />
+                {/* </div> */}
 
-                <div>
-                  <label className="sr-only" htmlFor="message">
-                    Message
-                  </label>
+                {/* <div> */}
+                <label className="sr-only" htmlFor="message">
+                  Message
+                </label>
 
-                  <textarea
-                    className="w-full rounded-lg border border-gray-200 p-3 text-sm shadow-lg shadow-secondary-color"
-                    placeholder="Message"
-                    rows={8}
-                    id="message"
-                  ></textarea>
-                </div>
+                <textarea
+                  className="w-full rounded-lg border border-gray-200 p-3 text-sm shadow-lg shadow-secondary-color"
+                  placeholder="Message"
+                  rows={8}
+                  id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
+                {/* </div> */}
 
                 <div className="mt-4  hover:scale-105 transition-all duration-300">
                   <button
                     type="submit"
                     className="inline-block w-full rounded-lg bg-primary-color px-5 py-3 font-medium text-white sm:w-auto"
+                    onSubmit={handleSubmit}
                   >
                     Send Enquiry
                   </button>

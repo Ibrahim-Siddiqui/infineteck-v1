@@ -39,11 +39,19 @@ const Home = () => {
     setIsSocialMedia(false);
     setShowMore(false);
 
-    stateSetter(true);  
+    stateSetter(true);
   };
   useEffect(() => {
     window.scrollTo(0, 600);
-  }, [isTextLogo, isGameDev, isMascot, isShopify, isSocialMedia, isVideoEditing, isUIUX]);
+  }, [
+    isTextLogo,
+    isGameDev,
+    isMascot,
+    isShopify,
+    isSocialMedia,
+    isVideoEditing,
+    isUIUX,
+  ]);
   return (
     <>
       <main className="">
@@ -55,7 +63,7 @@ const Home = () => {
           text="Discover the Projects That Drive Our Success"
         />
 
-        <div className="my-5 mx-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap gap-5 justify-center text-sm lg:text-lg">
+        <div className="mt-12 mx-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap gap-5 justify-center text-sm lg:text-lg">
           <button
             className="rounded-lg px-4 py-2 text-primary-color transition-all border-2 border-primary-color hover:bg-primary-color hover:scale-105 hover:text-white"
             onClick={() => handleButtonClick(setIsVideoEditing)}
@@ -102,7 +110,7 @@ const Home = () => {
         {isTextLogo && (
           <>
             <div className="mt-[5rem]">
-              <h1 className="text-black text-4xl md:text-5xl text-center font-bold">
+              <h1 className="text-black text-4xl md:text-5xl text-center font-bold py-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
                 Text Logo Portfolio
               </h1>
             </div>
@@ -125,7 +133,7 @@ const Home = () => {
         {isUIUX && (
           <>
             <div className=" mt-[5rem]">
-              <h1 className="text-black text-4xl md:text-5xl text-center font-bold">
+              <h1 className="text-black text-4xl md:text-5xl text-center font-bold py-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
                 UI/UX Portfolio
               </h1>
             </div>
@@ -147,7 +155,7 @@ const Home = () => {
         {isGameDev && (
           <>
             <div className=" mt-[5rem]">
-              <h1 className="text-black text-4xl md:text-5xl text-center font-bold">
+              <h1 className="text-black text-4xl md:text-5xl text-center font-bold py-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
                 Game Development Portfolio
               </h1>
             </div>
@@ -170,7 +178,7 @@ const Home = () => {
         {isMascot && (
           <>
             <div className=" mt-[5rem]">
-              <h1 className="text-black text-4xl md:text-5xl text-center font-bold">
+              <h1 className="text-black text-4xl md:text-5xl text-center font-bold py-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
                 Mascot Logo Portfolio
               </h1>
             </div>
@@ -192,7 +200,7 @@ const Home = () => {
         {isSocialMedia && (
           <>
             <div className=" mt-[5rem]">
-              <h1 className="text-black text-4xl md:text-5xl text-center font-bold">
+              <h1 className="text-black text-4xl md:text-5xl text-center font-bold py-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
                 Socail Media Posts Portfolio
               </h1>
             </div>
@@ -214,7 +222,7 @@ const Home = () => {
         {isVideoEditing && (
           <>
             <div className=" my-[5rem]">
-              <h1 className="text-black text-4xl md:text-5xl text-center font-bold">
+              <h1 className="text-black text-4xl md:text-5xl text-center font-bold py-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
                 Video Editing Portfolio
               </h1>
             </div>
@@ -237,7 +245,7 @@ const Home = () => {
         {isShopify && (
           <>
             <div className=" mt-[5rem]">
-              <h1 className="text-black text-4xl md:text-5xl text-center font-bold">
+              <h1 className="text-black text-4xl md:text-5xl text-center font-bold py-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
                 Shopify UI/UX Portfolio
               </h1>
             </div>

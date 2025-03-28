@@ -30,7 +30,7 @@ const PageBanner = ({ imgSrc, heading, text }: any) => {
           commitment.
         </p> */}
         <a
-          href="#"
+          href="/contact"
           className="bg-primary-color text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
           Get in Touch

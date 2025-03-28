@@ -61,7 +61,7 @@ const PricingPage = () => {
         text="Tailored Plans, Transparent Costs"
       />
 
-      <div className="my-5 mx-2 grid grid-cols-2 gap-2 lg:gap-4 lg:mx-1 lg:flex lg:justify-center lg:flex-wrap text-md lg:text-lg">
+      <div className="mt-12 mx-2 grid grid-cols-2 gap-2 lg:gap-4 lg:mx-1 lg:flex lg:justify-center lg:flex-wrap text-md lg:text-lg">
         <button
           className="rounded-lg px-2 py-4 text-primary-color transition-all bg-white hover:scale-105  border-2 border-primary-color  hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setWebDev)}
