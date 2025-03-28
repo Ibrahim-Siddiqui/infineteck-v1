@@ -66,7 +66,7 @@ export default function DesktopMenu({ menu }: any) {
             >
               {hasSubMenu &&
                 menu.subMenu.map((submenu: any, i: number) => (
-                  <div className="cursor-pointer" key={i}>
+                  <Link href={submenu.link} className="cursor-pointer" key={i}>
                     {menu.gridCols > 1 && menu?.subMenuHeading?.[i] && (
                       <p className="text-sm mb-4 text-gray-500">
                         {menu?.subMenuHeading?.[i]}
@@ -81,7 +81,7 @@ export default function DesktopMenu({ menu }: any) {
                         <p className="text-sm text-gray-400">{submenu.desc}</p>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
             </div>
           </motion.div>

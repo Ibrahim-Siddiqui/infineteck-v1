@@ -1,4 +1,4 @@
-import { Play } from "lucide-react";
+import { Monitor, Play, Smartphone } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
 import { MonitorSmartphone } from "lucide-react";
 import { Gamepad2 } from "lucide-react";
@@ -35,39 +35,50 @@ export const Menus = [
   },
   {
     name: "Services",
-    link: "/services",
+    link: "",
     // subMenuHeading: ["Development", "Marketing", "Creative"],
     subMenu: [
       {
-        name: "Web & App Development",
-        desc: "Browse templates",
-        icon: MonitorSmartphone,
+        name: "Web Development",
+        desc: "",
+        icon: Monitor,
         link: "/services/web-development",
       },
       {
+        name: "App Development",
+        desc: "",
+        icon: Smartphone,
+        link: "/services/app-development",
+      },
+      {
         name: "Digital Marketing & Branding",
-        desc: "Upcoming events",
+        desc: "",
         icon: LucideBarChart,
+        link: "/services/digital-marketing",
       },
       {
         name: "Game Development",
-        desc: "Changelog",
+        desc: "",
         icon: Gamepad2,
+        link: "/services/game-development",
       },
       {
         name: "Animation - Video Editing",
-        desc: "Watch lessions",
+        desc: "",
         icon: Play,
+        link: "/services/video-animation",
       },
       {
         name: "Ecommerce Solutions",
-        desc: "Posts",
+        desc: "",
         icon: ShoppingCart,
+        link: "/services/e-commerce",
       },
       {
         name: "AI Automation",
-        desc: "Plugin",
+        desc: "",
         icon: BrainCircuit,
+        link: "/services/ai-automation",
       },
       // {
       //   name: "Experts",
