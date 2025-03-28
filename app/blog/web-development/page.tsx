@@ -21,7 +21,7 @@ const WebDevelopment = () => {
               <h1 className="text-gray-900 font-bold text-4xl my-2">
                 Custom Web App Development: What You Need to Know
               </h1>
-              <p className="text-gray-700 text-xs mt-2">Written By:</p>
+              <p className="text-gray-700 text-xs mt-2"></p>
               <p className="text-lg md:text-xl font-light leading-8 my-5">
                 The world runs on software and engineers (or AI) are writing
                 more code than ever. According to Business Research Insights,
@@ -300,7 +300,7 @@ const WebDevelopment = () => {
                 is moving towards more sophisticated, seamless, and dynamic web
                 applications. Therefore, selecting the right development partner
                 is a game changer for the success of your custom web application
-                project. This is where Devsinc brings more than just technical
+                project. This is where Infineteck brings more than just technical
                 expertise; we understand your business objectives, market
                 challenges, and customer needs. Our skilled development team
                 translates your vision into a scalable, secure, and user-centric
@@ -308,40 +308,7 @@ const WebDevelopment = () => {
                 ensure your project is delivered on time, within budget, and
                 with a quality that surpasses expectations.
               </p>
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #Election
-              </a>
-              ,
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #people
-              </a>
-              ,
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #Election2020
-              </a>
-              ,
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #trump
-              </a>
-              ,
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #Joe
-              </a>
+             
             </div>
           </div>
         </div>
