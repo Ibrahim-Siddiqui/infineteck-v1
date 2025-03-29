@@ -2,29 +2,30 @@
 import React from "react";
 
 const VideoHero = () => {
-  const css = `   .video-docker video {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+//   const css = `   .video-docker video {
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
 
-    .video-docker::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-}
-  `;
+//     .video-docker::after {
+//       content: "";
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       top: 0;
+//       left: 0;
+//       background: rgba(0, 0, 0, 0.4);
+//       z-index: 1;
+// }
+//   `;
   return (
     <>
       <section className="relative h-screen sm:h-[70vh] xl:h-[80vh] flex flex-col items-center justify-center text-center text-white ">
-        <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+        <div className="video-docker after:content-[] after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-black/40 after:z-1">
+        {/* w-full h-full overflow-hidden */}
           <video
-            className="min-w-full min-h-full absolute object-cover"
+            className="min-w-full min-h-full absolute object-cover top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
             autoPlay
             muted
             loop
@@ -60,7 +61,7 @@ const VideoHero = () => {
         </div>
       </section>
 
-      <style>{css}</style>
+      {/* <style>{css}</style> */}
     </>
   );
 };

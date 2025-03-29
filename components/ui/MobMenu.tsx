@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -39,7 +40,7 @@ export default function MobMenu({ Menus }: any) {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;
             return (
-              <Link href={link} key={name}>
+              <div key={name}>
                 <li className="">
                   <span
                     className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
@@ -72,7 +73,7 @@ export default function MobMenu({ Menus }: any) {
                     </motion.ul>
                   )}
                 </li>
-              </Link>
+              </div>
             );
           })}
           <div className="lg:hidden">
