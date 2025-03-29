@@ -50,23 +50,23 @@ const FeatureCards = () => {
   ];
 
   return (
-    <motion.section
+    <section
       className="mb-[5%]"
-      initial={{
-        opacity: 0,
-        translateY: 100,
-      }}
-      whileInView={{
-        translateY: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1,
-      }}
-      viewport={{
-        once: true,
-        margin: "-250px",
-      }}
+      // initial={{
+      //   opacity: 0,
+      //   translateY: 100,
+      // }}
+      // whileInView={{
+      //   translateY: 0,
+      //   opacity: 1,
+      // }}
+      // transition={{
+      //   duration: 1,
+      // }}
+      // viewport={{
+      //   once: true,
+      //   margin: "-250px",
+      // }}
     >
       {/* <div className="pt-[5%] mx-auto max-w-7xl ">
         <h1 className="text-2xl lg:text-3xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
@@ -92,7 +92,7 @@ const FeatureCards = () => {
           </div>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 

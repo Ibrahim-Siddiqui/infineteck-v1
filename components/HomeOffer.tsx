@@ -61,23 +61,23 @@ const HomeOffer = () => {
   return (
     // bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200
     
-    <motion.section className=""
-      initial={{
-        opacity: 0,
-        translateY: 100,
-      }}
-      whileInView={{
-        translateY: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.7,
-      }}
+    <section className=""
+      // initial={{
+      //   opacity: 0,
+      //   translateY: 100,
+      // }}
+      // whileInView={{
+      //   translateY: 0,
+      //   opacity: 1,
+      // }}
+      // transition={{
+      //   duration: 0.7,
+      // }}
       
-      viewport={{
-        once: true,
-        margin: '-250px',
-      }}
+      // viewport={{
+      //   once: true,
+      //   margin: '-250px',
+      // }}
     >
       <div className="pt-[5%]">
         <h1 className="text-3xl lg:text-5xl text-center font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
@@ -100,7 +100,7 @@ const HomeOffer = () => {
           </div>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 

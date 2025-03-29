@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Plans = ({ plans }: any) => {
   return (
     <motion.div
-      className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
+      className="px-4 py-12 sm:px-6 sm:pb-8 lg:px-8 lg:pb-12"
       initial={{
         // opacity: 0,
         translateY: 150,
@@ -20,7 +20,7 @@ const Plans = ({ plans }: any) => {
         margin: "-250px",
       }}
     >
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:gap-8 ">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:gap-8 mb-[30%] sm:mb-[5%]">
         {/* <AnimatePresence> */}
         {plans.map((plan: any) => (
           // divide-y-2 divide-accent-color

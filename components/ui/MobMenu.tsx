@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -40,58 +40,72 @@ export default function MobMenu({ Menus }: any) {
             const isClicked = clicked === i;
             const hasSubMenu = subMenu?.length;
             return (
-              <div key={name}>
-                <li className="">
-                  <span
-                    className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
-                    onClick={() => setClicked(isClicked ? null : i)}
-                  >
-                    {name}
-                    {hasSubMenu && (
-                      <ChevronDown
-                        className={`ml-auto ${isClicked && "rotate-180"} `}
-                      />
-                    )}
-                  </span>
-                  {hasSubMenu && (
-                    <motion.ul
-                      initial="exit"
-                      animate={isClicked ? "enter" : "exit"}
-                      variants={subMenuDrawer}
-                      className="ml-5"
+              // {hasSubMenu ?}
+              hasSubMenu ? (
+                <div key={name}>
+                  <li className="">
+                    <span
+                      className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
+                      onClick={() => setClicked(isClicked ? null : i)}
                     >
-                      {subMenu.map(({ name, icon: Icon, link}: any) => (
-                        <Link
-                          key={name}
-                          href={link}
-                          className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
-                        >
-                          <Icon size={17} />
-                          {name}
-                        </Link>
-                      ))}
-                    </motion.ul>
-                  )}
-                </li>
-              </div>
+                      {name}
+                      {hasSubMenu && (
+                        <ChevronDown
+                          className={`ml-auto ${isClicked && "rotate-180"} `}
+                        />
+                      )}
+                    </span>
+                    {hasSubMenu && (
+                      <motion.ul
+                        initial="exit"
+                        animate={isClicked ? "enter" : "exit"}
+                        variants={subMenuDrawer}
+                        className="ml-5"
+                      >
+                        {subMenu.map(({ name, icon: Icon, link }: any) => (
+                          <Link
+                            key={name}
+                            href={link}
+                            className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
+                          >
+                            <Icon size={17} />
+                            {name}
+                          </Link>
+                        ))}
+                      </motion.ul>
+                    )}
+                  </li>
+                </div>
+              ) : (
+                <Link href={link} key={name}>
+                  <li className="">
+                    <span
+                      className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
+                      onClick={() => setClicked(isClicked ? null : i)}
+                    >
+                      {name}
+                    </span>
+                  </li>
+                </Link>
+              )
             );
           })}
           <div className="lg:hidden">
-          <Link
-            href="/blog"
-            aria-label="sign-in"
-            className="text-primary-color text-md text-center px-4 py-2 my-5 shadow rounded-lg border-2 border-primary-color hover:bg-primary-color hover:text-white hover:scale-105 transition-all duration-300 flex justify-center"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/contact"
-            aria-label="sign-in"
-            className="bg-primary-color text-white text-md text-center px-4 py-2 my-5 shadow rounded-lg border-2 border-primary-color hover:scale-105 transition-all duration-300 flex justify-center"
-          >
-            Contact
-          </Link>
-        </div>
+            <Link
+              href="/blog"
+              aria-label="sign-in"
+              className="text-primary-color text-md text-center px-4 py-2 my-5 shadow rounded-lg border-2 border-primary-color hover:bg-primary-color hover:text-white hover:scale-105 transition-all duration-300 flex justify-center"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              aria-label="sign-in"
+              className="bg-primary-color text-white text-md text-center px-4 py-2 my-5 shadow rounded-lg border-2 border-primary-color hover:scale-105 transition-all duration-300 flex justify-center"
+            >
+              Contact
+            </Link>
+          </div>
         </ul>
       </motion.div>
     </div>

@@ -33,23 +33,23 @@ const USPData = [
 const USP = () => {
   return (
     // bg-gradient-to-tr from-blue-50 via-blue-100 to-blue-200
-    <motion.section
+    <section
       className="mt-[10%] md:[5%]"
-      initial={{
-        opacity: 0,
-        translateY: 100,
-      }}
-      whileInView={{
-        translateY: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.7,
-      }}
-      viewport={{
-        once: true,
-        margin: "-250px",
-      }}
+      // initial={{
+      //   opacity: 0,
+      //   translateY: 100,
+      // }}
+      // whileInView={{
+      //   translateY: 0,
+      //   opacity: 1,
+      // }}
+      // transition={{
+      //   duration: 0.7,
+      // }}
+      // viewport={{
+      //   once: true,
+      //   margin: "-250px",
+      // }}
     >
       <div className="px-[5%]">
         <div className="z-[-99] grid grid-cols-1 md:grid-cols-3 space-y-[10%] md:gap-[2%] md:space-y-0">
@@ -123,7 +123,7 @@ const USP = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

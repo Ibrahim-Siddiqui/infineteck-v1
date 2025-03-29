@@ -47,23 +47,23 @@ const FAQ = () => {
   }`;
 
   return (
-    <motion.div
-    initial={{
-      opacity: 0,
-      translateY: 100,
-    }}
-    whileInView={{
-      translateY: 0,
-      opacity: 1,
-    }}
-    transition={{
-      duration: 0.7,
-    }}
+    <div
+    // initial={{
+    //   opacity: 0,
+    //   translateY: 100,
+    // }}
+    // whileInView={{
+    //   translateY: 0,
+    //   opacity: 1,
+    // }}
+    // transition={{
+    //   duration: 0.7,
+    // }}
     
-    viewport={{
-      once: true,
-      margin: '-250px',
-    }}
+    // viewport={{
+    //   once: true,
+    //   margin: '-250px',
+    // }}
     >
       <div className="">
         <h1 className="text-2xl lg:text-5xl font-bold text-center py-[5%]">
@@ -120,7 +120,7 @@ const FAQ = () => {
           </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
 

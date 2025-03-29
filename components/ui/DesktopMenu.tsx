@@ -115,4 +115,4 @@ export default function DesktopMenu({ menu }: any) {
       )}
     </>
   );
-}
+};

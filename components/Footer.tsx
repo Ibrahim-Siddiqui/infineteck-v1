@@ -47,30 +47,31 @@ const Footer = () => {
           <div className="text-md uppercase text-primary-color font-bold">
             Services
           </div>
-          <a className="my-3 block" href="/#">
-            Web & App Development
+          <a className="my-3 block" href="/services/web-development">
+            Web  Development
             <span className="text-teal-600 text-xs p-1"></span>
           </a>
-          <a className="my-3 block" href="/#">
+          <a className="my-3 block" href="/services/app-development">
+            App Development
+            <span className="text-teal-600 text-xs p-1"></span>
+          </a>
+          <a className="my-3 block" href="/services/digital-marketing">
             Marketing & Branding
             <span className="text-teal-600 text-xs p-1"></span>
           </a>
-          <a className="my-3 block" href="/#">
+          <a className="my-3 block" href="/services/game-development">
             Game Development<span className="text-teal-600 text-xs p-1"></span>
           </a>
-          <a className="my-3 block" href="/#">
+          <a className="my-3 block" href="/services/video-animation">
             Animation - Video Editing{" "}
             <span className="text-teal-600 text-xs p-1"></span>
           </a>
-          <a className="my-3 block" href="/#">
-            Video & Animations{" "}
-            <span className="text-teal-600 text-xs p-1"></span>
-          </a>
-          <a className="my-3 block" href="/#">
+          
+          <a className="my-3 block" href="/services/e-commerce">
             E-commerce Solutions{" "}
             <span className="text-teal-600 text-xs p-1"></span>
           </a>
-          <a className="my-3 block" href="/#">
+          <a className="my-3 block" href="/services/ai-automation">
             AI Automation <span className="text-teal-600 text-xs p-1"></span>
           </a>
         </div>
@@ -78,20 +79,20 @@ const Footer = () => {
           <div className="text-md uppercase text-primary-color font-bold">
             Contact us
           </div>
-          <a className="my-3 flex gap-2" href="/#">
+          <a className="my-3 flex gap-2" href="">
             <span className="text-teal-600 text-xs py-1">
               <MapPin />
             </span>
             60 James Carter Road, Mildenhall, Bury St. Edmunds, England, IP28
             7DE
           </a>
-          <a className="my-3 flex gap-2" href="/#">
+          <a className="my-3 flex gap-2" href="">
             <span className="text-teal-800 text-xs py-1">
               <Mail />
             </span>
             info@infineteck.com
           </a>
-          <a className="my-3 flex gap-2" href="/#">
+          <a className="my-3 flex gap-2" href="">
             <span className="text-teal-800 text-xs py-1">
               <Phone />
             </span>

@@ -151,7 +151,7 @@ export const Menus = [
   },
   {
     name: "Pricing",
-    link: "pricing",
+    link: "/pricing",
   },
   // {
   //   name: "Contact",

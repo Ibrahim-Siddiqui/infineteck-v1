@@ -12,23 +12,23 @@ import { motion } from "framer-motion";
 
 const Testimonial = () => {
   return (
-    <motion.div
+    <div
       className="max-w-screen"
-      initial={{
-        opacity: 0,
-        translateY: 100,
-      }}
-      whileInView={{
-        translateY: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.7,
-      }}
-      viewport={{
-        once: true,
-        margin: "-250px",
-      }}
+      // initial={{
+      //   opacity: 0,
+      //   translateY: 100,
+      // }}
+      // whileInView={{
+      //   translateY: 0,
+      //   opacity: 1,
+      // }}
+      // transition={{
+      //   duration: 0.7,
+      // }}
+      // viewport={{
+      //   once: true,
+      //   margin: "-250px",
+      // }}
     >
       <div className="flex flex-col items-center">
         <h2 className="text-3xl font-semibold">Client Feedback</h2>
@@ -77,7 +77,7 @@ const Testimonial = () => {
           {/* <CarouselNext className="mx-15" /> */}
         </Carousel>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

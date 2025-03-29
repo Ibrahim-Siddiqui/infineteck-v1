@@ -101,23 +101,23 @@ const Home = () => {
 
         <Hero />
         <VideoIntro />
-        <motion.div
+        <div
           className="px-[5%] py-[15%] sm:py-[5%] flex flex-col lg:flex-row justify-center gap-[5%] rounded-lg shadow-md shadow-accent-color border border-accent-color mx-5"
-          initial={{
-            opacity: 0,
-            translateY: 100,
-          }}
-          whileInView={{
-            translateY: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.7,
-          }}
-          viewport={{
-            once: true,
-            margin: "-250px",
-          }}
+          // initial={{
+          //   opacity: 0,
+          //   translateY: 100,
+          // }}
+          // whileInView={{
+          //   translateY: 0,
+          //   opacity: 1,
+          // }}
+          // transition={{
+          //   duration: 0.7,
+          // }}
+          // viewport={{
+          //   once: true,
+          //   margin: "-250px",
+          // }}
         >
           <div className="">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
@@ -134,24 +134,24 @@ const Home = () => {
           </div>
 
           <HeroCounter />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className=""
-          initial={{
-            opacity: 0,
-            translateY: 100,
-          }}
-          whileInView={{
-            translateY: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.7,
-          }}
-          viewport={{
-            once: true,
-            margin: "-250px",
-          }}
+          // initial={{
+          //   opacity: 0,
+          //   translateY: 100,
+          // }}
+          // whileInView={{
+          //   translateY: 0,
+          //   opacity: 1,
+          // }}
+          // transition={{
+          //   duration: 0.7,
+          // }}
+          // viewport={{
+          //   once: true,
+          //   margin: "-250px",
+          // }}
         >
           <div className="px-[10%] pt-[10%] sm:pt-[5%] flex ">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
@@ -166,49 +166,49 @@ const Home = () => {
             </h1>
           </div>
           <QuoteCard text={vision} points="" />
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           className="pt-[15%] sm:pt-[5%]"
-          initial={{
-            opacity: 0,
-            translateY: 100,
-          }}
-          whileInView={{
-            translateY: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.7,
-          }}
-          viewport={{
-            once: true,
-            margin: "-250px",
-          }}
+          // initial={{
+          //   opacity: 0,
+          //   translateY: 100,
+          // }}
+          // whileInView={{
+          //   translateY: 0,
+          //   opacity: 1,
+          // }}
+          // transition={{
+          //   duration: 0.7,
+          // }}
+          // viewport={{
+          //   once: true,
+          //   margin: "-250px",
+          // }}
         >
           <h1 className="text-3xl lg:text-5xl text-center font-extrabold ">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
               Our Values
             </span>
           </h1>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="mx-[5%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-          initial={{
-            opacity: 0,
-            translateY: 100,
-          }}
-          whileInView={{
-            translateY: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.7,
-          }}
-          viewport={{
-            once: true,
-            margin: "-250px",
-          }}
+          // initial={{
+          //   opacity: 0,
+          //   translateY: 100,
+          // }}
+          // whileInView={{
+          //   translateY: 0,
+          //   opacity: 1,
+          // }}
+          // transition={{
+          //   duration: 0.7,
+          // }}
+          // viewport={{
+          //   once: true,
+          //   margin: "-250px",
+          // }}
         >
           {values.map((value) => (
             <div
@@ -218,7 +218,7 @@ const Home = () => {
               <ValueCard item={value} />
             </div>
           ))}
-        </motion.div>
+        </div>
         <RecentProjects />
         <ContactForm />
         <Footer />

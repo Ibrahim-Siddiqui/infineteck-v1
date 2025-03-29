@@ -14,7 +14,6 @@ import {
   socialMediaPortfolioData,
   videoPortfolioData,
 } from "@/data";
-import Navbar from "@/components/ui/Navbar";
 import NewNavbar from "@/components/NewNavbar";
 import PageBanner from "@/components/PageBanner";
 
