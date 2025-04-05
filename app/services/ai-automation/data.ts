@@ -3,7 +3,7 @@ export const AIVideoData = [
     heading: "Revolutionize Your Business with AI Automation",
     paragraph:
       "Streamline operations, enhance efficiency, and reduce manual workload with cutting-edge AI automation solutions tailored to your business needs.",
-    video: "FdMtvg6Gpw4",
+    video: "osB9DcUT-EE",
     bullets: [
       {
         id: 1,

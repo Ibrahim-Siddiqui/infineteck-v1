@@ -3,7 +3,7 @@ export const AnimationVideoData = [
     heading: "Bring Your Vision to Life with 2D & 3D Animation and Video Editing",
     paragraph:
       "Enhance your brand’s storytelling with stunning animations and professional video editing. We create visually engaging content that captivates your audience.",
-    video: "KRiI6ElV6gM",
+    video: "7Og8gD9TtRo",
     bullets: [
       {
         id: 1,
