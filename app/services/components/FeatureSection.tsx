@@ -72,6 +72,7 @@ const FeatureSection = ({
                   src={item.image}
                   width={800}
                   height={200}
+                  className="rounded-b-lg lg:rounded-none"
                   alt="Image representing a feature"
                 />
               </div>
@@ -102,6 +103,7 @@ const FeatureSection = ({
                   src={item.image}
                   width={1000}
                   height={100}
+                  className="rounded-t-lg lg:rounded-none"
                   alt="Image representing a feature"
                 />
               </div>
