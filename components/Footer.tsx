@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="">
             <Image src="/logo.png" width={200} height={200} alt="logo" />
             <h2 className="my-[5%] text-lg font-semibold">
-              Driving Online Sucess
+              Driving Online Success
             </h2>
           </div>
           <a
