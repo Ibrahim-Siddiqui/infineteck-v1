@@ -34,7 +34,7 @@ const USP = () => {
   return (
     // bg-gradient-to-tr from-blue-50 via-blue-100 to-blue-200
     <section
-      className="mt-[10%] md:[5%]"
+      className="mt-[10%] md:mt-[5%]"
       // initial={{
       //   opacity: 0,
       //   translateY: 100,
@@ -52,7 +52,7 @@ const USP = () => {
       // }}
     >
       <div className="px-[5%]">
-        <div className="z-[-99] grid grid-cols-1 md:grid-cols-3 space-y-[10%] md:gap-[2%] md:space-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 space-y-[10%] md:gap-[2%] md:space-y-0">
           {USPData.map((usp) => (
             <div
               key={usp.title}
@@ -84,8 +84,8 @@ const USP = () => {
             </span>
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row gap-[5%] ">
-          <div className="lg:w-[50%]">
+        <div className="lg:flex lg:flex-row lg:gap-[5%]">
+          {/* <div className="lg:w-[50%]"> */}
             <MediaPlayer
               title="Infineteck Introduction"
               src={`youtube/qCCl_2fGKYY`}
@@ -95,8 +95,8 @@ const USP = () => {
               <MediaProvider />
               <PlyrLayout icons={plyrLayoutIcons} />
             </MediaPlayer>
-          </div>
-          <div className="lg:w-[50%]">
+          {/* </div> */}
+          <div className="lg:w-[100%] py-[5%] lg:py-0">
             <h1 className="text-xl">
               At <strong>Infineteck</strong>, we don’t just talk about
               innovation—we show it. Watch our company introduction video to
