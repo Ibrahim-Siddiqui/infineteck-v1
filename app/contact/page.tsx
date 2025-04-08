@@ -175,6 +175,7 @@ const Home = () => {
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  required
                 />
                 {/* </div> */}
                 {/* <div> */}
@@ -183,7 +184,7 @@ const Home = () => {
                 </label>
                 <input
                   className="w-full rounded-lg border border-gray-200 shadow-md shadow-secondary-color p-3 text-sm"
-                  placeholder="Company Name"
+                  placeholder="Business Name"
                   type="text"
                   id="name"
                   value={companyName}
@@ -203,6 +204,7 @@ const Home = () => {
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                   />
                   {/* </div> */}
 
@@ -217,6 +219,7 @@ const Home = () => {
                     id="phone"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
+                    required
                   />
                   {/* </div> */}
                 </div>
@@ -290,6 +293,7 @@ const Home = () => {
                   placeholder="Select Service Type"
                   styles={colourStyles}
                   inputValue=""
+                  required
                 />
                 {/* </div> */}
 
