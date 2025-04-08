@@ -84,7 +84,7 @@ const USP = () => {
             </span>
           </h1>
         </div>
-        <div className="lg:flex lg:flex-row lg:gap-[5%]">
+        <div className="flex flex-col lg:flex-row lg:gap-[5%]">
           {/* <div className="lg:w-[50%]"> */}
             <MediaPlayer
               title="Infineteck Introduction"
