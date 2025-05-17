@@ -70,11 +70,13 @@ const FeatureSection = ({
               <div className="flex flex-col justify-center items-center">
                 <Image
                   src={item.image}
-                  width={800}
-                  height={200}
+                  width={500}
+                  height={1}
                   className="rounded-b-lg lg:rounded-none"
                   alt="Image representing a feature"
                   priority={true}
+                  sizes="(min-width: 375px) 580px, (max-width: 2160px) 580px"
+                  layout="responsive"
                 />
               </div>
             </div>
@@ -102,11 +104,12 @@ const FeatureSection = ({
               <div className="flex flex-col justify-center items-center">
                 <Image
                   src={item.image}
-                  width={1000}
+                  width={500}
                   height={100}
                   className="rounded-t-lg lg:rounded-none"
                   alt="Image representing a feature"
                   priority={true}
+                  layout="responsive"
                 />
               </div>
               {/* rounded-lg shadow-md shadow-accent-color border border-accent-color */}

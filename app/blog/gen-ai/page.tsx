@@ -13,6 +13,7 @@ const GenAI = () => {
           src="/gen-ai-blog.png"
           width={1200}
           height={100}
+          priority={true} 
           alt="blog image"
         />
         <div className="max-w-7xl mx-auto">

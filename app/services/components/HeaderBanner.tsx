@@ -13,6 +13,8 @@ const HeaderBanner = ({ imgSrc, title, text }: any) => {
           alt="Background Image"
           className="object-cover object-center w-full h-full"
           priority={true}
+          // width={100}
+          sizes="(min-width: 375px) 425px, "
         />
         <div className="absolute inset-0 bg-black opacity-60"></div>
       </div>

@@ -14,6 +14,7 @@ const WebDevelopment = () => {
           width={1200}
           height={100}
           alt="blog image"
+          priority={true}
         />
         <div className="max-w-7xl mx-auto">
           <div className="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">

@@ -35,7 +35,7 @@ export const WebFeaturesData = [
     heading: "Custom Website Design",
     paragraph:
       "Every business is unique, and so should be its website. Our custom web design services ensure your site reflects your brand identity and engages your audience.",
-    image: "/web-dev-service-1.svg",
+    image: "/web-dev-service-1-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -55,7 +55,7 @@ export const WebFeaturesData = [
     heading: "High-Performance Development",
     paragraph:
       "We build websites with speed, security, and scalability in mind, ensuring optimal performance.",
-    image: "/web-dev-service-2.svg",
+    image: "/web-dev-service-2-min.jpg",
     isReversed: true,
     bullets: [
       {
@@ -75,7 +75,7 @@ export const WebFeaturesData = [
     heading: "SEO & Digital Growth",
     paragraph:
       "A great website needs visibility. We implement SEO best practices to help you rank higher on search engines.",
-    image: "/web-dev-service-3.svg",
+    image: "/web-dev-service-3-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -95,7 +95,7 @@ export const WebFeaturesData = [
     heading: "E-Commerce & CMS Solutions",
     paragraph:
       "We empower businesses with seamless e-commerce and content management systems for smooth operations.",
-    image: "/web-dev-service-4.svg",
+    image: "/web-dev-service-4-min.jpg",
     isReversed: true,
     bullets: [
       {

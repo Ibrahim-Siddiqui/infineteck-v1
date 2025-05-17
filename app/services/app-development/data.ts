@@ -35,7 +35,7 @@ export const AppFeaturesData = [
     heading: "Native & Cross-Platform Development",
     paragraph:
       "We develop high-performance mobile apps for both iOS and Android, ensuring seamless user experiences across devices.",
-    image: "/app-dev-service-1.svg",
+    image: "/app-dev-service-1-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -55,7 +55,7 @@ export const AppFeaturesData = [
     heading: "Scalable & Secure Architecture",
     paragraph:
       "Our apps are built with robust security and scalability, ensuring smooth performance as your business grows.",
-    image: "/app-dev-service-2.svg",
+    image: "/app-dev-service-2-min.jpg",
     isReversed: true,
     bullets: [
       {

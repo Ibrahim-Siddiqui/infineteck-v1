@@ -66,6 +66,7 @@ const Blog = () => {
                   className="h-48 w-full object-cover"
                   width={500}
                   height={100}
+                  priority={true} 
                   src="/web-development-blog.png"
                   alt=""
                 />
@@ -94,6 +95,7 @@ const Blog = () => {
                   height={100}
                   src="/gen-ai-blog.png"
                   alt=""
+                  priority={true} 
                 ></Image>
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
@@ -120,6 +122,7 @@ const Blog = () => {
                   height={100}
                   src="/integration-blog.png"
                   alt=""
+                  priority={true} 
                 ></Image>
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">

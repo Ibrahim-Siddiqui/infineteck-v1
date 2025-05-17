@@ -13,6 +13,7 @@ const PageBanner = ({ imgSrc, heading, text }: any) => {
           alt="Background Image"
           className="object-cover object-center w-full h-full"
           priority={true}
+          width={600}
         />
         <div className="absolute inset-0 bg-black opacity-70"></div>
       </div>

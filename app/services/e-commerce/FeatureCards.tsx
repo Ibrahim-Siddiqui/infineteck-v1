@@ -20,19 +20,19 @@ const FeatureCards = () => {
       id: 1,
       name: "WooCommerce Development",
       desc: "Build flexible and scalable WooCommerce stores with seamless WordPress integration.",
-      icon: <Image src="/woo-logo.svg" width={48} height={48} sizes="48" alt="woo-commerce logo"/>,
+      icon: <Image src="/woo-logo.svg" width={48} height={48} sizes="48" priority={true} alt="woo-commerce logo"/>,
     },
     {
       id: 2,
       name: "Shopify Store Setup",
       desc: "Launch high-converting Shopify stores with optimized user experiences.",
-      icon: <Image src="/shopify-logo.svg" width={48} height={48} sizes="48" alt="woo-commerce logo"/>,
+      icon: <Image src="/shopify-logo.svg" width={48} height={48} sizes="48" priority={true}  alt="woo-commerce logo"/>,
     },
     {
       id: 3,
       name: "Custom E-Commerce Development",
       desc: "Create unique online stores with tailored features and advanced functionalities.",
-      icon: <ShoppingCart  size={48} />,
+      icon: <ShoppingCart size={48} />,
     },
     {
       id: 4,
