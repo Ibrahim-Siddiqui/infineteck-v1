@@ -64,7 +64,7 @@ const OurPartners = () => {
           {partners.map((partner) => (
             <CarouselItem key={partner.id} className="basis-1/3 md:basis-1/4 ">
               <div className="flex justify-center items-end rounded-lg">
-                <Image src={partner.img} width={150} height={50} alt="logo" />
+                <Image src={partner.img} width={150} height={50} alt="logo" priority={true} />
               </div>
             </CarouselItem>
           ))}
@@ -88,7 +88,7 @@ const OurPartners = () => {
           {partners.map((partner) => (
             <CarouselItem key={partner.id} className="basis-1/3 md:basis-1/4 ">
               <div className="flex justify-center items-start rounded-lg ">
-                <Image src={partner.img} width={150} height={50} alt="logo" />
+                <Image src={partner.img} width={150} height={50} alt="logo" priority={true} />
               </div>
             </CarouselItem>
           ))}

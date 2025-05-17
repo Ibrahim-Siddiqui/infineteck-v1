@@ -9,6 +9,8 @@ const Hero = () => {
           src={bgImg}
           alt="Background Image"
           className="object-cover object-center w-full h-full"
+          sizes=""
+          priority={true}
         />
         <div className="absolute inset-0 bg-black opacity-70"></div>
       </div>

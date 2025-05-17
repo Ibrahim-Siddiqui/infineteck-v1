@@ -1,5 +1,5 @@
 import React from "react";
-import headerImg from "@/public/web-dev-service.jpg";
+import headerImg from "@/public/web-dev-service-min.jpg";
 import Image, { StaticImageData } from "next/image";
 export type ImageCardProps = {
   imageSrc: StaticImageData;
@@ -12,6 +12,7 @@ const HeaderBanner = ({ imgSrc, title, text }: any) => {
           src={imgSrc}
           alt="Background Image"
           className="object-cover object-center w-full h-full"
+          priority={true}
         />
         <div className="absolute inset-0 bg-black opacity-60"></div>
       </div>

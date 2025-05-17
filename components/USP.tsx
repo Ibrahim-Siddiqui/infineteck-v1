@@ -65,6 +65,7 @@ const USP = () => {
                 height={50}
                 alt="usp image"
                 className="w-[25%]"
+                priority={true}
               />
               <div className="flex flex-col">
                 <h2 className="text-center md:text-left text-lg lg:text-2xl font-bold">

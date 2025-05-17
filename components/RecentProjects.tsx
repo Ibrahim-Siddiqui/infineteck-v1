@@ -38,6 +38,7 @@ const RecentProjects = () => {
                   height={500}
                   alt="cover"
                   className="z-10 absolute bottom-0"
+                  sizes="(max-width)"
                 />
               </div>
 

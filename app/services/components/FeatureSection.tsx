@@ -74,6 +74,7 @@ const FeatureSection = ({
                   height={200}
                   className="rounded-b-lg lg:rounded-none"
                   alt="Image representing a feature"
+                  priority={true}
                 />
               </div>
             </div>
@@ -105,6 +106,7 @@ const FeatureSection = ({
                   height={100}
                   className="rounded-t-lg lg:rounded-none"
                   alt="Image representing a feature"
+                  priority={true}
                 />
               </div>
               {/* rounded-lg shadow-md shadow-accent-color border border-accent-color */}
