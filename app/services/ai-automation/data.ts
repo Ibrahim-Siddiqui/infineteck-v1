@@ -35,7 +35,7 @@ export const AIFeaturesData = [
     heading: "AI Chatbots & Virtual Assistants",
     paragraph:
       "Enhance customer experience with intelligent chatbots that provide instant support.",
-    image: "/ai-automation-service-1.jpg",
+    image: "/ai-automation-service-1-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -55,7 +55,7 @@ export const AIFeaturesData = [
     heading: "Business Process Automation",
     paragraph:
       "Optimize workflows by automating repetitive tasks to save time and resources.",
-    image: "/ai-automation-service-2.jpg",
+    image: "/ai-automation-service-2-min.jpg",
     isReversed: true,
     bullets: [
       {
@@ -75,7 +75,7 @@ export const AIFeaturesData = [
     heading: "AI-Powered Analytics & Insights",
     paragraph:
       "Make informed decisions with AI-driven data analysis and predictive insights.",
-    image: "/ai-automation-service-3.jpg",
+    image: "/ai-automation-service-3-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -95,7 +95,7 @@ export const AIFeaturesData = [
     heading: "AI-Driven Marketing & Sales Optimization",
     paragraph:
       "Boost revenue with AI-powered marketing strategies that maximize customer engagement.",
-    image: "/ai-automation-service-4.jpg",
+    image: "/ai-automation-service-4-min.jpg",
     isReversed: true,
     bullets: [
       {

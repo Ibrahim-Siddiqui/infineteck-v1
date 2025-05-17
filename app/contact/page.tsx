@@ -5,7 +5,7 @@ import { useState } from "react";
 import { MultiValue } from "react-select";
 import NewNavbar from "@/components/NewNavbar";
 import PageBanner from "@/components/PageBanner";
-import bannerImg from "@/public/contact-banner.jpg";
+import bannerImg from "@/public/contact-banner-min.jpg";
 import { formRequest } from "./components/FormRequest";
 
 // export interface formDataType

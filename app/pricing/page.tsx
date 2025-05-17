@@ -15,7 +15,7 @@ import Plans from "./components/Plans";
 import NewNavbar from "@/components/NewNavbar";
 import Footer from "@/components/Footer";
 import PageBanner from "@/components/PageBanner";
-import bannerImg from "@/public/pricing-banner.jpg";
+import bannerImg from "@/public/pricing-banner-min.jpg";
 
 const PricingPage = () => {
   const [webDev, setWebDev] = useState(true);

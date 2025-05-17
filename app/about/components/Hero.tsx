@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import bgImg from "@/public/handshake.jpg";
+import bgImg from "@/public/handshake-min.jpg";
 const Hero = () => {
   return (
     <div className="relative w-scren h-screen sm:h-[60vh] xl:h-[70vh] text-white overflow-hidden">

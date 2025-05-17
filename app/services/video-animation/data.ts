@@ -35,7 +35,7 @@ export const AnimationFeaturesData = [
     heading: "2D Animation & Motion Graphics",
     paragraph:
       "Engage your audience with dynamic 2D animations that bring your ideas to life.",
-    image: "/video-editing-service-1.jpg",
+    image: "/video-editing-service-1-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -55,7 +55,7 @@ export const AnimationFeaturesData = [
     heading: "3D Animation & Visual Effects (VFX)",
     paragraph:
       "Create immersive and realistic visuals with cutting-edge 3D animation and effects.",
-    image: "/video-editing-service-2.jpg",
+    image: "/video-editing-service-2-min.jpg",
     isReversed: true,
     bullets: [
       {
@@ -75,7 +75,7 @@ export const AnimationFeaturesData = [
     heading: "Professional Video Editing",
     paragraph:
       "Enhance your footage with seamless edits, transitions, and effects for a polished look.",
-    image: "/video-editing-service-3.jpg",
+    image: "/video-editing-service-3-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -95,7 +95,7 @@ export const AnimationFeaturesData = [
     heading: "Corporate & Social Media Video Production",
     paragraph:
       "Boost engagement with professionally crafted videos for social media and corporate use.",
-    image: "/video-editing-service-4.jpg",
+    image: "/video-editing-service-4-min.jpg",
     isReversed: true,
     bullets: [
       {

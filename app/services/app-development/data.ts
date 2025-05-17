@@ -75,7 +75,7 @@ export const AppFeaturesData = [
     heading: "Engaging UI/UX Design",
     paragraph:
       "User experience is key to success. We craft intuitive and visually appealing app interfaces.",
-    image: "/app-dev-service-3.jpg",
+    image: "/app-dev-service-3-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -95,7 +95,7 @@ export const AppFeaturesData = [
     heading: "API & Third-Party Integrations",
     paragraph:
       "Enhance functionality with seamless integrations, from payment gateways to AI-based features.",
-    image: "/app-dev-service-4.jpg",
+    image: "/app-dev-service-4-min.jpg",
     isReversed: true,
     bullets: [
       {

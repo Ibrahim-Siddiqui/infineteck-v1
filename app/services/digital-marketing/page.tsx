@@ -1,6 +1,6 @@
 "use client";
 import HeaderBanner from "../components/HeaderBanner";
-import headerImg from "@/public/marketing-service.jpg";
+import headerImg from "@/public/marketing-service-min.jpg";
 import VideoSection from "../components/VideoSection";
 import NewNavbar from "@/components/NewNavbar";
 import Footer from "@/components/Footer";

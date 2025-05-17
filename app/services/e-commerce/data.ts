@@ -35,7 +35,7 @@ export const EcommerceFeaturesData = [
     heading: "WooCommerce Development",
     paragraph:
       "Create flexible and scalable WooCommerce stores with seamless WordPress integration.",
-    image: "/e-commerce-service-1.png",
+    image: "/e-commerce-service-1-min.png",
     isReversed: false,
     bullets: [
       {
@@ -55,7 +55,7 @@ export const EcommerceFeaturesData = [
     heading: "Shopify Store Setup",
     paragraph:
       "Build feature-rich online stores tailored to unique business needs.",
-    image: "/e-commerce-service-2.jpg",
+    image: "/e-commerce-service-2-min.jpg",
     isReversed: true,
     bullets: [
       {
@@ -75,7 +75,7 @@ export const EcommerceFeaturesData = [
     heading: "Performance & SEO Optimization",
     paragraph:
       "Enhance store performance and boost search engine rankings for higher conversions.",
-    image: "/e-commerce-service-3.jpg",
+    image: "/e-commerce-service-3-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -95,7 +95,7 @@ export const EcommerceFeaturesData = [
     heading: "Custom E-Commerce Development",
     paragraph:
       "Build feature-rich online stores tailored to unique business needs.",
-    image: "/e-commerce-service-4.jpg",
+    image: "/e-commerce-service-4-min.jpg",
     isReversed: true,
     bullets: [
       {

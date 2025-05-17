@@ -35,7 +35,7 @@ export const GameFeaturesData = [
     heading: "2D Game Development",
     paragraph:
       "Create visually appealing and engaging 2D games with smooth mechanics and optimized performance.",
-    image: "/game-dev-service-1.jpg",
+    image: "/game-dev-service-1-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -55,7 +55,7 @@ export const GameFeaturesData = [
     heading: "3D Game Development",
     paragraph:
       "Develop stunning 3D worlds with realistic environments and immersive gameplay.",
-    image: "/game-dev-service-2.jpg",
+    image: "/game-dev-service-2-min.jpg",
     isReversed: true,
     bullets: [
       {
@@ -75,7 +75,7 @@ export const GameFeaturesData = [
     heading: "Multiplayer & Cross-Platform Games",
     paragraph:
       "Build interactive multiplayer experiences compatible across various devices.",
-    image: "/game-dev-service-3.jpg",
+    image: "/game-dev-service-3-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -95,7 +95,7 @@ export const GameFeaturesData = [
     heading: "Game Monetization & Optimization",
     paragraph:
       "Maximize revenue opportunities and optimize game performance for a wider audience.",
-    image: "/game-dev-service-4.jpg",
+    image: "/game-dev-service-4-min.jpg",
     isReversed: true,
     bullets: [
       {

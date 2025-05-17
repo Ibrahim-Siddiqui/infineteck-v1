@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Footer from "@/components/Footer";
-import bannerImg from "@/public/portfolio-banner.jpg";
+import bannerImg from "@/public/portfolio-banner-min.jpg";
 import { FocusCards } from "@/components/ui/FocusCards";
 import { VideoCards } from "@/components/ui/VideoCards";
 import {

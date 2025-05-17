@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import bannerImg from "@/public/blog-banner.jpg"
+import bannerImg from "@/public/blog-banner-min.jpg"
 import NewNavbar from "@/components/NewNavbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";

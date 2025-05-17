@@ -35,7 +35,7 @@ export const AppFeaturesData = [
     heading: "Search Engine Optimization",
     paragraph:
       "Boost your website’s visibility and attract organic traffic with our expert SEO strategies.",
-    image: "/marketing-service-1.jpg",
+    image: "/marketing-service-1-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -55,7 +55,7 @@ export const AppFeaturesData = [
     heading: "Social Media Marketing & Ads",
     paragraph:
       "Engage your audience and drive conversions with targeted social media campaigns.",
-    image: "/marketing-service-2.jpg",
+    image: "/marketing-service-2-min.jpg",
     isReversed: true,
     bullets: [
       {
@@ -75,7 +75,7 @@ export const AppFeaturesData = [
     heading: "Content Marketing & Brand Storytelling",
     paragraph:
       "Tell your brand’s story with compelling content that builds trust and authority.",
-    image: "/marketing-service-3.jpg",
+    image: "/marketing-service-3-min.jpg",
     isReversed: false,
     bullets: [
       {
@@ -95,7 +95,7 @@ export const AppFeaturesData = [
     heading: "Brand Identity & Design",
     paragraph:
       "Create a strong and memorable brand identity with unique designs and branding strategies.",
-    image: "/marketing-service-4.jpg",
+    image: "/marketing-service-4-min.jpg",
     isReversed: true,
     bullets: [
       {
