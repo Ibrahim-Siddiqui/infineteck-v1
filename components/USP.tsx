@@ -115,6 +115,7 @@ const USP = () => {
             <div className="my-[5%]">
               <Link
                 href="/contact"
+                prefetch={false}
                 className=" text-xl rounded-lg border-2 border-accent-color px-4 py-2 text-white transition-all duration-300 bg-primary-color hover:scale-105"
               >
                 Let&apos;s Elevate Your Business

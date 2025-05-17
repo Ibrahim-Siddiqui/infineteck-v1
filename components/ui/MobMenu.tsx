@@ -66,6 +66,7 @@ export default function MobMenu({ Menus }: any) {
                           <Link
                             key={name}
                             href={link}
+                            prefetch={false}
                             className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                           >
                             <Icon size={17} />
@@ -77,7 +78,7 @@ export default function MobMenu({ Menus }: any) {
                   </li>
                 </div>
               ) : (
-                <Link href={link} key={name}>
+                <Link href={link} prefetch={false} key={name}>
                   <li className="">
                     <span
                       className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
@@ -93,6 +94,7 @@ export default function MobMenu({ Menus }: any) {
           <div className="lg:hidden">
             <Link
               href="/blog"
+              prefetch={false}
               aria-label="sign-in"
               className="text-primary-color text-md text-center px-4 py-2 my-5 shadow rounded-lg border-2 border-primary-color hover:bg-primary-color hover:text-white hover:scale-105 transition-all duration-300 flex justify-center"
             >
@@ -100,6 +102,7 @@ export default function MobMenu({ Menus }: any) {
             </Link>
             <Link
               href="/contact"
+              prefetch={false}
               aria-label="sign-in"
               className="bg-primary-color text-white text-md text-center px-4 py-2 my-5 shadow rounded-lg border-2 border-primary-color hover:scale-105 transition-all duration-300 flex justify-center"
             >

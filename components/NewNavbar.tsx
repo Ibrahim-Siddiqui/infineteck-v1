@@ -22,6 +22,7 @@ const NewNavbar = () => {
           <div className="hidden lg:flex-center gap-x-5">
             <Link
             href="/blog"
+            prefetch={false}
               aria-label="sign-in"
               className="relative text-primary-color text-md px-4 py-2 shadow rounded-lg border-2 border-primary-color hover:bg-primary-color hover:text-white hover:scale-105 transition-all duration-300 flex-center"
             >
@@ -29,6 +30,7 @@ const NewNavbar = () => {
             </Link>
             <Link
             href="/contact"
+            prefetch={false}
               aria-label="sign-in"
               className="bg-primary-color text-white text-md z-[999] relative px-4 py-2 shadow rounded-lg border-2 border-primary-color hover:scale-105 transition-all duration-300 flex-center"
             >

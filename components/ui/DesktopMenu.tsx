@@ -70,6 +70,7 @@ export default function DesktopMenu({ menu }: any) {
                   {hasSubMenu &&
                     menu.subMenu.map((submenu: any, i: number) => (
                       <Link
+                      prefetch={false}
                         href={submenu.link}
                         className="cursor-pointer"
                         key={i}
@@ -98,7 +99,7 @@ export default function DesktopMenu({ menu }: any) {
           </motion.li>
         </motion.div>
       ) : (
-        <Link href={menu.link} className="z-[999]">
+        <Link href={menu.link} prefetch={false} className="z-[999]">
           <motion.li
             className="group/link "
             onHoverStart={() => {
