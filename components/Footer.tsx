@@ -11,7 +11,13 @@ const Footer = () => {
       <div className="sm:px-6 text-gray-800 sm:grid md:grid-cols-5 sm:grid-cols-2">
         <div className="p-5 col-span-1 flex flex-col justify-between">
           <div className="">
-            <Image src="/logo.png" width={200} height={200} alt="logo" />
+            <Image
+              src="/logo.png"
+              width={200}
+              height={200}
+              priority={true}
+              alt="logo"
+            />
             <h2 className="my-[5%] text-lg font-semibold">
               Driving Online Success
             </h2>
@@ -20,7 +26,13 @@ const Footer = () => {
             href="https://www.trustpilot.com/review/infineteck.com"
             target="_blank"
           >
-            <Image src="/trust-pilot.png" width={200} height={200} alt="logo" />
+            <Image
+              src="/trust-pilot.png"
+              width={200}
+              height={200}
+              priority={true}
+              alt="logo"
+            />
           </a>
         </div>
         <div className="p-5 col-span-1">
@@ -48,7 +60,7 @@ const Footer = () => {
             Services
           </div>
           <a className="my-3 block" href="/services/web-development">
-            Web  Development
+            Web Development
             <span className="text-teal-600 text-xs p-1"></span>
           </a>
           <a className="my-3 block" href="/services/app-development">
@@ -66,7 +78,7 @@ const Footer = () => {
             Animation - Video Editing{" "}
             <span className="text-teal-600 text-xs p-1"></span>
           </a>
-          
+
           <a className="my-3 block" href="/services/e-commerce">
             E-commerce Solutions{" "}
             <span className="text-teal-600 text-xs p-1"></span>
@@ -105,6 +117,7 @@ const Footer = () => {
               src="/paypal.png"
               width={500}
               height={300}
+              priority={true}
               alt="Paypal Logo"
             />
           </div>
@@ -126,6 +139,7 @@ const Footer = () => {
                 src="/facebook.png"
                 width={200}
                 height={200}
+                priority={true}
                 alt="social-logo"
               />
             </a>
@@ -138,6 +152,7 @@ const Footer = () => {
                 src="/instagram.png"
                 width={200}
                 height={200}
+                priority={true}
                 alt="social-logo"
               />
             </a>
@@ -150,6 +165,7 @@ const Footer = () => {
                 src="/linkedin.png"
                 width={200}
                 height={200}
+                priority={true}
                 alt="social-logo"
               />
             </a>
@@ -158,6 +174,7 @@ const Footer = () => {
                 src="/twitter.png"
                 width={200}
                 height={200}
+                priority={true}
                 alt="social-logo"
               />
             </a>
