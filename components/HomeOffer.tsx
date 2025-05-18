@@ -17,6 +17,7 @@ const offers = [
     name: "Digital Marketing & Branding",
     title: "Branding That Converts",
     desc: "Build unforgettable brands and dominate search engines with data-driven marketing strategies.",
+    link: "/services/digital-marketing",
     icon: <LucideBarChart size={48} />,
   },
   {
@@ -25,6 +26,7 @@ const offers = [
     name: "Website & App Development",
     title: "Future-Ready Websites & Apps",
     desc: "Craft lightning-fast websites and intuitive apps that engage users, boost conversions, and grow your business.",
+    link: "/services/web-development",
     icon: <MonitorSmartphone size={48} />,
   },
   {
@@ -32,6 +34,7 @@ const offers = [
     name: "Game Development",
     title: "Immersive Game Experiences",
     desc: "Design 2D/3D games that captivate audiences, from casual mobile games to high-end console adventures.",
+    link: "/services/game-development",
     icon: <Gamepad2 size={48} />,
   },
   {
@@ -39,6 +42,7 @@ const offers = [
     name: "2D & 3D Animation - Video Editing",
     title: "Animation & Video That Wows",
     desc: "Bring ideas to life with stunning animations and polished video edits.",
+    link: "/services/video-animation",
     icon: <Play size={48} />,
   },
   {
@@ -46,6 +50,7 @@ const offers = [
     name: "E-commerce Solutions",
     title: "E-commerce That Scales",
     desc: "Build high-converting online stores with seamless checkout, smart inventory, and AI-powered insights.",
+    link: "/services/e-commerce",
     icon: <ShoppingCart size={48} />,
   },
   {
@@ -53,6 +58,7 @@ const offers = [
     name: "AI Automation",
     title: "AI-Driven Business Growth",
     desc: "Automate workflows, predict trends, and unlock efficiency with tailor-made AI solutions.",
+    link: "/services/ai-automation",
     icon: <BrainCircuit size={48} />,
   },
 ];
@@ -60,8 +66,9 @@ const offers = [
 const HomeOffer = () => {
   return (
     // bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200
-    
-    <section className=""
+
+    <section
+      className=""
       // initial={{
       //   opacity: 0,
       //   translateY: 100,
@@ -73,7 +80,7 @@ const HomeOffer = () => {
       // transition={{
       //   duration: 0.7,
       // }}
-      
+
       // viewport={{
       //   once: true,
       //   margin: '-250px',
@@ -125,12 +132,14 @@ const OfferItem = ({ item }: any) => {
       {/* <h3 className="mt-[5%] mb-[2%] text-2xl font-semibold">
         {item.title}
       </h3> */}
-      <p className="row-span-3 my-[5%] text-md lg:text-lg tracking-tight">{item.desc}</p>
+      <p className="row-span-3 my-[5%] text-md lg:text-lg tracking-tight">
+        {item.desc}
+      </p>
 
-      {/* <a className="flex gap-2 my-[2%] text-primary-color group-hover:text-inherit font-semibold">
-        Read More
+      <a href={item.link} className="flex gap-2 my-[2%] text-primary-color group-hover:text-inherit font-semibold">
+        Learn More
         <ChevronRight />
-      </a> */}
+      </a>
     </div>
   );
 };
