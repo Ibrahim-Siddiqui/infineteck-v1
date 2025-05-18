@@ -112,13 +112,34 @@ const Footer = () => {
           </a>
         </div>
         <div className="py-5 col-span-1">
-          <div className="flex flex-col justify-end items-end">
+          <div className="flex flex-col justify-end items-center">
             <Image
               src="/paypal.png"
-              width={500}
+              width={300}
               height={300}
               priority={true}
               alt="Paypal Logo"
+            />
+            <Image
+              src="/venmo.png"
+              width={150}
+              height={100}
+              priority={true}
+              alt="Venmo Logo"
+            />
+            <Image
+              src="/stripe.png"
+              width={120}
+              height={100}
+              priority={true}
+              alt="Stripe Logo"
+            />
+            <Image
+              src="/zelle.png"
+              width={120}
+              height={1}
+              priority={true}
+              alt="Zelle Logo"
             />
           </div>
         </div>
