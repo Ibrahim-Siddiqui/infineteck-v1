@@ -39,7 +39,7 @@ export const webDevPlans = [
       "8 Stock images",
       "6 Banner Designs",
       "1 jQuery Slider Banner",
-      "FREE Google Frien,dly Sitemap",
+      "FREE Google Friendly Sitemap",
       "Complete W3C CertifiedHTML",
       "48 to 72 hours TAT",
       "Facebook Page Design",
