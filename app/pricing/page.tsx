@@ -11,6 +11,7 @@ import {
   logoPlans,
   socialPlans,
   googleAdsPlans,
+  uiuxPlans,
 } from "./data";
 import Plans from "./components/Plans";
 import NewNavbar from "@/components/NewNavbar";
@@ -28,6 +29,7 @@ const PricingPage = () => {
   const [shopify, setShopify] = useState(false);
   const [socialMedia, setSocialMedia] = useState(false);
   const [googleAds, setGoogleAds] = useState(false);
+  const [uiux, setUiUx] = useState(false);
 
   const handleButtonClick = (stateSetter: (value: boolean) => void) => {
     setWebDev(false);
@@ -38,7 +40,8 @@ const PricingPage = () => {
     setLogo(false);
     setShopify(false);
     setSocialMedia(false);
-    setGoogleAds(false)
+    setGoogleAds(false);
+    setUiUx(false);
 
     stateSetter(true);
   };
@@ -53,7 +56,8 @@ const PricingPage = () => {
     logo,
     shopify,
     socialMedia,
-    googleAds
+    googleAds,
+    uiux,
   ]);
   return (
     <>
@@ -65,7 +69,7 @@ const PricingPage = () => {
         text="Tailored Plans, Transparent Costs"
       />
 
-      <div className="mt-5 sm:mt-12 mx-2 grid grid-cols-2 gap-2 lg:gap-2 lg:mx-1 lg:flex lg:justify-center lg:flex-wrap text-md lg:text-lg lg:tracking-tighter">
+      <div className="mt-5 sm:mt-12 mx-2 grid grid-cols-2 gap-2 md:grid-rows-2 md:grid-cols-5 lg:mx-4  text-md lg:text-lg lg:tracking-tighter">
         <button
           className="rounded-lg px-2 py-4 text-primary-color transition-all bg-white hover:scale-105  border-2 border-primary-color  hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setWebDev)}
@@ -103,22 +107,28 @@ const PricingPage = () => {
           SEO
         </button>
         <button
-          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className=" rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setBranding)}
         >
           Design & Branding
         </button>
         <button
-          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className=" rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setSocialMedia)}
         >
           Social Media Management
         </button>
         <button
-          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          className=" rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
           onClick={() => handleButtonClick(setGoogleAds)}
         >
           Google Ads (PPC)
+        </button>
+        <button
+          className=" rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+          onClick={() => handleButtonClick(setUiUx)}
+        >
+          UI/UX
         </button>
       </div>
 
@@ -131,6 +141,7 @@ const PricingPage = () => {
       {logo ? <Plans plans={logoPlans} /> : <></>}
       {socialMedia ? <Plans plans={socialPlans} /> : <></>}
       {googleAds ? <Plans plans={googleAdsPlans} /> : <></>}
+      {uiux ? <Plans plans={uiuxPlans} /> : <></>}
 
       <Footer />
     </>
