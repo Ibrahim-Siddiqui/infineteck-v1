@@ -62,33 +62,44 @@ const Plans = ({ plans }: any) => {
                   </span>
                 </p>
               )}
+              {plan.savings && (
+                <p className="text-lg font-medium text-gray-900 sm:text-xl">
+                  {plan.savings}
+                </p>
+              )}
             </div>
 
-            <div className="p-6 sm:px-8">
+            <div className="p-6 sm:px-8 h-full">
               <p className="text-lg font-medium text-gray-900 sm:text-xl">
-                What's included:
+                {plan.inclusion}
               </p>
 
-              <ul className="mt-2 space-y-2 sm:mt-4 max-h-[50vh] overflow-y-scroll">
+              <ul className="mt-2 space-y-2 sm:mt-4 h-full max-h-[60vh] overflow-x-auto overflow-y-auto"
+              style={{scrollbarWidth: 'thin', scrollbarColor: '#1c3be9 white'}}>
                 {plan.features.map((feature: any) => (
+                    
                   <li key={feature} className="flex items-center gap-1">
+                    {feature[0] !== "\t" && 
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="size-5 text-indigo-700"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-5 text-indigo-700"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         d="M4.5 12.75l6 6 9-13.5"
-                      />
+                        />
                     </svg>
+                    }
 
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-gray-700 whitespace-pre">{feature}</span>
+                    
                   </li>
+                  
                 ))}
               </ul>
             </div>
