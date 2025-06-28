@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+
+    "export": "next build && next export"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
