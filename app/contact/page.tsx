@@ -133,7 +133,7 @@ const Home = () => {
                 </div>
                 <div className="flex gap-5 w-8 ">
                   <img src="/telephone.png" className="icon" alt="" />
-                  <p>+44 7463 836597</p>
+                  <p>+447463836597</p>
                 </div>
               </div>
 
