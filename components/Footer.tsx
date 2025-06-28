@@ -108,7 +108,7 @@ const Footer = () => {
             <span className="text-teal-800 text-xs py-1">
               <Phone />
             </span>
-            +44 7463 836597
+            +447463836597
           </a>
         </div>
         <div className="py-5 col-span-1">
