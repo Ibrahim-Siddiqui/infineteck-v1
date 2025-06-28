@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://infineteck.com
+
+# Sitemaps
+Sitemap: https://infineteck.com/sitemap.xml

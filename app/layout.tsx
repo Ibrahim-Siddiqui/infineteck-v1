@@ -42,7 +42,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Infineteck",
-  description: "Infineteck's Landing Page and Portfolio",
+  description: "Infineteck's Software Services Website",
 };
 
 export default function RootLayout({
