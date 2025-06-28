@@ -53,6 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="zCC_O2GN7tu6YjjwU5UJZQPoZejvgn1SbZvy8quCGv8" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
         <Script id="facebook-pixel" strategy="afterInteractive">
