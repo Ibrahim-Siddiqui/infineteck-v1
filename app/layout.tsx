@@ -41,8 +41,8 @@ const open_sans = Open_Sans({
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Infineteck",
-  description: "Infineteck's Software Services Website",
+  title: "Digital Marketing, E-commerce & AI Development Experts | Infineteck",
+  description: "Infineteck delivers expert web and app development, AI automation, digital marketing, and e-commerce solutions to help startups and enterprises grow online in the UK, USA, UAE, and globally.",
 };
 
 export default function RootLayout({
