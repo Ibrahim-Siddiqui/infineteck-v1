@@ -43,6 +43,31 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Digital Marketing, E-commerce & AI Development Experts | Infineteck",
   description: "Infineteck delivers expert web and app development, AI automation, digital marketing, and e-commerce solutions to help startups and enterprises grow online in the UK, USA, UAE, and globally.",
+  openGraph: {
+    title: 'Infineteck',
+    description: 'Digital Marketing, E-commerce & AI Development Experts',
+    url: 'https://www.infineteck.com/',
+    siteName: 'Infineteck',
+    images: [
+      {
+        url: '',
+        width: 1200,
+        height: 630,
+        alt: 'Infineteck Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   title: 'Your Twitter Title',
+  //   description: 'Your Twitter description',
+  //   images: ['https://yourdomain.com/twitter-image.jpg'],
+  //   site: '@yourTwitterHandle',
+  //   creator: '@yourTwitterHandle',
+  // },
+
 };
 
 export default function RootLayout({
@@ -55,7 +80,7 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="zCC_O2GN7tu6YjjwU5UJZQPoZejvgn1SbZvy8quCGv8" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-
+        
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
