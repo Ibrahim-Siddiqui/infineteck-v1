@@ -3,7 +3,7 @@ export const EcommerceVideoData = [
     heading: "Powerful E-Commerce Solutions for Your Business",
     paragraph:
       "We create high-performing e-commerce stores using WooCommerce, Shopify, and custom development to drive sales and enhance user experience.",
-    video: "fEfGmLae6x4",
+    video: "tsGEaHUAVrE",
     bullets: [
       {
         id: 1,

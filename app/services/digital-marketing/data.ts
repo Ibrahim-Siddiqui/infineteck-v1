@@ -3,7 +3,7 @@ export const MarketingVideoData = [
     heading: "Boost Your Brand with Expert Digital Marketing & Branding",
     paragraph:
       "Maximize your online presence with our data-driven digital marketing and branding strategies. We help businesses grow, engage their audience, and drive conversions.",
-    video: "KRiI6ElV6gM",
+    video: "nLeWHDVKRQA",
     bullets: [
       {
         id: 1,
