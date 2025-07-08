@@ -47,7 +47,7 @@ const Plans = ({ plans }: any) => {
                 </strong>
 
                 <span className="text-sm font-medium text-gray-700">
-                  /month
+                
                 </span>
               </p>
               {plan.originalPrice && (
@@ -58,7 +58,7 @@ const Plans = ({ plans }: any) => {
                   </strong>
 
                   <span className="text-sm font-medium text-gray-700">
-                    /month
+                    
                   </span>
                 </p>
               )}

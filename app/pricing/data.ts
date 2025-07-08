@@ -462,7 +462,7 @@ export const seoPlans = [
   {
     id: 1,
     title: "BASIC SEO PACKAGE",
-    discountedPrice: "$499",
+    discountedPrice: "$499 /month",
     originalPrice: "$1,499",
     addOn: "Perfect for new organizations or small startups",
     savings: "(Quarterly: $1,199 – Save $299)",
@@ -498,7 +498,7 @@ export const seoPlans = [
   {
     id: 2,
     title: "STANDARD SEO PACKAGE",
-    discountedPrice: "$599",
+    discountedPrice: "$599 /month",
     originalPrice: "$1,799",
     addOn: "Tailored for well-established businesses",
     savings: "(Quarterly: $1,499.99 – Save $299.98)",
@@ -516,7 +516,7 @@ export const seoPlans = [
   {
     id: 3,
     title: "PREMIUM SEO PACKAGE",
-    discountedPrice: "$799.99",
+    discountedPrice: "$799 /month",
     originalPrice: "$2,399",
     addOn: "Ideal for enterprises & high-competition industries",
     savings: "(Quarterly: $1,999.99 – Save $399)",
@@ -601,7 +601,7 @@ export const socialPlans = [
   {
     id: 1,
     title: "BASIC SMM PACKAGE",
-    discountedPrice: "$549",
+    discountedPrice: "$549 /month",
     originalPrice: "$1,647",
     inclusion: "What's Included:",
     savings: "(Quarterly: $1399.00 – Save $248.00)",
@@ -652,7 +652,7 @@ export const socialPlans = [
   {
     id: 3,
     title: "STANDARD SMM PACKAGE",
-    discountedPrice: "$749",
+    discountedPrice: "$749 /month",
     originalPrice: "$2,247",
     addOn: "Social media solutions for well-established businesses",
     savings: "(Quarterly: $1,999.00 – Save $248.00)",
@@ -670,7 +670,7 @@ export const socialPlans = [
   {
     id: 4,
     title: "PREMIUM SMM PACKAGE",
-    discountedPrice: "$949.00",
+    discountedPrice: "$949 /month",
     originalPrice: "$2,847",
     addOn: "Ideal for enterprises & high-growth brands",
     inclusion: "Includes everything in Standard, plus:",
@@ -689,7 +689,7 @@ export const googleAdsPlans = [
   {
     id: 1,
     title: "Basic PPC Package",
-    discountedPrice: "$999",
+    discountedPrice: "$999 /month",
     originalPrice: "",
     inclusion: "What's included:",
     addOn: "Ideal for small businesses starting with paid advertising.",
@@ -734,7 +734,7 @@ export const googleAdsPlans = [
   {
     id: 3,
     title: "Standard PPC Package",
-    discountedPrice: "$1599",
+    discountedPrice: "$1599 /month",
     originalPrice: "",
     inclusion: "Includes Everything in Basic, plus:",
     addOn: "Best for growing businesses looking to scale and improve ROI",
@@ -756,7 +756,7 @@ export const googleAdsPlans = [
   {
     id: 4,
     title: "Premium PPC Package",
-    discountedPrice: "$2499",
+    discountedPrice: "$2499 /month",
     originalPrice: "",
     inclusion: "Includes Everything in Standard, plus:",
     addOn: "Built for established businesses that need aggressive PPC growth",
