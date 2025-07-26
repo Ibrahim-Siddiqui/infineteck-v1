@@ -42,22 +42,23 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Digital Marketing, E-commerce & AI Development Experts | Infineteck",
-  description: "Infineteck delivers expert web and app development, AI automation, digital marketing, and e-commerce solutions to help startups and enterprises grow online in the UK, USA, UAE, and globally.",
+  description:
+    "Infineteck delivers expert web and app development, AI automation, digital marketing, and e-commerce solutions to help startups and enterprises grow online in the UK, USA, UAE, and globally.",
   openGraph: {
-    title: 'Infineteck',
-    description: 'Digital Marketing, E-commerce & AI Development Experts',
-    url: 'https://www.infineteck.com/',
-    siteName: 'Infineteck',
+    title: "Infineteck | Marketing, E-commerce & AI Development Experts",
+    description: "Digital Marketing, E-commerce & AI Development Experts",
+    url: "https://www.infineteck.com/",
+    siteName: "Infineteck",
     images: [
       {
-        url: '',
+        url: "",
         width: 1200,
         height: 630,
-        alt: 'Infineteck Logo',
+        alt: "Infineteck Logo",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   // twitter: {
   //   card: 'summary_large_image',
@@ -67,7 +68,6 @@ export const metadata: Metadata = {
   //   site: '@yourTwitterHandle',
   //   creator: '@yourTwitterHandle',
   // },
-
 };
 
 export default function RootLayout({
@@ -78,10 +78,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="google-site-verification" content="zCC_O2GN7tu6YjjwU5UJZQPoZejvgn1SbZvy8quCGv8" />
+        <meta
+          name="google-site-verification"
+          content="zCC_O2GN7tu6YjjwU5UJZQPoZejvgn1SbZvy8quCGv8"
+        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        
-        <Script id="facebook-pixel" strategy="afterInteractive">
+
+        <Script id="facebook-pixel" strategy="afterInteractive" defer>
           {`
             !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -95,6 +98,30 @@ fbq('init', '1135041898668208');
 fbq('track', 'PageView');
           `}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Infineteck",
+              url: "https://www.infineteck.com",
+              logo: "",
+              sameAs: [
+                "https://www.facebook.com/people/Infineteck/61569356296437",
+                "https://www.instagram.com/infineteck/",
+                "https://www.linkedin.com/company/infineteck",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+44-7463-836-597",
+                contactType: "customer service",
+                areaServed: "Worldwide",
+                availableLanguage: "English",
+              },
+            }),
+          }}
+        />
       </head>
       <body className={poppins.className}>
         {/* <NewNavbar /> */}
