@@ -48,7 +48,7 @@ export const FloatingNav = ({
     <nav className="sticky top-0 bg-white shadow-md flex lg:flex lg:justify-between z-[1]">
       <div className={`container py-2 lg:flex justify-between`}>
         <Link href="/" className="text-xl font-light capitalcase flex items-center">
-          <Image src="/logo.png" width={50} height={50} alt="cosmic jewels logo"/>
+          <Image src="/logo.png" width={50} height={50} alt=" "/>
           {/* Cosmic Jewels */}
         </Link>
         

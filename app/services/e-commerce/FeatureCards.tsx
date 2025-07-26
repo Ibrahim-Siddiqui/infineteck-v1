@@ -20,13 +20,31 @@ const FeatureCards = () => {
       id: 1,
       name: "WooCommerce Development",
       desc: "Build flexible and scalable WooCommerce stores with seamless WordPress integration.",
-      icon: <Image src="/woo-logo.svg" width={48} height={48} sizes="48" priority={true} alt="woo-commerce logo"/>,
+      icon: (
+        <Image
+          src="/woo-logo.svg"
+          width={48}
+          height={48}
+          sizes="48"
+          priority={true}
+          alt="woo-commerce logo"
+        />
+      ),
     },
     {
       id: 2,
       name: "Shopify Store Setup",
       desc: "Launch high-converting Shopify stores with optimized user experiences.",
-      icon: <Image src="/shopify-logo.svg" width={48} height={48} sizes="48" priority={true}  alt="woo-commerce logo"/>,
+      icon: (
+        <Image
+          src="/shopify-logo.svg"
+          width={48}
+          height={48}
+          sizes="48"
+          priority={true}
+          alt="shopify logo"
+        />
+      ),
     },
     {
       id: 3,
@@ -38,19 +56,19 @@ const FeatureCards = () => {
       id: 4,
       name: "Payment Gateway Integration",
       desc: "Enable secure, fast, and reliable payment processing for smooth transactions.",
-      icon: <HandCoins  size={48} />,
+      icon: <HandCoins size={48} />,
     },
     {
       id: 5,
       name: "SEO & Performance Optimization",
       desc: "Enhance speed, user experience, and search engine rankings for better conversions.",
-      icon: <Gauge  size={48} />,
+      icon: <Gauge size={48} />,
     },
     {
       id: 5,
       name: "Multi-Vendor Marketplace",
       desc: "Develop a feature-rich marketplace supporting multiple sellers and seamless transactions.",
-      icon: <Store  size={48} />,
+      icon: <Store size={48} />,
     },
   ];
 
