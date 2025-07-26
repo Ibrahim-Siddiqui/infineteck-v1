@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Infineteck",
     images: [
       {
-        url: "",
+        url: "https://www.infineteck.com/logo.png",
         width: 1200,
         height: 630,
         alt: "Infineteck Logo",
@@ -106,7 +106,7 @@ fbq('track', 'PageView');
               "@type": "Organization",
               name: "Infineteck",
               url: "https://www.infineteck.com",
-              logo: "",
+              logo: "https://www.infineteck.com/logo.png",
               sameAs: [
                 "https://www.facebook.com/people/Infineteck/61569356296437",
                 "https://www.instagram.com/infineteck/",
