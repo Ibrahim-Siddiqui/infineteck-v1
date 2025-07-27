@@ -1,6 +1,7 @@
 import Select from "react-select";
 import { useState } from "react";
 import { MultiValue } from "react-select";
+import Image from "next/image";
 
 const ContactForm = () => {
   type OptionType = {
@@ -75,18 +76,18 @@ const ContactForm = () => {
             {/* grid grid-rows-4 row-auto space-y-5 */}
             <div className="grid grid-rows-4 row-auto space-y-5 my-5">
               <div className="flex gap-5 h-6 row-span-2 sm:row-span-1">
-                <img src="/map.png" className="icon" alt="" />
+                <Image src="/map.png" className="icon" alt="" />
                 <p>
                   60 James Carter Road, Mildenhall, Bury St. Edmunds, England,
                   IP28 7DE
                 </p>
               </div>
               <div className="flex gap-5 w-8 ">
-                <img src="/gmail.png" className="icon" alt="" />
+                <Image src="/gmail.png" className="icon" alt="" />
                 <p>info@infineteck.com</p>
               </div>
               <div className="flex gap-5 w-8 ">
-                <img src="/telephone.png" className="icon" alt="" />
+                <Image src="/telephone.png" className="icon" alt="" />
                 <p>+4474638365597</p>
               </div>
             </div>
@@ -95,16 +96,16 @@ const ContactForm = () => {
               <p>Connect with us :</p>
               <div className="flex gap-5 py-5">
                 <a href="#">
-                  <img src="/twitter.png" className="icon" alt="" />
+                  <Image src="/twitter.png" className="icon" alt="" />
                 </a>
                 <a href="https://www.linkedin.com/company/infineteck/">
-                  <img src="/linkedin.png" className="icon" alt="" />
+                  <Image src="/linkedin.png" className="icon" alt="" />
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL">
-                  <img src="/facebook.png" className="icon" alt="" />
+                  <Image src="/facebook.png" className="icon" alt="" />
                 </a>
                 <a href="https://www.instagram.com/infineteck/profilecard/?igsh=dnR6c2FjNjJjcWE2">
-                  <img src="/instagram.png" className="icon" alt="" />
+                  <Image src="/instagram.png" className="icon" alt="" />
                 </a>
               </div>
             </div>

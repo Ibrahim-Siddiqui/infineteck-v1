@@ -39,6 +39,7 @@ const open_sans = Open_Sans({
 });
 // const hevdig = Hedvig_Letters_Sans({ subsets: ["latin"], weight: ["400"] });
 import Script from "next/script";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Infineteck | Marketing, E-commerce & AI Development Experts",
@@ -135,7 +136,7 @@ fbq('track', 'PageView');
         > */}
         {children}
         <noscript>
-          <img
+          <Image
             height="1"
             width="1"
             style={{ display: "none" }}

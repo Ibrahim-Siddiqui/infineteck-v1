@@ -4,6 +4,7 @@ import DesktopMenu from './ui/DesktopMenu'
 import MobMenu from './ui/MobMenu'
 import { Menus } from '@/data'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const NewNavbar = () => {
   return (
@@ -11,7 +12,7 @@ const NewNavbar = () => {
       <header className="h-16 text-[15px] fixed inset-0 flex-center shadow-lg bg-white z-[99]">
         <nav className=" px-3.5 flex-center-between w-full max-w-7xl mx-auto z-[99]">
           <div className="flex-center gap-x-3 z-[999] relative">
-            <img src="/logo.png" width={150} height={100} alt=" " className="w-[150px] md:w-[200px]"/>
+            <Image src="/logo.png" width={150} height={100} alt=" " className="w-[150px] md:w-[200px]"/>
           </div>
 
           <ul className="gap-x-1 lg:flex-center hidden">
