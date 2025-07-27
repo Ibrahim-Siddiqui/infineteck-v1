@@ -83,6 +83,8 @@ export default function RootLayout({
           content="zCC_O2GN7tu6YjjwU5UJZQPoZejvgn1SbZvy8quCGv8"
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="canonical" href="https://www.infineteck.com/" />
+
 
         <Script id="facebook-pixel" strategy="afterInteractive" defer>
           {`
