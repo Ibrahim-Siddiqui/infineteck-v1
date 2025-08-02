@@ -51,9 +51,9 @@ const VideoHero = () => {
           </p>
           <div className="">
             <a
-              // href="/CC Profile-2024.pdf"
+              href="/Company Profile.pdf"
               className="px-2 lg:px-8 py-2 md:py-4 md:px-8 text-xs sm:text-sm md:text-lg rounded-md border border-transparent shadow bg-primary-color hover:scale-105 transition-all duration-200 font-medium text-white cursor-pointer"
-              // download
+              download
             >
               Download Our Company Profile
             </a>
