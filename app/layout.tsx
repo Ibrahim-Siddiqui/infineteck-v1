@@ -86,7 +86,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://www.infineteck.com/" />
 
-
         <Script id="facebook-pixel" strategy="afterInteractive" defer>
           {`
             !function(f,b,e,v,n,t,s)
@@ -114,6 +113,8 @@ fbq('track', 'PageView');
                 "https://www.facebook.com/people/Infineteck/61569356296437",
                 "https://www.instagram.com/infineteck/",
                 "https://www.linkedin.com/company/infineteck",
+                "https://www.youtube.com/@infineteck",
+                "https://www.tiktok.com/@infineteck?_t=ZN-8xpxbxIaFMc&_r=1",
               ],
               contactPoint: {
                 "@type": "ContactPoint",
