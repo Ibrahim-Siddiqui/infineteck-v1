@@ -122,18 +122,18 @@ const Home = () => {
               {/* grid grid-rows-4 row-auto space-y-5 */}
               <div className="grid grid-rows-4 row-auto space-y-5 my-5">
                 <div className="flex gap-5 h-6 row-span-2 sm:row-span-1">
-                  <Image src="/map.png" className="icon" alt="" />
+                  <Image width={150} height={1} src="/map.png" className="icon" alt="" />
                   <p>
                     60 James Carter Road, Mildenhall, Bury St. Edmunds, England,
                     IP28 7DE
                   </p>
                 </div>
                 <div className="flex gap-5 w-8 ">
-                  <Image src="/gmail.png" className="icon" alt="" />
+                  <Image width={150} height={1} src="/gmail.png" className="icon" alt="" />
                   <p>info@infineteck.com</p>
                 </div>
                 <div className="flex gap-5 w-8 ">
-                  <Image src="/telephone.png" className="icon" alt="" />
+                  <Image width={150} height={1} src="/telephone.png" className="icon" alt="" />
                   <p>+447463836597</p>
                 </div>
               </div>
@@ -142,16 +142,16 @@ const Home = () => {
                 <p>Connect with us :</p>
                 <div className="flex gap-5 py-5">
                   <a href="#">
-                    <Image src="/twitter.png" className="icon" alt="" />
+                    <Image width={150} height={1} src="/twitter.png" className="icon" alt="" />
                   </a>
                   <a href="https://www.linkedin.com/company/infineteck/">
-                    <Image src="/linkedin.png" className="icon" alt="" />
+                    <Image width={150} height={1} src="/linkedin.png" className="icon" alt="" />
                   </a>
                   <a href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL">
-                    <Image src="/facebook.png" className="icon" alt="" />
+                    <Image width={150} height={1} src="/facebook.png" className="icon" alt="" />
                   </a>
                   <a href="https://www.instagram.com/infineteck/profilecard/?igsh=dnR6c2FjNjJjcWE2">
-                    <Image src="/instagram.png" className="icon" alt="" />
+                    <Image width={150} height={1} src="/instagram.png" className="icon" alt="" />
                   </a>
                 </div>
               </div>
