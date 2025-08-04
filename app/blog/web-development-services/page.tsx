@@ -300,15 +300,14 @@ const WebDevelopment = () => {
                 is moving towards more sophisticated, seamless, and dynamic web
                 applications. Therefore, selecting the right development partner
                 is a game changer for the success of your custom web application
-                project. This is where Infineteck brings more than just technical
-                expertise; we understand your business objectives, market
-                challenges, and customer needs. Our skilled development team
-                translates your vision into a scalable, secure, and user-centric
-                web solution that drives growth and enhances user engagement. We
-                ensure your project is delivered on time, within budget, and
-                with a quality that surpasses expectations.
+                project. This is where Infineteck brings more than just
+                technical expertise; we understand your business objectives,
+                market challenges, and customer needs. Our skilled development
+                team translates your vision into a scalable, secure, and
+                user-centric web solution that drives growth and enhances user
+                engagement. We ensure your project is delivered on time, within
+                budget, and with a quality that surpasses expectations.
               </p>
-             
             </div>
           </div>
         </div>
