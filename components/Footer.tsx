@@ -8,7 +8,7 @@ const Footer = () => {
       {/* <div className="hidden xl:block absolute top-0 -z-10 h-full w-full bg-white">
         <div className="absolute bottom-auto left-auto right-0 top-[100%] h-[30%] lg:h-[25%] w-[30%] lg:w-[10%] -translate-x-[10%] lg:-translate-x-[55%] translate-y-[180%] lg:translate-y-[250%] rounded-full bg-secondary-color opacity-70 blur-[80px]"></div>
       </div> */}
-      <div className="sm:px-6 text-gray-800 sm:grid md:grid-cols-5 sm:grid-cols-2">
+      <div className="sm:px-6 text-gray-800 sm:grid md:grid-cols-6 sm:grid-cols-2">
         <div className="p-5 col-span-1 flex flex-col justify-between">
           <div className="">
             <Image
@@ -89,6 +89,30 @@ const Footer = () => {
         </div>
         <div className="p-5 col-span-1 md:col-span-1">
           <div className="text-md uppercase text-primary-color font-bold">
+            Legal
+          </div>
+          <a className="my-3 flex gap-2" href="/legal/privacy-policy">
+            Privacy Policy
+          </a>
+          <a className="my-3 flex gap-2" href="/legal/terms-and-conditions">
+            Terms & Conditions
+          </a>
+          <a className="my-3 flex gap-2" href="/legal/refund-policy">
+            Refund Policy
+          </a>
+
+          <div className="text-md uppercase text-primary-color font-bold">
+            Resources
+          </div>
+          <a className="my-3 flex gap-2" href="/blog">
+            Blog
+          </a>
+          <a className="my-3 flex gap-2" href="#">
+            Articles
+          </a>
+        </div>
+        <div className="p-5 col-span-1 md:col-span-1">
+          <div className="text-md uppercase text-primary-color font-bold">
             Contact us
           </div>
           <a className="my-3 flex gap-2" href="">
@@ -114,11 +138,18 @@ const Footer = () => {
         <div className="py-5 col-span-1">
           <div className="flex flex-col justify-end items-center">
             <Image
-              src="/paypal.png"
-              width={300}
-              height={300}
+              src="/stripe.png"
+              width={100}
+              height={100}
               priority={true}
-              alt="Paypal Logo"
+              alt="Stripe Logo"
+            />
+            <Image
+              src="/zelle.png"
+              width={100}
+              height={1}
+              priority={true}
+              alt="Zelle Logo"
             />
             <Image
               src="/venmo.png"
@@ -128,18 +159,11 @@ const Footer = () => {
               alt="Venmo Logo"
             />
             <Image
-              src="/stripe.png"
-              width={120}
-              height={100}
+              src="/paypal.png"
+              width={300}
+              height={300}
               priority={true}
-              alt="Stripe Logo"
-            />
-            <Image
-              src="/zelle.png"
-              width={120}
-              height={1}
-              priority={true}
-              alt="Zelle Logo"
+              alt="Paypal Logo"
             />
           </div>
         </div>
