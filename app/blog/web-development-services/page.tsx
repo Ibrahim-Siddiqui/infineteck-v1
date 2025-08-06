@@ -68,7 +68,7 @@ const WebDevServicesBlog = () => {
             Web Development Services That Make an Impact in 2025
           </h1>
           <p className="text-accent-color text-lg mb-4">
-            By {author} | <Calendar size={20} className="inline" /> July 20,
+            By {author} | <Calendar size={20} className="inline" /> July 19,
             2025
           </p>
 
