@@ -34,5 +34,11 @@ export const blogsData = [
         text: "Examine leading e-commerce options that will support brand’s online growth in 2025. Study how growth is fueled by AI, safe architecture, mobile optimization and...",
         blogUrl: "/blog/ecommerce-solutions"
     },
-    
+    {
+        imageUrl: "/web-dev-services-blog.png",
+        postDate: "July 19 2025",
+        title: "Web Development Services That Make an Impact in 2025",
+        text: "Let’s say you are browsing the internet and you run across a website that loads infinitely slow, has a 2011 look and feel and doesn't even work properly on your mobile device. What do you do first?...",
+        blogUrl: "/blog/web-development-services",
+      },
 ]
