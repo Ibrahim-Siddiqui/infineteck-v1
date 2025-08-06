@@ -15,28 +15,29 @@ import "react-photo-view/dist/react-photo-view.css";
 import { ThemeProvider } from "./provider";
 import { Toaster } from "@/components/ui/sonner";
 
-const inter = Inter({ subsets: ["latin"] });
-const raleway = Raleway({ subsets: ["latin"] });
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-});
+// const inter = Inter({ subsets: ["latin"] });
+// const raleway = Raleway({ subsets: ["latin"] });
+// const roboto = Roboto({
+//   subsets: ["latin"],
+//   weight: ["100", "300", "400", "500", "700", "900"],
+// });
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
+  display: "swap",
 });
-const mont = Montserrat({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-});
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"],
-});
-const open_sans = Open_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "700", "800"],
-});
+// const mont = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["100", "300", "400", "500", "700", "900"],
+// });
+// const lato = Lato({
+//   subsets: ["latin"],
+//   weight: ["100", "300", "400", "700", "900"],
+// });
+// const open_sans = Open_Sans({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "700", "800"],
+// });
 // const hevdig = Hedvig_Letters_Sans({ subsets: ["latin"], weight: ["400"] });
 import Script from "next/script";
 import Image from "next/image";
