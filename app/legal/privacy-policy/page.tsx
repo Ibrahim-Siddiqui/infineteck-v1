@@ -1,31 +1,7 @@
 import Footer from "@/components/Footer";
 import NewNavbar from "@/components/NewNavbar";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { Calendar } from "lucide-react";
 import React from "react";
 
-const title = "Web Development Services That Make an Impact in 2025";
-const description = "";
-const keywords = "";
-const author = "Infineteck";
-const publishedDate = "2025-07-19";
-const modifiedDate = "2025-07-19";
-const blogUrl = "https://infineteck.com/blog/web-development-services";
-const imageUrl = "https://infineteck.com/web-dev-services-blog.png";
-
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  headline: title,
-  image: imageUrl,
-  author: { "@type": "Organization", name: author },
-  publisher: { "@type": "Organization", name: author },
-  datePublished: publishedDate,
-  dateModified: modifiedDate,
-  mainEntityOfPage: { "@type": "WebPage", "@id": blogUrl },
-};
 const PrivacyPolicy = () => {
   return (
     <>
