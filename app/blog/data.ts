@@ -40,5 +40,19 @@ export const blogsData = [
         title: "Web Development Services That Make an Impact in 2025",
         text: "Let’s say you are browsing the internet and you run across a website that loads infinitely slow, has a 2011 look and feel and doesn't even work properly on your mobile device. What do you do first?...",
         blogUrl: "/blog/web-development-services",
-      },
+    },
+    {
+        imageUrl: "/app-dev-services-blog.png",
+        postDate: "July 18 2025",
+        title: "How Can App Development Services Enhance Your Business's Success?",
+        text: "Let's face it, your clients are occupied with their mobile devices. Our daily tasks can be accomplished through apps that enable us to order food, ride out services or pay for goods and services online, while...",
+        blogUrl: "/blog/app-dev-services",
+    },
+    {
+        imageUrl: "/ai-automation-blog.png",
+        postDate: "July 15 2025",
+        title: "How Infineteck’s AI Automation Services Can Help You Work Smarter, Not Harder",
+        text: "Let’s just face the reality with Infineteck, running a business in 2025 is like juggling flaming swords while trying to balance on a tightrope. There is always a fire...",
+        blogUrl: "/blog/ai-automation-services",
+    },
 ]
