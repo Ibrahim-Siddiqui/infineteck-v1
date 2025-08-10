@@ -77,10 +77,7 @@ const WebDevServicesBlog = () => {
           </p>
 
           <article className="">
-            <h2 className="text-2xl md:text-3xl py-4 font-semibold">
-              In This Era Of Mobile Devices, Why Is It Essential To Use
-              Effective Apps?
-            </h2>
+
             <p className="text-lg">
               Let’s just face the reality with Infineteck, running a business in
               2025 is like juggling flaming swords while trying to balance on a
