@@ -13,7 +13,7 @@ const keywords = "";
 const author = "Infineteck";
 const publishedDate = "2025-07-10";
 const modifiedDate = "2025-07-10";
-const blogUrl = "https://infineteck.com/blog/effects-of-bloackchain";
+const blogUrl = "https://infineteck.com/blog/effects-of-blockchain";
 const imageUrl = "https://infineteck.com/effects-of-blockchain-blog.png";
 
 const schemaData = {

@@ -75,4 +75,12 @@ export const blogsData = [
     text: 'Let\'s face it, most people immediately think of cryptocurrencies Bitcoin, Ethereum and perhaps a few gaudy headlines about NFTs or digital wallets when they hear the word "blockchain"...',
     blogUrl: "/blog/effects-of-bloackchain",
   },
+  {
+    imageUrl: "/realtime-data-sync-blog.png",
+    postDate: "July 10 2025",
+    title:
+      "Why Real-Time Data Sync is Essential for Modern Applications By Infineteck",
+    text: "Today, in a fast-evolving digital world, where milliseconds matter and data signals decisions, real-time data synchronization is no longer an option; it's a requirement. Maybe that is a mobile banking app displaying...",
+    blogUrl: "/blog/realtime-data-sync",
+  },
 ];
