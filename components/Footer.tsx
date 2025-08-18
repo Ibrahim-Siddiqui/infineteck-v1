@@ -107,7 +107,7 @@ const Footer = () => {
           <a className="my-3 flex gap-2" href="/blog">
             Blog
           </a>
-          <a className="my-3 flex gap-2" href="#">
+          <a className="my-3 flex gap-2" href="/articles">
             Articles
           </a>
         </div>
