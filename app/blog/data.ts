@@ -73,7 +73,7 @@ export const blogsData = [
     postDate: "July 12 2025",
     title: "The Effects Of Blockchain Technology On Software Development",
     text: 'Let\'s face it, most people immediately think of cryptocurrencies Bitcoin, Ethereum and perhaps a few gaudy headlines about NFTs or digital wallets when they hear the word "blockchain"...',
-    blogUrl: "/blog/effects-of-bloackchain",
+    blogUrl: "/blog/effects-of-blockchain",
   },
   {
     imageUrl: "/realtime-data-sync-blog.png",
