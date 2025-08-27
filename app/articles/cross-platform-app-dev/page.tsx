@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "@/app/blog/components/ResponseForm";
 
 const title = "Cross-Platform App Development Is the Smart Choice For 2025";
 const description =
@@ -302,6 +303,8 @@ const GenerativeEngineOptimization = () => {
               create something incredible
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

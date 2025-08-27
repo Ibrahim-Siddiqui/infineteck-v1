@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "@/app/blog/components/ResponseForm";
 
 const title =
   "Why Mobile Apps Are Essential For All Business In This Era of Technology?";
@@ -460,6 +461,8 @@ const MobileAppsArticle = () => {
               </li>
             </ul>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "@/app/blog/components/ResponseForm";
 
 const title =
   "Generative Engine Optimization (GEO): Why Infineteck Needs It in 2025";
@@ -405,6 +406,8 @@ const GenerativeEngineOptimization = () => {
               </li>
             </ul>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

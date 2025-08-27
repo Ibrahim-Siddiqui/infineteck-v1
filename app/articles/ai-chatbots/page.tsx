@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "@/app/blog/components/ResponseForm";
 
 const title =
   "How 2025 Will See AI Chatbots Change Customer Service by Infineteck";
@@ -453,6 +454,7 @@ const GenerativeEngineOptimization = () => {
               genuinely enjoy.
             </p>
           </article>
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

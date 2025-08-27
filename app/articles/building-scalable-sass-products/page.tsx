@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "@/app/blog/components/ResponseForm";
 
 const title =
   "What is Uniquely Infineteck’s commitment to building scalable SaaS products that go with you?";
@@ -359,6 +360,8 @@ const GenerativeEngineOptimization = () => {
               you are in.
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />
