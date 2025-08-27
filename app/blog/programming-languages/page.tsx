@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title =
   "The Top 10 Programming Languages to Learn in 2025: An Overview of Their Significance";
@@ -349,6 +350,8 @@ const ProgrammingLanguagesBlog = () => {
               </Link>
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

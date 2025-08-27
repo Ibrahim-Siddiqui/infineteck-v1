@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title =
   "How Infineteck’s AI Automation Services Can Help You Work Smarter, Not Harder";
@@ -430,6 +431,8 @@ const WebDevServicesBlog = () => {
               Infineteck.
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

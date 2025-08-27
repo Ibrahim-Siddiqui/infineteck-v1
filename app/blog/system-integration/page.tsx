@@ -2,8 +2,11 @@ import Footer from "@/components/Footer";
 import NewNavbar from "@/components/NewNavbar";
 import Image from "next/image";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const WebDevelopment = () => {
+  const title = "Tech Made Simple: Effective System Integration";
+
   return (
     <>
       <NewNavbar />
@@ -264,6 +267,8 @@ const WebDevelopment = () => {
             </div>
           </div>
         </div>
+
+        <ResponseForm blogTitle={title} />
       </div>
       <Footer />
     </>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title =
   "How Can App Development Services Enhance Your Business's Success?";
@@ -396,6 +397,8 @@ const WebDevServicesBlog = () => {
               Let's develop your app together!
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title = "The Effects Of Blockchain Technology On Software Development";
 const description =
@@ -393,6 +394,9 @@ const WebDevServicesBlog = () => {
               </li>
             </ul>
           </article>
+
+          <ResponseForm blogTitle={title} />
+
         </main>
       </div>
       <Footer />

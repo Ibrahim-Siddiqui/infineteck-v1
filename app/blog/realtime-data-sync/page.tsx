@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title =
   "Why Real-Time Data Sync is Essential for Modern Applications By Infineteck";
@@ -370,6 +371,8 @@ const WebDevServicesBlog = () => {
               success.
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

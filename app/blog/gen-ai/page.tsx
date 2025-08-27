@@ -2,8 +2,10 @@ import Footer from "@/components/Footer";
 import NewNavbar from "@/components/NewNavbar";
 import Image from "next/image";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const GenAI = () => {
+  const title = "How Generative AI is Shaping the Future of Healthcare";
   return (
     <>
       <NewNavbar />
@@ -13,7 +15,7 @@ const GenAI = () => {
           src="/gen-ai-blog.png"
           width={1200}
           height={100}
-          priority={true} 
+          priority={true}
           alt="blog image"
         />
         <div className="max-w-7xl mx-auto">
@@ -88,9 +90,7 @@ const GenAI = () => {
                 height={100}
                 alt="blog image"
               /> */}
-              <h3 className="text-2xl font-bold my-5">
-                Predictive Analytics
-              </h3>
+              <h3 className="text-2xl font-bold my-5">Predictive Analytics</h3>
               <p className="text-lg md:text-xl font-light leading-8 my-5">
                 AI's predictive analytics capabilities are revolutionizing
                 disease prediction and patient outcomes. By analyzing patient
@@ -207,6 +207,7 @@ const GenAI = () => {
             </div>
           </div>
         </div>
+        <ResponseForm blogTitle={title} />
       </div>
       <Footer />
     </>

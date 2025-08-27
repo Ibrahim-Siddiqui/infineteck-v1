@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title =
   "Why is game development booming in 2025, and how might Infineteck help you realize your ideas?";
@@ -366,6 +367,8 @@ const GameDevelopmentBlog = () => {
               </Link>
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

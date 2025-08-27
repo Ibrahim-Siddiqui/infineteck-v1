@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title =
   "Top 5 SEO (GEO) Plugins for Every Software House Needs (2025 Edition)";
@@ -272,6 +273,8 @@ const SEOPluginsBlog = () => {
             </p>
             
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title =
   "How Can Infineteck's Digital Marketing Services Speed Up Your Brand's Online Growth?";
@@ -265,16 +266,26 @@ const DigitalMarketingBlog = () => {
               <br />
             </p>
             <p className="text-lg">
-            A combination of genuine flexible storytelling, strategic partnerships and smart SEO plan execution, Infineteck brings measurable results that feel authentic and boost our team confidence.
+              A combination of genuine flexible storytelling, strategic
+              partnerships and smart SEO plan execution, Infineteck brings
+              measurable results that feel authentic and boost our team
+              confidence.
             </p>
             <h2 className="text-2xl md:text-3xl py-4 font-semibold">
-            Are You Ready To Grow With Infineteck?
+              Are You Ready To Grow With Infineteck?
             </h2>
             <p className="text-lg">
-            If you are searching for a digital marketing software house that understands your brand deeply and can deliver thoughtful campaigns in this digital era, you are at the right place (Infineteck). Let’s build your digital presence more prominently, contact us today to discover how we can build your brand, attract customers, and generate measurable results through expert <strong>digital marketing services</strong>.
+              If you are searching for a digital marketing software house that
+              understands your brand deeply and can deliver thoughtful campaigns
+              in this digital era, you are at the right place (Infineteck).
+              Let’s build your digital presence more prominently, contact us
+              today to discover how we can build your brand, attract customers,
+              and generate measurable results through expert{" "}
+              <strong>digital marketing services</strong>.
             </p>
-            
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

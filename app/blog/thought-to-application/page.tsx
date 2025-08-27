@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title =
   "From Thought to Application: How Infineteck Makes Your Ideas Come Alive";
@@ -424,6 +425,7 @@ const WebDevServicesBlog = () => {
               </li>
             </ul>
           </article>
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

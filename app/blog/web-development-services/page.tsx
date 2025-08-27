@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title = "Web Development Services That Make an Impact in 2025";
 const description = "";
@@ -382,6 +383,8 @@ const WebDevServicesBlog = () => {
               </Link>
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />

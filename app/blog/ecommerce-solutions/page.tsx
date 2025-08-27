@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 import React from "react";
+import ResponseForm from "../components/ResponseForm";
 
 const title = "E-commerce Solutions That Actually Move the Needle in 2025";
 const description =
@@ -410,6 +411,8 @@ const EcommerceSolutionsBlog = () => {
               and see how your online store can rank, convert and grow.
             </p>
           </article>
+
+          <ResponseForm blogTitle={title} />
         </main>
       </div>
       <Footer />
