@@ -60,7 +60,7 @@ const WebDevServicesBlog = () => {
       <div className="max-w-screen-xl mx-auto p-5 sm:p-8 md:p-12 relative">
         <Image
           className="h-75"
-          src="/effects-of-blockchain-blog"
+          src="/effects-of-blockchain-blog.png"
           width={3600}
           height={100}
           alt="blog image"
