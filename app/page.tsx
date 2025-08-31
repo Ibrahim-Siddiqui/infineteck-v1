@@ -9,6 +9,8 @@ import Testimonial from "@/components/Testimonial";
 import OurPartners from "@/components/OurPartners";
 import NewNavbar from "@/components/NewNavbar";
 import VideoHero from "@/components/VideoHero";
+import ContactForm from "../components/ContactForm";
+import Blogs from "@/components/Blogs";
 
 const Home = () => {
   return (
@@ -19,9 +21,11 @@ const Home = () => {
       <VideoHero />
       <USP />
       <HomeOffer />
+      <Blogs/>
       <FAQ />
       <OurPartners />
       <Testimonial />
+      <ContactForm />
       <Footer />
       {/* </div> */}
     </main>
