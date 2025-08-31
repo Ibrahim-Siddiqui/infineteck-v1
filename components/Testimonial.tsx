@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 const Testimonial = () => {
   return (
     <div
-      className="max-w-screen"
+      className="max-w-screen my-[5%]"
       // initial={{
       //   opacity: 0,
       //   translateY: 100,
@@ -36,7 +36,7 @@ const Testimonial = () => {
           Testimonials
         </h1>
       </div>
-      <div className="flex justify-center py-[2rem] mx-auto">
+      <div className="flex justify-center md:py-[2rem] mx-auto">
         <Carousel
           className="sticky max-w-[75%] sm:max-w-xs md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl z-[-1]"
           opts={{

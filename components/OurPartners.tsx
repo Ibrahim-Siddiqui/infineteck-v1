@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -15,7 +16,7 @@ import { motion } from "framer-motion";
 const OurPartners = () => {
   return (
     <div
-      className="mt-[5%] z-[-99]"
+      className="mt-[5%] z-[-99] text-center"
       // initial={{
       //   opacity: 0,
       //   translateY: 100,
@@ -32,45 +33,54 @@ const OurPartners = () => {
       //   margin: "-250px",
       // }}
     >
-      <h1
-        className="text-4xl lg:text-6xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color
-      to-primary-color"
-      >
-        Our Partners
-      </h1>
-      <h3 className="text-2xl lg:text-3xl text-center font-semibold py-5">
-        Achieve Online Success and Boosted Revenues
-      </h3>
-      <p className="text-sm lg:text-lg text-center py-5">
+      <h1 className="text-2xl md:text-4xl font-bold">
+          Trusted by{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
+            Visionaries
+          </span>
+          , Backed by{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
+            Industry Leaders
+          </span>
+        </h1>
+        <h2 className="text-xl md:text-2xl font-medium">
+          Top brands partner with Infineteck to build, scale and lead in the
+          digital world.
+        </h2>
+      {/* <p className="text-sm lg:text-lg text-center">
         We are a company that focuses on smart and productive digital solutions
         that maximize your business opportunities.
-      </p>
+      </p> */}
 
       <Carousel
         opts={{
-          //   align: "",
-
           direction: "ltr",
           loop: true,
         }}
         plugins={[
           Autoplay({
-            delay: 2000,
+            delay: 500,
           }),
         ]}
-        className=" p-5 bg-blue-100"
+        className="p-5 my-[5%]"
       >
         <CarouselContent className="">
           {partners.map((partner) => (
             <CarouselItem key={partner.id} className="basis-1/3 md:basis-1/4 ">
               <div className="flex justify-center items-end rounded-lg">
-                <Image src={partner.img} width={150} height={50} alt="logo" priority={true} />
+                <Image
+                  src={partner.img}
+                  width={200}
+                  height={50}
+                  alt="logo"
+                  priority={true}
+                />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
-      <Carousel
+      {/* <Carousel
         opts={{
           //   align: "",
 
@@ -93,7 +103,7 @@ const OurPartners = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 };

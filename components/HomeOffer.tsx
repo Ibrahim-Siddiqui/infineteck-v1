@@ -8,24 +8,26 @@ import {
   Gamepad2,
   BrainCircuit,
   LucideBarChart,
+  TabletSmartphone,
+  Figma,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const offers = [
   {
     id: 1,
-    name: "Digital Marketing & Branding",
-    title: "Branding That Converts",
-    desc: "Build unforgettable brands and dominate search engines with data-driven marketing strategies.",
-    link: "/services/digital-marketing",
-    icon: <LucideBarChart size={48} />,
+    name: "Cross Platform App Development",
+    // title: "Branding That Converts",
+    desc: "Infineteck builds apps that run flawlessly on iOS, Android, and web. strategies.",
+    link: "/services/app-development",
+    icon: <TabletSmartphone size={48} />,
   },
   {
     id: 2,
 
-    name: "Website & App Development",
-    title: "Future-Ready Websites & Apps",
-    desc: "Craft lightning-fast websites and intuitive apps that engage users, boost conversions, and grow your business.",
+    name: "Web Development",
+    // title: "Future-Ready Websites & Apps",
+    desc: "Infineteck delivers fast, secure, and scalable websites built to grow.",
     link: "/services/web-development",
     icon: <MonitorSmartphone size={48} />,
   },
@@ -33,17 +35,17 @@ const offers = [
     id: 3,
     name: "Game Development",
     title: "Immersive Game Experiences",
-    desc: "Design 2D/3D games that captivate audiences, from casual mobile games to high-end console adventures.",
+    desc: "Infineteck designs immersive 2D/3D games for mobile and desktop.",
     link: "/services/game-development",
     icon: <Gamepad2 size={48} />,
   },
   {
     id: 4,
-    name: "2D & 3D Animation - Video Editing",
-    title: "Animation & Video That Wows",
-    desc: "Bring ideas to life with stunning animations and polished video edits.",
+    name: "UI/UX Design",
+    // title: "Animation & Video That Wows",
+    desc: "Infineteck crafts sleek, user-friendly interfaces your audience will love.",
     link: "/services/video-animation",
-    icon: <Play size={48} />,
+    icon: <Figma size={48} />,
   },
   {
     id: 5,
@@ -57,7 +59,7 @@ const offers = [
     id: 6,
     name: "AI Automation",
     title: "AI-Driven Business Growth",
-    desc: "Automate workflows, predict trends, and unlock efficiency with tailor-made AI solutions.",
+    desc: "Infineteck automates tasks with smart AI solutions that save time and boost productivity.",
     link: "/services/ai-automation",
     icon: <BrainCircuit size={48} />,
   },
@@ -90,10 +92,10 @@ const HomeOffer = () => {
         <h1 className="text-3xl lg:text-5xl text-center font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
           Our Services
         </h1>
-        <h1 className="my-[2%] text-3xl lg:text-5xl text-center font-extrabold">
-          Transform your{" "}
+        <h1 className="my-[2%] text-2xl lg:text-4xl text-center font-extrabold">
+          Services That Set You Apart{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
-            Business
+            Powered by Infineteck
           </span>
         </h1>
       </div>
@@ -136,7 +138,10 @@ const OfferItem = ({ item }: any) => {
         {item.desc}
       </p>
 
-      <a href={item.link} className="flex gap-2 my-[2%] text-primary-color group-hover:text-inherit font-semibold">
+      <a
+        href={item.link}
+        className="flex gap-2 my-[2%] text-primary-color group-hover:text-inherit font-semibold"
+      >
         Learn More
         <ChevronRight />
       </a>

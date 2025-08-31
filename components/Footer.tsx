@@ -1,6 +1,7 @@
 import { socialMedia } from "@/data";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import Image from "next/image";
+import Subscription from "./Subscription";
 
 const Footer = () => {
   return (
@@ -110,8 +111,11 @@ const Footer = () => {
           <a className="my-3 flex gap-2" href="/articles">
             Articles
           </a>
+          <a className="my-3 flex gap-2" href="/faqs">
+            FAQs
+          </a>
         </div>
-        <div className="p-5 col-span-1 md:col-span-1">
+        <div className="p-5 col-span-1 md:col-span-2">
           <div className="text-md uppercase text-primary-color font-bold">
             Contact us
           </div>
@@ -135,46 +139,13 @@ const Footer = () => {
             +447463836597
           </a>
         </div>
-        <div className="py-5 col-span-1">
-          <div className="flex flex-col justify-end items-center">
-            <Image
-              src="/stripe.png"
-              width={100}
-              height={100}
-              priority={true}
-              alt="Stripe Logo"
-            />
-            <Image
-              src="/zelle.png"
-              width={100}
-              height={1}
-              priority={true}
-              alt="Zelle Logo"
-            />
-            <Image
-              src="/venmo.png"
-              width={150}
-              height={100}
-              priority={true}
-              alt="Venmo Logo"
-            />
-            <Image
-              src="/paypal.png"
-              width={300}
-              height={300}
-              priority={true}
-              alt="Paypal Logo"
-            />
-          </div>
-        </div>
       </div>
 
       <div className="max-w-screen-2xl pt-2">
-        <div
-          className="flex flex-col md:flex-row-reverse justify-evenly pb-5 pt-5 border-t text-gray-800 text-sm 
-          max-w-screen-2xl items-center"
-        >
+        <div className="flex flex-col md:flex-row-reverse justify-center md:justify-between gap-5 md:gap-0 px-[2%] pb-5 pt-5 text-sm items-center">
+          <Subscription />
           <div className="flex gap-4 mt-2 flex-row">
+            <p className="text-lg">Follow us:</p>
             <a
               href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL"
               className="w-8"
@@ -225,7 +196,42 @@ const Footer = () => {
             </a>
             {/* <a href="/#" className="w-8 mx-1"></a> */}
           </div>
+        </div>
+        <div
+          className="flex flex-col md:flex-row justify-between px-[2%] text-sm 
+          max-w-screen-2xl items-center border-t text-gray-800"
+        >
           <div className="my-5">© 2025 Infineteck. All Rights Reserved.</div>
+          <div className="flex flex-row justify-center items-center gap-2 md:gap-4">
+            <Image
+              src="/stripe.png"
+              width={70}
+              height={100}
+              priority={true}
+              alt="Stripe Logo"
+            />
+            <Image
+              src="/zelle.png"
+              width={60}
+              height={1}
+              priority={true}
+              alt="Zelle Logo"
+            />
+            <Image
+              src="/venmo.png"
+              width={90}
+              height={100}
+              priority={true}
+              alt="Venmo Logo"
+            />
+            <Image
+              src="/paypal-no-bg.png"
+              width={120}
+              height={300}
+              priority={true}
+              alt="Paypal Logo"
+            />
+          </div>
         </div>
       </div>
     </footer>

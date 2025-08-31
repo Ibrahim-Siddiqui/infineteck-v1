@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, animate, color } from "framer-motion";
 import { PlusCircle, MinusCircle } from "lucide-react";
+import Link from "next/link";
 
 const FAQ = () => {
   const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
@@ -65,14 +66,19 @@ const FAQ = () => {
     //   margin: '-250px',
     // }}
     >
-      <div className="">
-        <h1 className="text-2xl lg:text-5xl font-bold text-center py-[5%]">
-          Frequently Asked{" "}
+      <div className="my-[5%]">
+        <h1 className="text-2xl lg:text-5xl font-bold text-center">
+        Got Questions? {" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
             {" "}
-            Questions
+            Infineteck Has the Answers
           </span>
         </h1>
+        <h3 className="text-lg md:text-xl text-center font-medium leading-[100%]">
+        From pricing to project timelines, tech stacks to support Infineteck believes in full transparency.
+        <br />
+        Explore our FAQs to see how Infineteck makes your digital journey smooth, smart and stress free.
+          </h3>
       </div>
       <div className="max-w-4xl mx-auto">
         {faqs.map((faq) => (
@@ -120,6 +126,23 @@ const FAQ = () => {
           </div>
         ))}
       </div>
+
+      <div className="my-[5%] flex justify-center gap-5">
+              <Link
+                href="/faqs"
+                prefetch={false}
+                className="text-sm md:text-xl rounded-lg border-2 border-accent-color px-6 py-2 md:px-10 md:py-4 text-white transition-all duration-300 bg-primary-color hover:scale-105"
+              >
+                For More Visit
+              </Link>
+              <Link
+                href="/contact"
+                prefetch={false}
+                className="text-sm md:text-xl rounded-lg border-2 border-accent-color px-2 py-2 md:px-6 md:py-4 text-white transition-all duration-300 bg-primary-color hover:scale-105"
+              >
+                Free Expert Advice
+              </Link>
+            </div>
     </div>
   );
 };

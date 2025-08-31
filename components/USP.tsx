@@ -13,19 +13,19 @@ const USPData = [
   {
     id: 1,
     title: "Creative Branding",
-    desc: "Build a brand that inspires trust, loyalty, and action.",
+    desc: "Infineteck crafts bold, unforgettable brand identities from logo to tone, Infineteck makes your brand stand out.",
     image: "/branding.svg",
   },
   {
     id: 2,
     title: "Digital Presence",
-    desc: "Dominate search engines, social media, and your market.",
+    desc: "Infineteck builds sleek, high impact websites and apps so that your audience finds you faster with Infineteck online.",
     image: "/digital-presence.svg",
   },
   {
     id: 3,
     title: "Business Development",
-    desc: "Skyrocket sales with data-driven automation and strategy.",
+    desc: "Infineteck powers your growth with smart digital tools, also scale faster and smarter with Infineteck by your side.",
     image: "/development.svg",
   },
 ];
@@ -77,41 +77,49 @@ const USP = () => {
             </div>
           ))}
         </div>
-        <div className=" mt-[10%] mb-[5%] text-center text-3xl lg:text-5xl font font-extrabold lg:px-[15%]">
-          <h1 className="leading-[3rem]">
-            Watch How We Drive{" "}
+        <div className="mt-[10%] md:mt-[5%] mb-[5%] text-center text-3xl lg:text-5xl font font-extrabold lg:px-[15%]">
+          <h1 className="leading-[2rem] md:leading-[3rem]">
+            Discover How Infineteck Turns Bold Ideas into{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
-              Digital Success
+              Digital Success Stories
             </span>
           </h1>
+          <h3 className="my-[5%] text-xl md:text-2xl font-medium leading-2">
+            Infineteck takes your raw ideas and transforms them into powerful,
+            user ready digital products. From MVPs to enterprise solutions,
+            Infineteck delivers results that drive real growth and impact.
+          </h3>
         </div>
         <div className="flex flex-col lg:flex-row lg:gap-[5%]">
           {/* <div className="lg:w-[50%]"> */}
-            <MediaPlayer
-              title="Infineteck Introduction"
-              src={`youtube/qCCl_2fGKYY`}
-              playsInline
-              className=""
-            >
-              <MediaProvider />
-              <PlyrLayout icons={plyrLayoutIcons} />
-            </MediaPlayer>
+          <MediaPlayer
+            title="Infineteck Introduction"
+            src={`youtube/qCCl_2fGKYY`}
+            playsInline
+            className=""
+          >
+            <MediaProvider />
+            <PlyrLayout icons={plyrLayoutIcons} />
+          </MediaPlayer>
           {/* </div> */}
           <div className="lg:w-[100%] py-[5%] lg:py-0">
-            <h1 className="text-xl">
-              At <strong>Infineteck</strong>, we don’t just talk about
-              innovation—we show it. Watch our company introduction video to
-              discover how we’ve helped businesses like yours achieve{" "}
-              <strong>unprecedented growth </strong>through creative branding,
-              cutting-edge technology, and data-driven strategies.
+            <h2 className="text-2xl md:text-3xl font-semibold">
+              Unlock the Power of Innovation with Infineteck
+            </h2>
+            <h1 className="text-lg">
+              At <strong>Infineteck</strong>, we don’t just talk tech we live
+              it.
               <br />
-              From <strong>website design </strong> to{" "}
-              <strong>
-                {" "}
-                AI automation, social media management to e-commerce solutions,
-              </strong>{" "}
-              this video showcases our passion, expertise, and commitment to
-              delivering results that matter.
+              Watch how Infineteck transforms bold ideas into unstoppable
+              digital brands. From jaw dropping website design to intelligent AI
+              automation, from viral social media strategies to revenue-driving
+              e-commerce solutions this is not just a company video; it is a
+              window into what Infineteck can do for you.
+              <br />
+              Get inspired. Get excited. Get growing with Infineteck by your
+              side.
+              <br />
+              Hit play and experience the future powered by Infineteck.
             </h1>
             <div className="my-[5%]">
               <Link
