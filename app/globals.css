@@ -499,9 +499,9 @@ textarea.input {
   min-width: 0;
 } */
 
-.carousel-direction {
+/* .carousel-direction {
   direction: rtl;
-}
+} */
 @layer base {
   * {
     @apply border-border;
