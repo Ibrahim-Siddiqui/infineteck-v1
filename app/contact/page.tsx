@@ -19,7 +19,7 @@ import Image from "next/image";
 //   services: MultiValue<OptionType>;
 // };
 
-const Home = () => {
+const ContactForm = () => {
   type OptionType = {
     value: string;
     label: string;
@@ -332,4 +332,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ContactForm;
