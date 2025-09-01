@@ -40,20 +40,22 @@ export const Subscription = () => {
   };
 
   return (
-    <div className="flex justify-center items-center">
-      <input
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Enter your email"
-        className="max-w-[60%] md:max-w-full border-2 rounded-md text-sm md:text-xl p-2 md:p-4"
-      />
-      <button
-        onClick={handleSubmit}
-        className="max-w-[40%] md:max-w-full flex gap-2 md:gap-4 items-center text-sm md:text-xl rounded-lg border-2 border-accent-color p-2 md:p-4 text-white transition-all duration-300 bg-primary-color hover:scale-102"
-      >
-        Subscribe
-        <Send size={15} />
-      </button>
-    </div>
+    <>
+      <div className="flex flex-col gap-2 md:flex-row items-center">
+        <input
+          // onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your email"
+          className=" border-2 rounded-md text-sm md:text-lg p-2 md:p-4"
+        />
+        <button
+          // onClick={handleSubmit}
+          className="flex gap-2 md:gap-4 items-center text-sm md:text-lg rounded-lg border-2 border-accent-color p-2 md:p-4 text-white transition-all duration-300 bg-primary-color hover:scale-102"
+        >
+          Subscribe
+          <Send size={15} />
+        </button>
+      </div>
+    </>
   );
 };
 

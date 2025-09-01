@@ -141,9 +141,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-screen-2xl pt-2">
-        <div className="flex flex-col md:flex-row-reverse justify-center md:justify-between gap-5 md:gap-0 px-[2%] pb-5 pt-5 text-sm items-center">
+      <div className="pt-2">
+        <div className="flex flex-col md:flex-row-reverse justify-center md:justify-between gap-5 md:gap-0 px-2 pb-5 text-sm items-center">
           <Subscription />
+
           <div className="flex gap-4 mt-2 flex-row">
             <p className="text-lg">Follow us:</p>
             <a
