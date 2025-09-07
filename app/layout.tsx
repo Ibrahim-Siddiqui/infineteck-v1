@@ -86,7 +86,11 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://www.infineteck.com/" />
-
+        <script
+          type="text/javascript"
+          src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+          async
+        ></script>
         <Script id="facebook-pixel" strategy="afterInteractive" defer>
           {`
             !function(f,b,e,v,n,t,s)
