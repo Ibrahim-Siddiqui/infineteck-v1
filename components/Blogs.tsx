@@ -6,7 +6,7 @@ const Blogs = () => {
   return (
     <div className="flex flex-col md:flex-row mx-[5%] my-[5%]">
       <div className="md:max-w-[50%] flex flex-col justify-start gap-[5%] pt-[5%]">
-        <h2 className="text-2xl md:text-5xl font-semibold">
+        <h2 className="text-3xl md:text-5xl font-semibold">
           The Brain behind the{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
             Build by Infineteck
@@ -23,7 +23,7 @@ const Blogs = () => {
           shaping tomorrow’s business. Stay current; stay fearless with
           Infineteck in your feed.
         </p>
-        <div className="my-[5%] flex justify-start gap-5">
+        <div className="my-[5%] flex justify-start gap-5 text-center">
           <Link
             href="/blog"
             prefetch={false}
