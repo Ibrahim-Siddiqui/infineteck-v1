@@ -8,26 +8,26 @@ import FAQ from "@/components/FAQ";
 import Testimonial from "@/components/Testimonial";
 import OurPartners from "@/components/OurPartners";
 import NewNavbar from "@/components/NewNavbar";
-import VideoHero from "@/components/VideoHero";
 import ContactForm from "../components/ContactForm";
 import Blogs from "@/components/Blogs";
+import HomePlans from "@/components/HomePlans";
+import HomeReviews from "@/components/HomeReviews";
 
 const Home = () => {
   return (
     <main className="">
-      {/* <div className="max-w-7xl w-full"> */}
       <NewNavbar />
-      {/* <HomeHero /> */}
-      <VideoHero />
+      <HomeHero />
       <USP />
       <HomeOffer />
-      <Blogs/>
+      <HomePlans />
+      <Blogs />
       <FAQ />
       <OurPartners />
       <Testimonial />
+      <HomeReviews />
       <ContactForm />
       <Footer />
-      {/* </div> */}
     </main>
   );
 };
