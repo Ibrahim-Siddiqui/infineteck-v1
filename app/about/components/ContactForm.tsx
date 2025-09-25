@@ -33,7 +33,8 @@ const ContactForm = () => {
     },
   ];
 
-  const [selectedOptions, setSelectedOptions] = useState<MultiValue<OptionType>>();
+  const [selectedOptions, setSelectedOptions] =
+    useState<MultiValue<OptionType>>();
 
   const handleChange = (option: MultiValue<OptionType>) => {
     setSelectedOptions(option);
@@ -62,7 +63,10 @@ const ContactForm = () => {
       <div className="py-[10%] md:py-[5%]">
         <h1 className="text-4xl md:text-5xl text-center font-bold ">
           {" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color"> Get in Touch with Us Today</span>{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
+            {" "}
+            Get in Touch with Us Today
+          </span>{" "}
         </h1>
       </div>
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 pb-10">
@@ -76,18 +80,18 @@ const ContactForm = () => {
             {/* grid grid-rows-4 row-auto space-y-5 */}
             <div className="grid grid-rows-4 row-auto space-y-5 my-5">
               <div className="flex gap-5 h-6 row-span-2 sm:row-span-1">
-                <Image src="/map.png" className="icon" alt="" />
+                <Image src="/map.png" className="icon" width={150} height={5} alt="" />
                 <p>
                   60 James Carter Road, Mildenhall, Bury St. Edmunds, England,
                   IP28 7DE
                 </p>
               </div>
               <div className="flex gap-5 w-8 ">
-                <Image src="/gmail.png" className="icon" alt="" />
+                <Image src="/gmail.png" className="icon" width={150} height={5} alt="" />
                 <p>info@infineteck.com</p>
               </div>
               <div className="flex gap-5 w-8 ">
-                <Image src="/telephone.png" className="icon" alt="" />
+                <Image src="/telephone.png" className="icon" width={150} height={5} alt="" />
                 <p>+4474638365597</p>
               </div>
             </div>
@@ -96,16 +100,25 @@ const ContactForm = () => {
               <p>Connect with us :</p>
               <div className="flex gap-5 py-5">
                 <a href="#">
-                  <Image src="/twitter.png" className="icon" alt="" />
+                  <Image src="/twitter.png" className="icon" width={150} height={5} alt="" />
                 </a>
-                <a href="https://www.linkedin.com/company/infineteck/">
-                  <Image src="/linkedin.png" className="icon" alt="" />
+                <a
+                  href="https://www.linkedin.com/company/infineteck/"
+                  target="_blank"
+                >
+                  <Image src="/linkedin.png" className="icon" width={150} height={5} alt="" />
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL">
-                  <Image src="/facebook.png" className="icon" alt="" />
+                <a
+                  href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL"
+                  target="_blank"
+                >
+                  <Image src="/facebook.png" className="icon" width={150} height={5}  alt="" />
                 </a>
-                <a href="https://www.instagram.com/infineteck/profilecard/?igsh=dnR6c2FjNjJjcWE2">
-                  <Image src="/instagram.png" className="icon" alt="" />
+                <a
+                  href="https://www.instagram.com/infineteck/profilecard/?igsh=dnR6c2FjNjJjcWE2"
+                  target="_blank"
+                >
+                  <Image src="/instagram.png" className="icon"  width={150} height={5} alt="" />
                 </a>
               </div>
             </div>
