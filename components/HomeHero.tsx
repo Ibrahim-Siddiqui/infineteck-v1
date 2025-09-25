@@ -61,10 +61,10 @@ const HomeHero = () => {
             <HeroReviews />
           </div>
         </div>
-        <div className="xl:flex justify-center items-center">
+        <div className="xl:flex flex-row justify-center items-start">
           <Image
             src="/Hero-Banner.gif"
-            width={1200}
+            width={1100}
             height={100}
             alt="person image"
           />

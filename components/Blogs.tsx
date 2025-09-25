@@ -23,7 +23,7 @@ const Blogs = () => {
           shaping tomorrow’s business. Stay current; stay fearless with
           Infineteck in your feed.
         </p>
-        <div className="my-[5%] flex justify-start gap-5 text-center">
+        <div className="my-[5%] flex justify-start gap-5 text-center  ">
           <Link
             href="/blog"
             prefetch={false}

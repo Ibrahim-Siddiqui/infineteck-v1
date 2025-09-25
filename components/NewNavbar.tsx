@@ -12,7 +12,9 @@ const NewNavbar = () => {
       <header className="h-16 text-[15px] fixed inset-0 flex-center shadow-lg bg-white z-[99]">
         <nav className=" px-3.5 flex-center-between w-full max-w-7xl mx-auto z-[99]">
           <div className="flex-center gap-x-3 z-[999] relative">
+            <Link href="/">
             <Image src="/logo.png" width={150} height={100} alt=" " className="w-[150px] md:w-[200px]"/>
+            </Link>
           </div>
 
           <ul className="gap-x-1 lg:flex-center hidden">

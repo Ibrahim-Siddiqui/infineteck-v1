@@ -59,7 +59,7 @@ const OurPartners = () => {
         }}
         plugins={[
           Autoplay({
-            delay: 500,
+            delay: 600,
           }),
         ]}
         className="p-5 my-[5%]"

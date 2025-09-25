@@ -2,6 +2,7 @@ import { socialMedia } from "@/data";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import Image from "next/image";
 import Subscription from "./Subscription";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -9,32 +10,22 @@ const Footer = () => {
       {/* <div className="hidden xl:block absolute top-0 -z-10 h-full w-full bg-white">
         <div className="absolute bottom-auto left-auto right-0 top-[100%] h-[30%] lg:h-[25%] w-[30%] lg:w-[10%] -translate-x-[10%] lg:-translate-x-[55%] translate-y-[180%] lg:translate-y-[250%] rounded-full bg-secondary-color opacity-70 blur-[80px]"></div>
       </div> */}
-      <div className="sm:px-6 text-gray-800 sm:grid md:grid-cols-6 sm:grid-cols-2">
-        <div className="p-5 col-span-1 flex flex-col justify-between">
+      <div className="sm:px-6 text-gray-800 sm:grid md:grid-cols-5 sm:grid-cols-2">
+        <div className="p-5 col-span-1 flex flex-col items-start justify-between">
           <div className="">
-            <Image
-              src="/logo.png"
-              width={200}
-              height={200}
-              priority={true}
-              alt="logo"
-            />
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                width={200}
+                height={200}
+                priority={true}
+                alt="logo"
+              />
+            </Link>
             <h2 className="my-[5%] text-lg font-semibold">
               Driving Online Success
             </h2>
           </div>
-          <a
-            href="https://www.trustpilot.com/review/infineteck.com"
-            target="_blank"
-          >
-            <Image
-              src="/trust-pilot.png"
-              width={200}
-              height={200}
-              priority={true}
-              alt="logo"
-            />
-          </a>
         </div>
         <div className="p-5 col-span-1">
           <div className="text-md uppercase text-primary-color font-bold">
@@ -56,7 +47,7 @@ const Footer = () => {
             Pricing <span className="text-teal-600 text-xs p-1"></span>
           </a>
         </div>
-        <div className="p-5 col-span-1 md:col-span-1">
+        <div className="p-5 col-span-1 md:col-span-1 justify-start">
           <div className="text-md uppercase text-primary-color font-bold">
             Services
           </div>
@@ -115,7 +106,7 @@ const Footer = () => {
             FAQs
           </a>
         </div>
-        <div className="p-5 col-span-1 md:col-span-2">
+        <div className="p-5 col-span-1 md:col-span-1">
           <div className="text-md uppercase text-primary-color font-bold">
             Contact us
           </div>
@@ -186,7 +177,7 @@ const Footer = () => {
                 alt="social-logo"
               />
             </a>
-            <a href="/#" className="w-8 mx-1" target="_blank">
+            <a href="/#" className="w-8 mx-1">
               <Image
                 src="/twitter.png"
                 width={200}

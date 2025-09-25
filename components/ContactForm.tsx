@@ -147,7 +147,7 @@ export const ContactForm = () => {
                       alt=""
                     />
                   </a>
-                  <a href="https://www.linkedin.com/company/infineteck/">
+                  <a href="https://www.linkedin.com/company/infineteck/" target="_blank">
                     <Image
                       width={150}
                       height={1}
@@ -156,7 +156,7 @@ export const ContactForm = () => {
                       alt=""
                     />
                   </a>
-                  <a href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL">
+                  <a href="https://www.facebook.com/profile.php?id=61569356296437&mibextid=ZbWKwL" target="_blank">
                     <Image
                       width={150}
                       height={1}
@@ -165,7 +165,7 @@ export const ContactForm = () => {
                       alt=""
                     />
                   </a>
-                  <a href="https://www.instagram.com/infineteck/profilecard/?igsh=dnR6c2FjNjJjcWE2">
+                  <a href="https://www.instagram.com/infineteck/profilecard/?igsh=dnR6c2FjNjJjcWE2" target="_blank">
                     <Image
                       width={150}
                       height={1}
