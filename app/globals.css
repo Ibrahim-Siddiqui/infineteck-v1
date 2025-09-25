@@ -544,3 +544,12 @@ video {
   background-color: rgba(0,0,0, 0.8);
   /* background-color: #000000cc; */
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}

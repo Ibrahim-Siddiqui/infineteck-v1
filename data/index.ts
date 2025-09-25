@@ -478,12 +478,12 @@ export const UIUXPortfolioData = [
   {
     id: 1,
     title: "",
-    src: "/ui-ux-1.jpg",
+    src: "/ui-ux-1.png",
   },
   {
     id: 2,
     title: "",
-    src: "/ui-ux-2.jpg",
+    src: "/ui-ux-2.png",
   },
   {
     id: 3,
@@ -519,6 +519,16 @@ export const UIUXPortfolioData = [
     id: 9,
     title: "",
     src: "/ui-ux-9.jpg",
+  },
+  {
+    id: 10,
+    title: "",
+    src: "/ui-ux-10.png",
+  },
+  {
+    id: 11,
+    title: "",
+    src: "/ui-ux-11.png",
   },
 ];
 
