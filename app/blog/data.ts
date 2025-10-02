@@ -85,10 +85,10 @@ export const blogsData = [
   },
   {
     imageUrl: "/custom-softwares-for-startups-blog.png",
-    postDate: "July 10 2025",
+    postDate: "September 10 2025",
     title:
       "Why Custom Software Matters for Startups in 2025 | Infineteck",
-    text: "Starting a startup in 2025 is more exhilarating—and more difficult—than ever. As AI, blockchain, cloud computing, and Web3 applications transform modern businesses, startups must realize that they’re no longer competing just on ideas; they’re competing on execution, speed, user experience, and adaptability.",
+    text: "Starting a startup in 2025 is more exhilarating—and more difficult—than ever. As AI, blockchain, cloud computing, and Web3 applications transform modern businesses, startups must realize that they’re no longer competing just on ideas; they’re competing on execution, speed, user experience, and adaptability...",
     blogUrl: "/blog/custom-software-for-startups",
   },
 ];
