@@ -8,16 +8,16 @@ import React from "react";
 import ResponseForm from "../components/ResponseForm";
 
 const title =
-  "How Infineteck’s AI Automation Services Can Help You Work Smarter, Not Harder";
+  "Why Custom Software Matters for Startups in 2025 | Infineteck";
 const description =
-  "At Infineteck, we help businesses remove the manual component from their work and much more importantly, inject the friendly magic of automation into the process.";
+  "Starting a startup in 2025 is more exhilarating—and more difficult—than ever. As AI, blockchain, cloud computing, and Web3 applications transform modern businesses, startups must realize that they’re no longer competing just on ideas; they’re competing on execution, speed, user experience, and adaptability.";
 const keywords = "";
 const author = "Infineteck";
 const publishedDate = "2025-07-";
 15;
 const modifiedDate = "2025-07-15";
-const blogUrl = "https://infineteck.com/blog/app-dev-services";
-const imageUrl = "https://infineteck.com/ai-automation-blog.png";
+const blogUrl = "https://infineteck.com/blog/custom-software-for-startups";
+const imageUrl = "https://infineteck.com/custom-softwares-for-startups.png";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -62,7 +62,7 @@ const WebDevServicesBlog = () => {
       <div className="max-w-screen-xl mx-auto p-5 sm:p-8 md:p-12 relative">
         <Image
           className="h-75"
-          src="/ai-automation-blog.png"
+          src="/custom-softwares-for-startups.png"
           width={3600}
           height={100}
           alt="blog image"
