@@ -201,7 +201,7 @@ const WebDevServicesBlog = () => {
       <br />
       With Infineteck as your technology partner, you aren’t just catching up to the future—you’re actually building it!
       <br />
-      <span className="font-bold">👉 Are you ready to start your startup and turn your idea into a future-proof digital product? Visit Infineteck and let us help you turn your vision into reality!</span>
+      <span className="font-bold"><Link href="https://www.infineteck.com/" className="text-blue-600 underline">👉 Are you ready to start your startup and turn your idea into a future-proof digital product? Visit Infineteck and let us help you turn your vision into reality!</Link></span>
     </p>
   </article>
   <ResponseForm blogTitle="Why Custom Software Matters for Startups in 2025" />
