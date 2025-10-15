@@ -7,7 +7,11 @@ import Footer from "@/components/Footer";
 import FeatureSection from "../components/FeatureSection";
 import FeatureCards from "./FeatureCards";
 import { AppVideoData } from "@/app/services/app-development/data";
-import { AppFeaturesData } from "@/app/services/app-development/data";
+import Image from "next/image";
+import Image1 from "./2.png";
+import Image2 from "./3.png";
+import Image3 from "./1.png";
+import ContactForm from "@/components/ContactForm";
 
 const AppDevelopment = () => {
   return (
@@ -19,13 +23,54 @@ const AppDevelopment = () => {
         text="We craft high-performance, scalable, and user-centric applications tailored to your business needs. From seamless cloud integration to AI-powered solutions, our expert team ensures cutting-edge technology and exceptional user experiences."
       />
       <VideoSection data={AppVideoData} />
-      <FeatureSection
+
+      <div className="hidden my-5 md:flex flex-col justify-center items-center">
+        <h2 className="text-3xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
+          Our Process
+        </h2>
+        {/* <p>Equipped with latest tools, our team deliver impactful solutions designed to grow your business</p> */}
+        <Image
+          src={Image1}
+          className=""
+          width={3000}
+          height={1}
+          alt="service image"
+        />
+      </div>
+      <div className="my-[15%] md:mt-[10%] md:mb-[5%] flex flex-col justify-center items-center">
+        <h2 className="text-3xl md:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
+          Our Tech Stack
+        </h2>
+        <p className="text-md md:text-lg text-center">
+          Equipped with latest tools, our team deliver impactful solutions
+          designed to grow your business
+        </p>
+        <Image
+          src={Image2}
+          className=""
+          width={1500}
+          height={1}
+          alt="service image"
+        />
+      </div>
+      <div className="hidden my-5 md:flex flex-col justify-center items-center">
+        {" "}
+        <Image
+          src={Image3}
+          className=""
+          width={2560}
+          height={1}
+          alt="service image"
+        />
+      </div>
+      {/* <FeatureSection
         data={AppFeaturesData}
         initialHeading="Empowering"
         specialText="Your Business"
         endHeading="with Advanced Mobile App Solutions"
-      />
+      /> */}
       <FeatureCards />
+      <ContactForm />
       <Footer />
     </>
   );
