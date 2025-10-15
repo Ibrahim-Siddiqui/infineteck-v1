@@ -83,4 +83,12 @@ export const blogsData = [
     text: "Today, in a fast-evolving digital world, where milliseconds matter and data signals decisions, real-time data synchronization is no longer an option; it's a requirement. Maybe that is a mobile banking app displaying...",
     blogUrl: "/blog/realtime-data-sync",
   },
+  {
+    imageUrl: "/custom-softwares-for-startups.png",
+    postDate: "September 10 2025",
+    title:
+      "Why Custom Software Matters for Startups in 2025 | Infineteck",
+    text: "Starting a startup in 2025 is more exhilarating—and more difficult—than ever. As AI, blockchain, cloud computing, and Web3 applications transform modern businesses, startups must realize that they’re no...",
+    blogUrl: "/blog/custom-software-for-startups",
+  },
 ];
