@@ -95,47 +95,44 @@ export default function LongScreenshot({
   const controls = useAnimation();
   const [imgHeight, setImgHeight] = useState(0);
   // const downDuration = 10
-  const upDuration = 1
-
+  const upDuration = 1;
 
   const handleMouseEnter = () => {
     if (imgHeight > height) {
       controls.start({
-        y: -(height),
+        y: -height,
         transition: { duration, ease: "linear" },
       });
     }
     // if (imgHeight > height * 2) {
-      
+
     // }
   };
 
   const handleMouseLeave = () => {
     controls.start({
       y: 0,
-      transition: { upDuration , ease: "linear" },
+      transition: { upDuration, ease: "linear" },
     });
   };
 
   return (
     <div className="">
-    
       <div
-      className="overflow-y-hidden rounded-md w-[400px] h-[450px]"
-      // style={{ height }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <motion.img
-        // src="/ui-ux-9.jpg"
-        src={path}
-        alt={alt}
-        className="col-span-1 object-cover"
-        animate={controls}
-        onLoad={(e) => setImgHeight(e.currentTarget.naturalHeight)}
+        className="overflow-y-hidden rounded-md  w-[350px] h-[400px] sm:w-[400px] md:h-[450px] shadow-md shadow-primary-color"
+        // style={{ height }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <motion.img
+          // src="/ui-ux-9.jpg"
+          src={path}
+          alt={alt}
+          className="col-span-1 object-cover"
+          animate={controls}
+          onLoad={(e) => setImgHeight(e.currentTarget.naturalHeight)}
         />
+      </div>
     </div>
-    
-     </div>
   );
 }

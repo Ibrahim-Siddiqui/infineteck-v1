@@ -33,6 +33,7 @@ export const Card = React.memo(
             src={card.src}
             alt={card.title}
             fill
+            objectFit="cover"
             className="object-contain absolute inset-0 cursor-pointer"
           />
         </PhotoView>
