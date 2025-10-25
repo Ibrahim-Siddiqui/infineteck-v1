@@ -27,13 +27,26 @@ const AppDevelopment = () => {
       />
       <VideoSection data={AnimationVideoData} /><div className="hidden my-5 md:flex flex-col justify-center items-center">
         <h2 className="text-3xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
-          Our Process
+          Why Choose Infineteck?
         </h2>
         {/* <p>Equipped with latest tools, our team deliver impactful solutions designed to grow your business</p> */}
         <Image
           src={Image1}
           className=""
           width={3000}
+          height={1}
+          alt="service image"
+        />
+      </div>
+      <div className="hidden my-5 md:flex flex-col justify-center items-center">
+      <h2 className="text-3xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
+          Infineteck's Video & Animation Process
+        </h2>
+        {" "}
+        <Image
+          src={Image3}
+          className=""
+          width={2560}
           height={1}
           alt="service image"
         />
@@ -61,16 +74,6 @@ const AppDevelopment = () => {
         endHeading="with Stunning Animation & Video Editing"
       /> */}
       <FeatureCards />
-      <div className="hidden my-5 md:flex flex-col justify-center items-center">
-        {" "}
-        <Image
-          src={Image3}
-          className=""
-          width={2560}
-          height={1}
-          alt="service image"
-        />
-      </div>
       <div className="mt-5 flex flex-col justify-center items-center">
         <h2 className="text-4xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color py-5">
           Our Pricing

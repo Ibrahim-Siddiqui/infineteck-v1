@@ -17,7 +17,6 @@ import { ecommercePlans, shopifyPlans } from "@/app/pricing/data";
 import { useState } from "react";
 import ContactForm from "@/components/ContactForm";
 const AppDevelopment = () => {
-
   const [ecommerce, setEcommerce] = useState(true);
   const [shopify, setShopify] = useState(false);
 
@@ -37,7 +36,7 @@ const AppDevelopment = () => {
       <VideoSection data={EcommerceVideoData} />
       <div className="hidden my-5 md:flex flex-col justify-center items-center">
         <h2 className="text-3xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
-          Our Process
+          Why Choose Infineteck?
         </h2>
         {/* <p>Equipped with latest tools, our team deliver impactful solutions designed to grow your business</p> */}
         <Image
@@ -49,6 +48,18 @@ const AppDevelopment = () => {
         />
       </div>
 
+      <div className="hidden my-5 md:flex flex-col justify-center items-center">
+        <h2 className="text-3xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
+          Infineteck's Ecommerce Development Process
+        </h2>{" "}
+        <Image
+          src={Image3}
+          className=""
+          width={2560}
+          height={1}
+          alt="service image"
+        />
+      </div>
       <div className="my-[15%] md:mt-[10%] md:mb-[5%] flex flex-col justify-center items-center">
         <h2 className="text-3xl md:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
           Our Tech Stack
@@ -72,34 +83,24 @@ const AppDevelopment = () => {
         endHeading="for Business Growth"
       /> */}
       <FeatureCards />
-      <div className="hidden my-5 md:flex flex-col justify-center items-center">
-        {" "}
-        <Image
-          src={Image3}
-          className=""
-          width={2560}
-          height={1}
-          alt="service image"
-        />
-      </div>
       <div className="mt-5 flex flex-col justify-center items-center">
         <h2 className="text-4xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color py-5">
           Our Pricing
         </h2>
         <div className="mt-5 sm:mt-12 mx-2 flex justify-center gap-2 lg:mx-4  text-md lg:text-lg lg:tracking-tighter">
-        <button
-          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
-          onClick={() => handleButtonClick(setEcommerce)}
-        >
-          E-Commerce
-        </button>
-        <button
-          className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
-          onClick={() => handleButtonClick(setShopify)}
-        >
-          Shopify Store
-        </button>
-      </div>
+          <button
+            className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+            onClick={() => handleButtonClick(setEcommerce)}
+          >
+            E-Commerce
+          </button>
+          <button
+            className="rounded-lg px-2 py-2 text-primary-color transition-all bg-white hover:scale-105 border-2 border-primary-color hover:bg-primary-color hover:text-white"
+            onClick={() => handleButtonClick(setShopify)}
+          >
+            Shopify Store
+          </button>
+        </div>
         {ecommerce ? <Plans plans={ecommercePlans} /> : <></>}
         {shopify ? <Plans plans={shopifyPlans} /> : <></>}
       </div>

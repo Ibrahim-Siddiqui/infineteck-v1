@@ -29,7 +29,7 @@ const AppDevelopment = () => {
       <VideoSection data={GameVideoData} />
       <div className="hidden my-5 md:flex flex-col justify-center items-center">
         <h2 className="text-3xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
-          Our Process
+          Why Choose Infineteck?
         </h2>
         {/* <p>Equipped with latest tools, our team deliver impactful solutions designed to grow your business</p> */}
         <Image
@@ -46,6 +46,19 @@ const AppDevelopment = () => {
         specialText="Cutting-Edge Technology"
         endHeading=""
       /> */}
+      <div className="hidden my-5 md:flex flex-col justify-center items-center">
+      <h2 className="text-3xl md:text-5xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color my-5">
+          Infineteck's Game Development Process
+        </h2>
+        {" "}
+        <Image
+          src={Image3}
+          className=""
+          width={2560}
+          height={1}
+          alt="service image"
+        />
+      </div>
       <div className=" mt-[5rem]">
         <h1 className="text-black text-4xl md:text-5xl text-center font-bold py-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-color to-primary-color">
           Our Portfolio
@@ -70,16 +83,6 @@ const AppDevelopment = () => {
         />
       </div>
       <FeatureCards />
-      <div className="hidden my-5 md:flex flex-col justify-center items-center">
-        {" "}
-        <Image
-          src={Image3}
-          className=""
-          width={2560}
-          height={1}
-          alt="service image"
-        />
-      </div>
 
       <ContactForm />
 
