@@ -23,24 +23,8 @@ const HeroCarousel = () => {
   ];
 
   return (
-    <div
-      className="px-[5%] shadow-sm"
-      // initial={{
-      //   opacity: 0,
-      //   translateY: 100,
-      // }}
-      // whileInView={{
-      //   translateY: 0,
-      //   opacity: 1,
-      // }}
-      // transition={{
-      //   duration: 0.7,
-      // }}
-      // viewport={{
-      //   once: true,
-      //   margin: "-250px",
-      // }}
-    >
+    <div className="px-[5%] shadow-sm">
+      {/* For Mobile View Port */}
       <Carousel
         opts={{
           direction: "ltr",
@@ -51,7 +35,67 @@ const HeroCarousel = () => {
             delay: 1500,
           }),
         ]}
-        className=""
+        className="sm:hidden"
+      >
+        <CarouselContent className="flex items-center">
+          {partners.map((partner) => (
+            <CarouselItem key={partner.img} className="basis-1/3">
+              <div className="flex justify-center items-center rounded-lg h-[200px] w-[200px]">
+                <Image
+                  src={partner.img}
+                  width={100}
+                  height={50}
+                  alt="logo"
+                  priority={true}
+                />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+
+      {/* For Small View Port */}
+      <Carousel
+        opts={{
+          direction: "ltr",
+          loop: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 1500,
+          }),
+        ]}
+        className="hidden sm:block md:hidden"
+      >
+        <CarouselContent className="flex items-center">
+          {partners.map((partner) => (
+            <CarouselItem key={partner.img} className="basis-1/3">
+              <div className="flex justify-center items-center rounded-lg h-[200px] w-[250px]">
+                <Image
+                  src={partner.img}
+                  width={150}
+                  height={50}
+                  alt="logo"
+                  priority={true}
+                />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+
+      {/* For Medium View Port and Above */}
+      <Carousel
+        opts={{
+          direction: "ltr",
+          loop: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 1500,
+          }),
+        ]}
+        className="hidden md:block"
       >
         <CarouselContent className="flex items-center">
           {partners.map((partner) => (
